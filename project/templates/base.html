@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meta-Pawn</title>
+
+        <!-- Local CSS file for styling-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base_style.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+
+        <!-- Additional styling-->
+        {% block styling %}
+        {% endblock %}
+    </head>
+    <body>
+        <header class="site-header">
+        </header>
+
+        <main class="content">
+            <!-- child template -->
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer class="site-footer">
+            <small>Meta-Pawn 2021</small>
+        </footer>
+    </body>
+</html>

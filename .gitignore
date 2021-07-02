@@ -130,3 +130,9 @@ dmypy.json
 
 # Pycharm environment files
 .idea/
+
+# Instance Folder - used for logging etc
+instance/*.cfg
+instance/*.db
+instance/*.log
+instance/*.log*
