@@ -24,10 +24,9 @@ def get_opening_frequency(games):
     return games['opening_name'].value_counts()
 
 
-
-def get_win_rate(opening_name, elo_low = -1, elo_high = -1):
-    chess_games = get_games('project/static/games.csv')
-    games = chess_games[chess_games['opening_name'] == opening_name]
+def get_win_rate(opening_name, elo_low=-1, elo_high=-1):
+    chess_games_t = get_games('project/static/games.csv')
+    games = chess_games_t[chess_games_t['opening_name'] == opening_name]
     w_win = games[games['winner'] == 'white']
     b_win = games[games['winner'] == 'black']
 
@@ -36,8 +35,8 @@ def get_win_rate(opening_name, elo_low = -1, elo_high = -1):
 
     return w_win_rate, b_win_rate
 
-chess_games = get_games('project/static/games.csv')
 
+chess_games = get_games('project/static/games.csv')
 
 
 if __name__ == "__main__":
