@@ -136,3 +136,4 @@ instance/*.cfg
 instance/*.db
 instance/*.log
 instance/*.log*
+!instance/.gitkeep
