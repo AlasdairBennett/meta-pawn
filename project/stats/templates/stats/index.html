@@ -10,5 +10,12 @@
         <h1><strong>Meta-Pawn</strong></h1>
         <p>Data based metagame analysis of chess.</p>
     </header>
+
+    <body>
+        <h1>Chess Data:</h1>
+        {% for chesstable in chesstable %}
+        {{ chesstable|safe }}
+        {% endfor %}
+    </body>
 </div>
 {% endblock %}

@@ -1,3 +1,4 @@
+import app
 from . import stats_blueprint
 from flask import current_app, render_template
 
@@ -22,4 +23,6 @@ def stats_teardown_request(error=None):
 @stats_blueprint.route('/')
 def index():
     current_app.logger.info('Calling the index() function.')
-    return render_template('stats/index.html')
+    return render_template('stats/index.html',
+                           chesstable=[app.chess_games.to_html(index=False)],
+                           titles=app.chess_games.columns.values)

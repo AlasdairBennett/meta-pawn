@@ -24,6 +24,7 @@ def get_opening_frequency(games):
     return games['opening_name'].value_counts()
 
 
+
 def get_win_rate(opening_name, elo_low = -1, elo_high = -1):
     chess_games = get_games('project/static/games.csv')
     games = chess_games[chess_games['opening_name'] == opening_name]
@@ -35,6 +36,9 @@ def get_win_rate(opening_name, elo_low = -1, elo_high = -1):
 
     return w_win_rate, b_win_rate
 
+chess_games = get_games('project/static/games.csv')
+
+
 
 if __name__ == "__main__":
     print("running...")
@@ -43,7 +47,7 @@ if __name__ == "__main__":
     pd.set_option('display.max_rows', 20)
     pd.set_option('display.width', 10000)
 
-    chess_games = get_games('project/static/games.csv')
+    # chess_games = get_games('project/static/games.csv')
     print(chess_games.iloc[:10])
     opening_freq = get_opening_frequency(chess_games)
     print(opening_freq[:10])
