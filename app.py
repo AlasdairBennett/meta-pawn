@@ -51,7 +51,18 @@ def get_win_rate_table(games_set):
 
     return win_rates_table
 
-
+# Get intermediate white games
+def get_intermediate_white_games(games_set):
+    white_games = games_set[games_set['winner'] == 'white']
+    intermediate_white_games = white_games[white_games['white_rating'] <= 1500]
+    return intermediate_white_games
+    
+# Get intermediate black games
+def get_intermediate_black_games(games_set):
+    black_games = games_set[games_set['winner'] == 'black']
+    intermediate_black_games = black_games[black_games['black_rating'] <= 1500]
+    return intermediate_black_games
+    
 if __name__ == "__main__":
     print("running...")
 
@@ -68,6 +79,14 @@ if __name__ == "__main__":
         chess_games[(chess_games.black_rating < rating) & (chess_games.winner == 'white')])
 
     print(get_win_rate_table(chess_games))
-
-    sns.pairplot(get_win_rate_table(chess_games))
-    plt.show()
+    
+    print("Intermediate white games:")
+    print(get_intermediate_white_games(chess_games))
+    
+    print("Intermediate black games:")
+    print(get_intermediate_black_games(chess_games))
+    
+    #sns.scatterplot(get_win_rate_table(chess_games))
+    #plt.show()
+    
+    
