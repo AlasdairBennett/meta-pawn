@@ -28,24 +28,26 @@ def get_opening_frequency(games):
 
 
 # get_win_rate takes a opening name and set of chess game
-# then returns the opening name, white and black win rate for that opening in a tuple
+# then returns the opening name, white/black win rate and number of games played for that opening in a tuple
 def get_win_rate(games_set, opening_name):
     games_with_opening = games_set[chess_games['opening_name'] == opening_name]
     w_win = games_with_opening[games_with_opening['winner'] == 'white']
     b_win = games_with_opening[games_with_opening['winner'] == 'black']
 
+    n_games_played = len(games_with_opening)
+
     w_win_rate = len(w_win) * 100 / len(games_with_opening)
     b_win_rate = len(b_win) * 100 / len(games_with_opening)
 
-    return opening_name, w_win_rate, b_win_rate
+    return opening_name, w_win_rate, b_win_rate, n_games_played
 
 
 # get_win_rate_table takes set of chess game
-# then returns table of white and black win rates for each opening in that set
+# then returns table of white/black win rates and number of games played for each opening in that set
 def get_win_rate_table(games_set):
     games_set_t = games_set.copy()
     win_rates_table = pd.DataFrame([get_win_rate(games_set, x) for x in games_set_t['opening_name'].drop_duplicates()],
-                                   columns=('opening_name', 'w_win_rate', 'b_win_rate'))
+                                   columns=('opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
 
     return win_rates_table
 
