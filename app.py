@@ -1,5 +1,7 @@
 from project import create_app
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 app = create_app()
 
@@ -66,3 +68,6 @@ if __name__ == "__main__":
         chess_games[(chess_games.black_rating < rating) & (chess_games.winner == 'white')])
 
     print(get_win_rate_table(chess_games))
+
+    sns.pairplot(get_win_rate_table(chess_games))
+    plt.show()
