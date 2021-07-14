@@ -85,15 +85,6 @@ if __name__ == "__main__":
 
     print(get_rel_game_set(chess_games, 1500).sample(20))
 
-    print(chess_games.iloc[:10])
-    opening_freq = get_opening_frequency(chess_games)
-    print(opening_freq[:10])
-    rating = 1000
-    black_lose_opening_freq = get_opening_frequency(
-        chess_games[(chess_games.black_rating < rating) & (chess_games.winner == 'white')])
-
-    print(get_win_rate_table(chess_games))
-
     sns.pairplot(get_win_rate_table(chess_games))
     plt.show()
 
