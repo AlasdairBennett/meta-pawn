@@ -34,7 +34,7 @@ def get_rel_game_set(game_set, user_rating):
                             & (np.abs(game_set['black_rating'] - user_rating) < 100)]
 
     opening_outliers = get_opening_outliers(rel_game_set)
-    return rel_game_set[rel_game_set['opening_name'].isin(opening_outliers)]
+    return rel_game_set[~rel_game_set['opening_name'].isin(opening_outliers)]
 
 
 # get_win_rate takes a opening name and set of chess games
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     print(chess_games.columns)
 
-    print(get_rel_game_set(chess_games, 1500).sample(20))
+    print(get_rel_game_set(chess_games, 1500).sample(10))
 
     sns.pairplot(get_win_rate_table(chess_games))
     plt.show()
