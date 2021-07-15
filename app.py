@@ -51,19 +51,13 @@ def get_win_rate_table(games_set):
 
     return win_rates_table
 
+### White ###
 # Get beginner white games
 def get_beginner_white_games(games_set):
     white_games = games_set[games_set['winner'] == 'white']
     beginner_white_games = white_games[white_games['white_rating'] <= 1500]
     beginner_white_games = beginner_white_games.assign(score_delta = beginner_white_games.white_rating - beginner_white_games.black_rating)
     return beginner_white_games
-    
-# Get beginner black games
-def get_beginner_black_games(games_set):
-    black_games = games_set[games_set['winner'] == 'black']
-    beginner_black_games = black_games[black_games['black_rating'] <= 1500]
-    beginner_black_games = beginner_black_games.assign(score_delta = beginner_black_games.black_rating - beginner_black_games.white_rating)
-    return beginner_black_games
 
 # Get intermediate white games
 def get_intermediate_white_games(games_set):
@@ -71,8 +65,23 @@ def get_intermediate_white_games(games_set):
     intermediate_white_games = white_games[(white_games['white_rating'] > 1500) &
                                            (white_games['white_rating'] <= 2000)]
     intermediate_white_games = intermediate_white_games.assign(score_delta = intermediate_white_games.white_rating - intermediate_white_games.black_rating)
-    return intermediate_white_games
-    
+    return intermediate_white_games  
+
+# Get advanced white games
+def get_advanced_white_games(games_set):
+    white_games = games_set[games_set['winner'] == 'white']
+    advanced_white_games = white_games[white_games['white_rating'] > 2000]
+    advanced_white_games = advanced_white_games.assign(score_delta = advanced_white_games.white_rating - advanced_white_games.black_rating)
+    return advanced_white_games
+
+### Black ###
+# Get beginner black games
+def get_beginner_black_games(games_set):
+    black_games = games_set[games_set['winner'] == 'black']
+    beginner_black_games = black_games[black_games['black_rating'] <= 1500]
+    beginner_black_games = beginner_black_games.assign(score_delta = beginner_black_games.black_rating - beginner_black_games.white_rating)
+    return beginner_black_games
+
 # Get intermediate black games
 def get_intermediate_black_games(games_set):
     black_games = games_set[games_set['winner'] == 'black']
@@ -81,13 +90,6 @@ def get_intermediate_black_games(games_set):
     intermediate_black_games = intermediate_black_games.assign(score_delta = intermediate_black_games.black_rating - intermediate_black_games.white_rating)
     return intermediate_black_games
 
-# Get intermediate white games
-def get_advanced_white_games(games_set):
-    white_games = games_set[games_set['winner'] == 'white']
-    advanced_white_games = white_games[white_games['white_rating'] > 2000]
-    advanced_white_games = advanced_white_games.assign(score_delta = advanced_white_games.white_rating - advanced_white_games.black_rating)
-    return advanced_white_games
-    
 # Get advanced black games
 def get_advanced_black_games(games_set):
     black_games = games_set[games_set['winner'] == 'black']
@@ -95,6 +97,13 @@ def get_advanced_black_games(games_set):
     advanced_black_games = advanced_black_games.assign(score_delta = advanced_black_games.black_rating - advanced_black_games.white_rating)
     return advanced_black_games
     
+### Utility methods ###
+# Get average score delta for each opening
+def get_avg_delta(games_set):
+    games_set = games_set[["opening_name", "score_delta"]]
+    avg_delta = games_set.groupby("opening_name").mean()
+    return avg_delta
+
 if __name__ == "__main__":
     print("running...")
 
@@ -114,29 +123,31 @@ if __name__ == "__main__":
     
     print("Beginner white games:")
     beginner_white_games = get_beginner_white_games(chess_games)
-    #print(beginner_white_games)
+    beginner_avg_delta = get_avg_delta(beginner_white_games)
+    print(beginner_white_games.sample(10))
+    print(beginner_avg_delta)
     
     print("Beginner black games:")
     beginner_black_games = get_beginner_black_games(chess_games)
-    #print(beginner_black_games)
+    #print(beginner_black_games.sample(10))
     
     print("Intermediate white games:")
     intermediate_white_games = get_intermediate_white_games(chess_games)
-    print(intermediate_white_games)
+    #print(intermediate_white_games.sample(10))
     
     print("Intermediate black games:")
     intermediate_black_games = get_intermediate_black_games(chess_games)
-    #print(intermediate_black_games)
+    #print(intermediate_black_games.sample(10))
     
     print("Advanced white games:")
     advanced_white_games = get_advanced_white_games(chess_games)
-    #print(advanced_white_games)
+    #print(advanced_white_games.sample(10))
     
     print("Advanced black games:")
     advanced_black_games = get_advanced_black_games(chess_games)
-    #print(advanced_black_games)
+    #print(advanced_black_games.sample(10))
     
-    sns.scatterplot(data=intermediate_white_games, x="white_rating", y="opening_ply")
+    sns.scatterplot(data=beginner_white_games, x="white_rating", y="opening_ply")
     plt.show()
     
     
