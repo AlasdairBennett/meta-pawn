@@ -114,11 +114,11 @@ if __name__ == "__main__":
     
     print("Beginner white games:")
     beginner_white_games = get_beginner_white_games(chess_games)
-    print(beginner_white_games)
+    #print(beginner_white_games)
     
     print("Beginner black games:")
     beginner_black_games = get_beginner_black_games(chess_games)
-    print(beginner_black_games)
+    #print(beginner_black_games)
     
     print("Intermediate white games:")
     intermediate_white_games = get_intermediate_white_games(chess_games)
@@ -126,15 +126,15 @@ if __name__ == "__main__":
     
     print("Intermediate black games:")
     intermediate_black_games = get_intermediate_black_games(chess_games)
-    print(intermediate_black_games)
+    #print(intermediate_black_games)
     
     print("Advanced white games:")
     advanced_white_games = get_advanced_white_games(chess_games)
-    print(advanced_white_games)
+    #print(advanced_white_games)
     
     print("Advanced black games:")
     advanced_black_games = get_advanced_black_games(chess_games)
-    print(advanced_black_games)
+    #print(advanced_black_games)
     
     sns.scatterplot(data=intermediate_white_games, x="white_rating", y="opening_ply")
     plt.show()
