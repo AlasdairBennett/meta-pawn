@@ -1,5 +1,4 @@
 import numpy as np
-
 from project import create_app
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,9 +7,6 @@ import seaborn as sns
 app = create_app()
 
 
-# def frame_html
-
-##
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
 #   only the data of ranked games
 def get_games(filename):
@@ -20,9 +16,6 @@ def get_games(filename):
     ranked_games = games[games['rated']]
 
     return ranked_games
-
-
-chess_games = get_games('project/static/games.csv')
 
 
 # get_rel_game_set takes in a set of chess games and an elo
@@ -72,6 +65,11 @@ def get_opening_outliers(games_set):
 
     return opening_freq[(opening_freq.values < l_quantile - 1.5 * interquartile_r)
                         | (opening_freq.values > h_quantile + 1.5 * interquartile_r)].index
+
+
+# Global variables to be piped through routes.py to be displayed on front end
+chess_games = get_games('project/static/games.csv')
+win_table_1 = get_win_rate_table(get_rel_game_set(chess_games, 1000))
 
 
 if __name__ == "__main__":
