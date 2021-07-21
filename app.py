@@ -8,9 +8,6 @@ import seaborn as sns
 app = create_app()
 
 
-# def frame_html
-
-##
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
 #   only the data of ranked games
 def get_games(filename):
@@ -62,6 +59,66 @@ def get_win_rate_table(games_set):
     return win_rates_table
 
 
+### White ###
+# Get beginner white games
+def get_beginner_white_games(games_set):
+    white_games = games_set[games_set['winner'] == 'white']
+    beginner_white_games = white_games[white_games['white_rating'] <= 1500]
+    beginner_white_games = beginner_white_games.assign(score_delta = beginner_white_games.white_rating - beginner_white_games.black_rating)
+    return beginner_white_games
+
+
+# Get intermediate white games
+def get_intermediate_white_games(games_set):
+    white_games = games_set[games_set['winner'] == 'white']
+    intermediate_white_games = white_games[(white_games['white_rating'] > 1500) &
+                                           (white_games['white_rating'] <= 2000)]
+    intermediate_white_games = intermediate_white_games.assign(score_delta = intermediate_white_games.white_rating - intermediate_white_games.black_rating)
+    return intermediate_white_games  
+
+
+# Get advanced white games
+def get_advanced_white_games(games_set):
+    white_games = games_set[games_set['winner'] == 'white']
+    advanced_white_games = white_games[white_games['white_rating'] > 2000]
+    advanced_white_games = advanced_white_games.assign(score_delta = advanced_white_games.white_rating - advanced_white_games.black_rating)
+    return advanced_white_games
+
+
+### Black ###
+# Get beginner black games
+def get_beginner_black_games(games_set):
+    black_games = games_set[games_set['winner'] == 'black']
+    beginner_black_games = black_games[black_games['black_rating'] <= 1500]
+    beginner_black_games = beginner_black_games.assign(score_delta = beginner_black_games.black_rating - beginner_black_games.white_rating)
+    return beginner_black_games
+
+
+# Get intermediate black games
+def get_intermediate_black_games(games_set):
+    black_games = games_set[games_set['winner'] == 'black']
+    intermediate_black_games = black_games[(black_games['black_rating'] > 1500) &
+                                           (black_games['black_rating'] <= 2000)]
+    intermediate_black_games = intermediate_black_games.assign(score_delta = intermediate_black_games.black_rating - intermediate_black_games.white_rating)
+    return intermediate_black_games
+
+
+# Get advanced black games
+def get_advanced_black_games(games_set):
+    black_games = games_set[games_set['winner'] == 'black']
+    advanced_black_games = black_games[black_games['black_rating'] > 2000]
+    advanced_black_games = advanced_black_games.assign(score_delta = advanced_black_games.black_rating - advanced_black_games.white_rating)
+    return advanced_black_games
+
+
+### Utility methods ###
+# Get average score delta for each opening
+def get_avg_delta(games_set):
+    games_set = games_set[["opening_name", "score_delta"]]
+    avg_delta = games_set.groupby("opening_name").mean()
+    return avg_delta
+
+
 # remove the openings that are considered outliers using
 # the instructions from this link https://www.wikihow.com/Calculate-Outliers
 def get_opening_outliers(games_set):
@@ -79,7 +136,37 @@ if __name__ == "__main__":
     pd.set_option('display.max_columns', 20)
     pd.set_option('display.max_rows', 20)
     pd.set_option('display.width', 10000)
-    # chess_games = get_games('project/static/games.csv')
+
+    print(get_win_rate_table(chess_games))
+    
+    print("Beginner white games:")
+    beginner_white_games = get_beginner_white_games(chess_games)
+    beginner_avg_delta = get_avg_delta(beginner_white_games)
+    print(beginner_white_games.sample(10))
+    print(beginner_avg_delta)
+    
+    print("Beginner black games:")
+    beginner_black_games = get_beginner_black_games(chess_games)
+    #print(beginner_black_games.sample(10))
+    
+    print("Intermediate white games:")
+    intermediate_white_games = get_intermediate_white_games(chess_games)
+    #print(intermediate_white_games.sample(10))
+    
+    print("Intermediate black games:")
+    intermediate_black_games = get_intermediate_black_games(chess_games)
+    #print(intermediate_black_games.sample(10))
+    
+    print("Advanced white games:")
+    advanced_white_games = get_advanced_white_games(chess_games)
+    #print(advanced_white_games.sample(10))
+    
+    print("Advanced black games:")
+    advanced_black_games = get_advanced_black_games(chess_games)
+    #print(advanced_black_games.sample(10))
+    
+    sns.scatterplot(data=beginner_white_games, x="white_rating", y="opening_ply")
+    plt.show()
 
     print(chess_games.columns)
 
@@ -87,4 +174,3 @@ if __name__ == "__main__":
 
     sns.pairplot(get_win_rate_table(chess_games))
     plt.show()
-
