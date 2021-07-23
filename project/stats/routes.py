@@ -24,5 +24,6 @@ def stats_teardown_request(error=None):
 def index():
     current_app.logger.info('Calling the index() function.')
     return render_template('stats/index.html',
-                           chesstable=[app.chess_games.to_html(index=False)],
+                           # Add table of all chess games with custom boostrap classes for formatting
+                           chesstable=[app.win_table_1],
                            titles=app.chess_games.columns.values)
