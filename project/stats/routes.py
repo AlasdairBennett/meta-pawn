@@ -28,11 +28,9 @@ def index():
 
     # get table headers and rows
     columns = df.columns
-    rows = df.to_json(orient='index')
+    rows = df.values
 
     return render_template('stats/index.html',
-                           chesstable=[app.win_table_1],
-                           titles=app.chess_games.columns.values,
                            columns=columns,
                            rows=rows)
 
