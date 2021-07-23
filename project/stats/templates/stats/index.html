@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block styling %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/base_style.css') }}">
 {% endblock %}
 
 {% block content %}
@@ -12,10 +11,19 @@
     </header>
 
     <body>
-        <h1>Chess Data:</h1>
-        {% for chesstable in chesstable %}
-        {{ chesstable|safe }}
-        {% endfor %}
+        <h2>Win Rate of openings by colour for elo ~1000:</h2>
+
+<!--        TODO fix this so it shows tables correctly-->
+<!--        <table class="table">-->
+<!--            <thead>-->
+<!--                <tr>-->
+<!--                    <th></th>-->
+<!--                </tr>-->
+<!--            </thead>-->
+<!--            {% for chesstable in chesstable %}-->
+<!--            {{ chesstable|safe }}-->
+<!--            {% endfor %}-->
+<!--        </table>-->
     </body>
 </div>
 {% endblock %}
