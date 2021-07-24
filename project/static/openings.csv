@@ -1,0 +1,1385 @@
+,opening_name,avg_rating_delta,w_win_rate,b_win_rate,n_games_played
+0,Alekhine Defense,174.25,47.36842105263158,47.36842105263158,38
+1,Alekhine Defense #2,-51.0,33.333333333333336,33.333333333333336,3
+2,Alekhine Defense #3,143.0,0.0,100.0,1
+3,Alekhine Defense: Balogh Variation,547.0,0.0,100.0,1
+4,Alekhine Defense: Brooklyn Variation,139.5,100.0,0.0,2
+5,Alekhine Defense: Exchange Variation,-27.25,75.0,25.0,4
+6,Alekhine Defense: Four Pawns Attack,458.5,50.0,50.0,2
+7,Alekhine Defense: Four Pawns Attack |  6...Nc6,53.0,100.0,0.0,1
+8,Alekhine Defense: Four Pawns Attack |  Main Line,-227.0,100.0,0.0,1
+9,Alekhine Defense: Four Pawns Attack |  Trifunovic Variation,-33.0,100.0,0.0,2
+10,Alekhine Defense: John Tracy Gambit,332.25,50.0,50.0,4
+11,Alekhine Defense: Krejcik Variation,-36.0,50.0,50.0,2
+12,Alekhine Defense: Maroczy Variation,130.21428571428572,46.666666666666664,46.666666666666664,15
+13,Alekhine Defense: Modern Variation |  Larsen Variation,200.33333333333334,66.66666666666667,33.333333333333336,3
+14,Alekhine Defense: Modern Variation |  Larsen-Haakert Variation,152.0,0.0,100.0,1
+15,Alekhine Defense: Modern Variation |  Main Line,173.2,60.0,40.0,5
+16,Alekhine Defense: Mokele Mbembe,131.57142857142858,62.5,25.0,8
+17,Alekhine Defense: Mokele Mbembe |  Vavra Defense,238.25,100.0,0.0,4
+18,Alekhine Defense: Normal Variation,182.1818181818182,41.666666666666664,50.0,12
+19,Alekhine Defense: Saemisch Attack,-23.0,66.66666666666667,33.333333333333336,3
+20,Alekhine Defense: Scandinavian Variation,45.04347826086956,37.5,58.333333333333336,24
+21,Alekhine Defense: Scandinavian Variation |  Geschev Gambit,-24.333333333333332,100.0,0.0,3
+22,Alekhine Defense: Steiner Variation,139.0,0.0,100.0,1
+23,Alekhine Defense: The Squirrel,500.0,100.0,0.0,1
+24,Alekhine Defense: Two Pawn Attack,93.38461538461539,53.84615384615385,46.15384615384615,13
+25,Alekhine Defense: Two Pawn Attack |  Lasker Variation,-2.0,50.0,50.0,2
+26,Amar Opening,146.375,50.0,50.0,8
+27,Amazon Attack,41.666666666666664,25.0,50.0,4
+28,Amazon Attack: Siberian Attack,5.0,100.0,0.0,1
+29,Anderssen Opening,145.47368421052633,80.0,15.0,20
+30,Australian Defense,425.0,100.0,0.0,1
+31,Barnes Defense,142.21428571428572,66.66666666666667,26.666666666666668,15
+32,Barnes Opening: Walkerling,-209.0,50.0,0.0,2
+33,Benko Gambit,37.8,42.857142857142854,28.571428571428573,7
+34,Benko Gambit Accepted |  Fianchetto Variation,14.5,100.0,0.0,2
+35,Benko Gambit Accepted |  Fully Accepted Variation,14.0,33.333333333333336,66.66666666666667,3
+36,Benko Gambit Accepted |  Modern Variation,264.0,100.0,0.0,1
+37,Benko Gambit Accepted |  Pawn Return Variation,210.0,100.0,0.0,1
+38,Benko Gambit Accepted |  Yugoslav |  without 7...Bxf1,235.0,0.0,100.0,1
+39,Benko Gambit Declined |  Main Line,-151.0,0.0,100.0,1
+40,Benko Gambit Declined |  Quiet Line,-5.0,100.0,0.0,1
+41,Benko Gambit: Zaitsev System,-183.0,0.0,100.0,1
+42,Benoni Defense,24.666666666666668,33.333333333333336,66.66666666666667,6
+43,Benoni Defense: Benoni Gambit Accepted,52.642857142857146,35.0,35.0,20
+44,Benoni Defense: Benoni Gambit |  Schlenker Defense,-102.0,0.0,100.0,1
+45,Benoni Defense: Benoni-Indian Defense,-39.25,50.0,50.0,4
+46,Benoni Defense: Benoni-Indian Defense |  Kingside Move Order,-157.5,75.0,25.0,4
+47,Benoni Defense: Classical Variation,60.0,33.333333333333336,66.66666666666667,3
+48,Benoni Defense: Classical Variation |  Averbakh-Grivas Attack,,0.0,0.0,1
+49,Benoni Defense: Classical Variation |  Main Line,-147.0,0.0,100.0,1
+50,Benoni Defense: Classical Variation |  New York Variation,-90.33333333333333,66.66666666666667,33.333333333333336,3
+51,Benoni Defense: Cormorant Gambit,,0.0,0.0,1
+52,Benoni Defense: Czech Benoni Defense,-86.0,16.666666666666668,83.33333333333333,6
+53,Benoni Defense: Hromadka System,-101.0,0.0,100.0,1
+54,Benoni Defense: King's Pawn Line,101.0,0.0,100.0,1
+55,Benoni Defense: Modern Variation,89.0,66.66666666666667,33.333333333333336,3
+56,Benoni Defense: Modern Variation |  Snake Variation,83.0,100.0,0.0,1
+57,Benoni Defense: Old Benoni,29.5,50.0,50.0,2
+58,Benoni Defense: Taimanov Variation,312.0,100.0,0.0,1
+59,Bird Opening,109.21311475409836,39.0625,56.25,64
+60,Bird Opening: Dutch Variation,63.77272727272727,37.254901960784316,49.01960784313726,51
+61,Bird Opening: Dutch Variation |  Dudweiler Gambit,,0.0,0.0,1
+62,Bird Opening: From's Gambit,309.625,30.0,50.0,10
+63,Bird Opening: Williams Gambit,-60.666666666666664,0.0,100.0,3
+64,Bishop's Opening,66.29347826086956,55.55555555555556,37.37373737373738,99
+65,Bishop's Opening: Berlin Defense,121.46666666666667,67.94871794871794,28.205128205128204,78
+66,Bishop's Opening: Berlin Defense |  Greco Gambit,-42.0,0.0,100.0,1
+67,Bishop's Opening: Boden-Kieseritzky Gambit,-119.0,100.0,0.0,1
+68,Bishop's Opening: Boi Variation,122.67647058823529,68.57142857142857,28.571428571428573,35
+69,Bishop's Opening: Calabrese Countergambit,79.66666666666667,83.33333333333333,16.666666666666668,6
+70,Bishop's Opening: Khan Gambit,70.4,20.0,80.0,5
+71,Bishop's Opening: Lewis Gambit,-161.0,100.0,0.0,1
+72,Bishop's Opening: Philidor Counterattack,231.88888888888889,66.66666666666667,33.333333333333336,9
+73,Bishop's Opening: Philidor Variation,-82.0,100.0,0.0,1
+74,Bishop's Opening: Ponziani Gambit,-12.2,50.0,50.0,10
+75,Bishop's Opening: Vienna Hybrid,172.5,33.333333333333336,66.66666666666667,6
+76,Bishop's Opening: Vienna Hybrid |  Spielmann Attack,157.6,42.857142857142854,28.571428571428573,7
+77,Bishop's Opening: Warsaw Gambit,-34.0,100.0,0.0,1
+78,Blackmar-Diemer Gambit,19.333333333333332,38.888888888888886,61.111111111111114,18
+79,Blackmar-Diemer Gambit Declined |  Brombacher Countergambit,159.0,0.0,100.0,1
+80,Blackmar-Diemer Gambit Declined |  Lamb Defense,72.33333333333333,66.66666666666667,33.333333333333336,3
+81,Blackmar-Diemer Gambit Declined |  Weinsbach Declination,107.0,100.0,0.0,1
+82,Blackmar-Diemer Gambit: Euwe Defense,-9.0,100.0,0.0,1
+83,Blackmar-Diemer Gambit: Gedult Gambit,104.5,16.666666666666668,83.33333333333333,6
+84,Blackmar-Diemer Gambit: Netherlands Variation,70.0,50.0,50.0,2
+85,Blackmar-Diemer Gambit: Pietrowsky Defense,130.5,100.0,0.0,2
+86,Blackmar-Diemer Gambit: Ryder Gambit,195.83333333333334,66.66666666666667,33.333333333333336,6
+87,Blackmar-Diemer Gambit: Tartakower Variation,591.0,100.0,0.0,1
+88,Blackmar-Diemer Gambit: Teichmann Variation,64.33333333333333,66.66666666666667,33.333333333333336,3
+89,Blackmar-Diemer Gambit: Vienna Variation,202.0,50.0,50.0,2
+90,Blackmar-Diemer Gambit: Zeller Defense,-103.0,100.0,0.0,2
+91,Blackmar-Diemer Gambit: von Popiel Gambit,179.0,50.0,50.0,2
+92,Blumenfeld Countergambit #2,157.75,50.0,50.0,8
+93,Blumenfeld Countergambit Accepted,-189.33333333333334,100.0,0.0,3
+94,Bogo-Indian Defense: Exchange Variation,178.0,66.66666666666667,0.0,3
+95,Bogo-Indian Defense: Gruenfeld Variation,189.0,0.0,100.0,2
+96,Bogo-Indian Defense: Nimzowitsch Variation,131.0,100.0,0.0,1
+97,Bogo-Indian Defense: Wade-Smyslov Variation,61.666666666666664,0.0,100.0,3
+98,Borg Defense,94.0,33.333333333333336,66.66666666666667,6
+99,Borg Defense: Borg Gambit,330.0,50.0,50.0,2
+100,Budapest Defense,152.5,25.0,75.0,4
+101,Budapest Defense: Adler Variation,-40.875,18.75,81.25,16
+102,Budapest Defense: Fajarowicz Variation,-98.0,0.0,100.0,1
+103,Budapest Defense: Rubinstein Variation,7.5,50.0,50.0,2
+104,Canard Opening,96.33333333333333,66.66666666666667,33.333333333333336,3
+105,Caro-Kann Defense,84.19526627218934,54.285714285714285,42.285714285714285,175
+106,Caro-Kann Defense #2,503.0,0.0,25.0,4
+107,Caro-Kann Defense: Accelerated Panov Attack,-91.5,100.0,0.0,2
+108,Caro-Kann Defense: Accelerated Panov Attack #2,38.0,0.0,100.0,2
+109,Caro-Kann Defense: Accelerated Panov Attack |  Modern Variation,-67.0,100.0,0.0,1
+110,Caro-Kann Defense: Accelerated Panov Attack |  Open Variation,4.0,100.0,0.0,2
+111,Caro-Kann Defense: Advance Variation,9.058823529411764,41.666666666666664,52.77777777777778,36
+112,Caro-Kann Defense: Advance Variation |  Bayonet Attack,17.444444444444443,44.44444444444444,55.55555555555556,9
+113,Caro-Kann Defense: Advance Variation |  Botvinnik-Carls Defense,159.0,37.5,62.5,8
+114,Caro-Kann Defense: Advance Variation |  Bronstein Variation,686.0,50.0,50.0,2
+115,Caro-Kann Defense: Advance Variation |  Short Variation,67.14285714285714,43.47826086956522,47.82608695652174,23
+116,Caro-Kann Defense: Advance Variation |  Tal Variation,179.33333333333334,33.333333333333336,66.66666666666667,6
+117,Caro-Kann Defense: Advance Variation |  Van der Wiel Attack,-10.2,20.0,80.0,5
+118,Caro-Kann Defense: Alekhine Gambit,54.666666666666664,100.0,0.0,3
+119,Caro-Kann Defense: Breyer Variation,103.66666666666667,22.22222222222222,77.77777777777777,9
+120,Caro-Kann Defense: Classical Variation,33.31818181818182,43.47826086956522,52.17391304347826,23
+121,Caro-Kann Defense: Classical Variation |  Flohr Variation,503.0,50.0,0.0,2
+122,Caro-Kann Defense: Classical Variation |  Lobron System,118.0,100.0,0.0,1
+123,Caro-Kann Defense: Classical Variation |  Main Line,149.0,0.0,50.0,2
+124,Caro-Kann Defense: Classical |  7...Nd7,23.666666666666668,33.333333333333336,66.66666666666667,3
+125,Caro-Kann Defense: Classical |  Spassky Variation,22.6,40.0,60.0,5
+126,Caro-Kann Defense: Euwe Attack,61.0,0.0,100.0,2
+127,Caro-Kann Defense: Exchange Variation,99.88888888888889,44.0,46.0,50
+128,Caro-Kann Defense: Exchange Variation |  Rubinstein Variation,,0.0,0.0,1
+129,Caro-Kann Defense: Gurgenidze System,248.0,100.0,0.0,1
+130,Caro-Kann Defense: Hillbilly Attack,109.58823529411765,47.22222222222222,47.22222222222222,36
+131,Caro-Kann Defense: Karpov Variation,322.6666666666667,100.0,0.0,3
+132,Caro-Kann Defense: Karpov Variation |  Tiviakov-Fischer Attack,259.0,100.0,0.0,1
+133,Caro-Kann Defense: Main Line,275.5,100.0,0.0,2
+134,Caro-Kann Defense: Maroczy Variation,193.57142857142858,28.571428571428573,71.42857142857143,7
+135,Caro-Kann Defense: Maroczy Variation |  Maroczy Gambit,-321.0,100.0,0.0,1
+136,Caro-Kann Defense: Masi Variation,-214.0,50.0,50.0,2
+137,Caro-Kann Defense: Massachusetts Defense,110.0,100.0,0.0,1
+138,Caro-Kann Defense: Modern Variation,331.0,50.0,50.0,2
+139,Caro-Kann Defense: Panov Attack,-87.0,0.0,66.66666666666667,3
+140,Caro-Kann Defense: Panov Attack #2,136.25,62.5,37.5,8
+141,Caro-Kann Defense: Panov Attack |  Gunderam Attack,50.0,0.0,100.0,1
+142,Caro-Kann Defense: Panov Attack |  Modern Defense,190.5,0.0,100.0,2
+143,Caro-Kann Defense: Panov Attack |  Modern Defense |  Mieses Line,35.5,100.0,0.0,2
+144,Caro-Kann Defense: Rasa-Studier Gambit,319.0,0.0,100.0,1
+145,Caro-Kann Defense: Tartakower Variation,140.0,100.0,0.0,4
+146,Caro-Kann Defense: Two Knights Attack,49.411764705882355,76.47058823529412,23.529411764705884,17
+147,Caro-Kann Defense: Two Knights Attack |  Mindeno Variation,35.0,33.333333333333336,66.66666666666667,3
+148,Caro-Kann Defense: Two Knights Attack |  Mindeno Variation |  Exchange Line,448.5,100.0,0.0,2
+149,Caro-Kann Defense: Two Knights Attack |  Mindeno Variation |  Retreat Line,269.4,60.0,40.0,5
+150,Caro-Kann Defense: Ulysses Gambit,-2.5,0.0,100.0,2
+151,Caro-Kann Defense: von Hennig Gambit,330.0,100.0,0.0,1
+152,Carr Defense,-96.0,50.0,0.0,2
+153,Catalan Opening,-7.0,100.0,0.0,2
+154,Catalan Opening: Closed Variation,614.0,100.0,0.0,2
+155,Catalan Opening: Open Defense,91.0,0.0,100.0,1
+156,Center Game,36.5,25.0,75.0,12
+157,Center Game #2,101.6,57.77777777777778,42.22222222222222,45
+158,Center Game Accepted,-16.0,50.0,50.0,2
+159,Center Game: Berger Variation,19.25,58.333333333333336,41.666666666666664,12
+160,Center Game: Hall Variation,120.83333333333333,16.666666666666668,83.33333333333333,6
+161,Center Game: Kieseritzky Variation #2,70.0,100.0,0.0,1
+162,Center Game: Kieseritzky Variation #3,3.5,0.0,100.0,2
+163,Center Game: Kieseritzky Variation #4,202.5,75.0,25.0,4
+164,Center Game: Lanc-Arnold Gambit |  Schippler Gambit,44.0,0.0,100.0,1
+165,Center Game: Normal Variation,123.8,32.5,67.5,40
+166,Center Game: Paulsen Attack Variation,-59.46153846153846,23.076923076923077,76.92307692307692,13
+167,Center Game: Ross Gambit,254.0,0.0,100.0,1
+168,Center Game: von der Lasa Gambit,-107.0,0.0,100.0,1
+169,Clemenz Opening,169.28571428571428,57.142857142857146,42.857142857142854,7
+170,Colle System,84.75,33.333333333333336,66.66666666666667,12
+171,Colle System #2,55.57142857142857,28.571428571428573,71.42857142857143,7
+172,Colle System: Traditional Colle,-128.5,50.0,50.0,2
+173,Crab Opening,299.3333333333333,0.0,100.0,3
+174,Creepy Crawly Formation: Classical Defense,3.5,0.0,100.0,2
+175,Czech Defense,-226.66666666666666,66.66666666666667,33.333333333333336,3
+176,Danish Gambit,64.57142857142857,39.130434782608695,52.17391304347826,23
+177,Danish Gambit Accepted,91.58333333333333,75.0,25.0,12
+178,Danish Gambit Accepted |  Classical Defense,76.33333333333333,66.66666666666667,33.333333333333336,3
+179,Danish Gambit Accepted |  Copenhagen Defense,111.55555555555556,55.55555555555556,44.44444444444444,9
+180,Danish Gambit Accepted |  Schlechter Defense,129.0,100.0,0.0,1
+181,Danish Gambit Declined |  Sorensen Defense,183.33333333333334,33.333333333333336,66.66666666666667,3
+182,Doery Defense,-28.0,0.0,100.0,1
+183,Duras Gambit,-3.5,83.33333333333333,16.666666666666668,6
+184,Dutch Defense,34.083333333333336,48.717948717948715,43.58974358974359,39
+185,Dutch Defense: Alapin Variation,404.0,0.0,100.0,1
+186,Dutch Defense: Classical Variation,208.5,100.0,0.0,2
+187,Dutch Defense: Classical Variation |  Ilyin-Zhenevsky Variation |  Modern Main Line,158.0,100.0,0.0,1
+188,Dutch Defense: Fianchetto Attack,141.0,0.0,66.66666666666667,3
+189,Dutch Defense: Hopton Attack,-193.0,50.0,50.0,4
+190,Dutch Defense: Ilyin-Zhenevsky |  Winter Variation,359.0,100.0,0.0,1
+191,Dutch Defense: Leningrad Variation |  Matulovic Variation,-17.0,0.0,100.0,1
+192,Dutch Defense: Normal Variation,85.5,33.333333333333336,66.66666666666667,6
+193,Dutch Defense: Omega-Isis Gambit,44.0,100.0,0.0,2
+194,Dutch Defense: Queen's Knight Variation,93.8,50.0,46.15384615384615,26
+195,Dutch Defense: Raphael Variation,162.0,40.0,60.0,5
+196,Dutch Defense: Rubinstein Variation,122.0,66.66666666666667,16.666666666666668,6
+197,Dutch Defense: Semi-Leningrad Variation,14.0,100.0,0.0,1
+198,Dutch Defense: Staunton Gambit,-75.0,100.0,0.0,1
+199,Dutch Defense: Staunton Gambit Accepted,-234.0,0.0,100.0,2
+200,Dutch Defense: Staunton Gambit |  Nimzowitsch Variation,249.0,0.0,100.0,1
+201,East Indian Defense,17.38095238095238,47.61904761904762,52.38095238095238,21
+202,Elephant Gambit,106.65714285714286,77.77777777777777,19.444444444444443,36
+203,Elephant Gambit: Maroczy Gambit,403.0,0.0,100.0,1
+204,Elephant Gambit: Paulsen Countergambit,69.2,50.0,50.0,10
+205,English Defense,102.26666666666667,50.0,43.75,16
+206,English Defense #2,49.39473684210526,47.36842105263158,52.63157894736842,38
+207,English Opening,74.42105263157895,52.63157894736842,47.36842105263158,19
+208,English Opening: Achilles-Omega Gambit,118.0,0.0,100.0,2
+209,English Opening: Agincourt Defense,41.90909090909091,70.83333333333333,20.833333333333332,24
+210,English Opening: Agincourt Defense #2,133.6,83.33333333333333,0.0,6
+211,English Opening: Agincourt Defense #3,193.5,100.0,0.0,4
+212,English Opening: Agincourt Defense |  Catalan Defense,326.5,50.0,50.0,2
+213,English Opening: Agincourt Defense |  Catalan Defense |  Semi-Slav Defense,-314.0,100.0,0.0,1
+214,English Opening: Agincourt Defense |  Neo-Catalan Declined,28.0,0.0,100.0,1
+215,English Opening: Anglo-Dutch Defense,-41.0,28.571428571428573,57.142857142857146,7
+216,English Opening: Anglo-Gruenfeld Defense,149.4,40.0,60.0,5
+217,English Opening: Anglo-Indian Defense,92.11111111111111,59.25925925925926,40.74074074074074,27
+218,English Opening: Anglo-Indian Defense |  Anglo-Gruenfeld Variation #3,166.0,33.333333333333336,33.333333333333336,3
+219,English Opening: Anglo-Indian Defense |  Hedgehog System,32.0,20.0,80.0,5
+220,English Opening: Anglo-Indian Defense |  King's Indian Formation,5.75,50.0,50.0,4
+221,English Opening: Anglo-Indian Defense |  King's Knight Variation,68.4,66.66666666666667,16.666666666666668,6
+222,English Opening: Anglo-Indian Defense |  Queen's Indian Formation,165.0,100.0,0.0,1
+223,English Opening: Anglo-Indian Defense |  Queen's Knight Variation,29.727272727272727,36.36363636363637,63.63636363636363,11
+224,English Opening: Anglo-Indian Defense |  Scandinavian Defense,-41.2,40.0,60.0,5
+225,English Opening: Anglo-Indian Defense |  Scandinavian Defense |  Exchange Variation,125.75,75.0,25.0,4
+226,English Opening: Anglo-Lithuanian Variation,-2.727272727272727,72.72727272727273,27.272727272727273,11
+227,English Opening: Anglo-Scandinavian Defense,20.88888888888889,61.111111111111114,38.888888888888886,36
+228,English Opening: Anglo-Scandinavian Defense |  Malvinas Variation,7.5,50.0,50.0,2
+229,English Opening: Carls-Bremen System,88.66666666666667,41.666666666666664,58.333333333333336,12
+230,English Opening: Caro-Kann Defensive System,104.17647058823529,52.94117647058823,47.05882352941177,17
+231,English Opening: Four Knights System |  Nimzowitsch Variation,44.666666666666664,66.66666666666667,33.333333333333336,3
+232,English Opening: Great Snake Variation,110.42857142857143,50.0,37.5,16
+233,English Opening: Jaenisch Gambit,136.0,0.0,100.0,1
+234,English Opening: King's English Variation,98.42666666666666,55.12820512820513,41.02564102564103,78
+235,English Opening: King's English Variation |  Four Knights Variation #2,51.75,60.0,20.0,5
+236,English Opening: King's English Variation |  Four Knights Variation |  Fianchetto Line,-22.875,75.0,25.0,8
+237,English Opening: King's English Variation |  Four Knights Variation |  Korchnoi Line,22.0,100.0,0.0,1
+238,English Opening: King's English Variation |  Four Knights Variation |  Quiet Line #3,5.571428571428571,44.44444444444444,33.333333333333336,9
+239,English Opening: King's English Variation |  Keres Defense,119.0,0.0,100.0,1
+240,English Opening: King's English Variation |  Kramnik-Shirov Counterattack,107.14285714285714,28.571428571428573,71.42857142857143,7
+241,English Opening: King's English Variation |  Nimzowitsch Variation,175.66666666666666,0.0,100.0,3
+242,English Opening: King's English Variation |  Nimzowitsch-Flohr Variation,74.0,0.0,100.0,1
+243,English Opening: King's English Variation |  Reversed Closed Sicilian,13.058823529411764,76.47058823529412,23.529411764705884,17
+244,English Opening: King's English Variation |  Reversed Sicilian,61.16216216216216,58.97435897435897,35.8974358974359,39
+245,English Opening: King's English Variation |  Taimanov Variation,-235.0,100.0,0.0,1
+246,English Opening: King's English Variation |  Three Knights System,97.0,60.0,40.0,10
+247,English Opening: King's English Variation |  Two Knights Variation,20.85,57.142857142857146,38.095238095238095,21
+248,English Opening: King's English Variation |  Two Knights Variation |  Fianchetto Line,-189.0,0.0,100.0,1
+249,English Opening: King's English Variation |  Two Knights Variation |  Keres Variation,30.0,100.0,0.0,1
+250,English Opening: King's English Variation |  Two Knights Variation |  Reversed Dragon,13.666666666666666,0.0,100.0,3
+251,English Opening: King's English Variation |  Two Knights Variation |  Smyslov System,-52.4,80.0,20.0,5
+252,English Opening: Mikenas-Carls Variation,178.0,100.0,0.0,1
+253,English Opening: Mikenas-Carls Variation #2,13.2,60.0,40.0,5
+254,English Opening: Symmetrical Variation,60.758620689655174,58.62068965517241,41.37931034482759,29
+255,English Opening: Symmetrical Variation |  Anti-Benoni Variation,318.0,0.0,100.0,2
+256,English Opening: Symmetrical Variation |  Anti-Benoni Variation |  Spielmann Defense,266.0,0.0,100.0,1
+257,English Opening: Symmetrical Variation |  Botvinnik System Reversed,-68.0,100.0,0.0,1
+258,English Opening: Symmetrical Variation |  Duchamp Variation,120.5,60.0,20.0,5
+259,English Opening: Symmetrical Variation |  Fianchetto Variation,23.666666666666668,42.857142857142854,42.857142857142854,7
+260,English Opening: Symmetrical Variation |  Four Knights Variation,152.5,80.0,0.0,5
+261,English Opening: Symmetrical Variation |  Full Symmetry Line,56.0,0.0,100.0,1
+262,English Opening: Symmetrical Variation |  Hedgehog Defense,175.0,100.0,0.0,1
+263,English Opening: Symmetrical Variation |  Mecking Variation,-143.0,66.66666666666667,33.333333333333336,3
+264,English Opening: Symmetrical Variation |  Normal Variation,123.23076923076923,71.42857142857143,21.428571428571427,14
+265,English Opening: Symmetrical Variation |  Symmetrical Variation,22.0,100.0,0.0,2
+266,English Opening: Symmetrical Variation |  Two Knights Variation,226.5,50.0,50.0,4
+267,English Opening: The Whale,32.76470588235294,42.857142857142854,54.285714285714285,35
+268,Englund Gambit,127.91428571428571,55.26315789473684,36.8421052631579,38
+269,Englund Gambit Complex Declined,80.25,50.0,50.0,4
+270,Englund Gambit Complex: Englund Gambit,110.5,71.42857142857143,14.285714285714286,7
+271,Englund Gambit Complex: Felbecker Gambit,422.0,50.0,50.0,2
+272,Englund Gambit Complex: Hartlaub-Charlick Gambit,213.5,75.0,25.0,4
+273,Englund Gambit Complex: Soller Gambit,301.25,100.0,0.0,4
+274,Englund Gambit Declined |  Reversed Alekhine,-43.0,50.0,50.0,4
+275,Englund Gambit Declined |  Reversed French,80.25925925925925,44.44444444444444,55.55555555555556,27
+276,Englund Gambit Declined |  Reversed Krebs,71.0,0.0,100.0,2
+277,Four Knights Game,160.96,46.15384615384615,50.0,26
+278,Four Knights Game: Double Spanish,229.25,20.0,60.0,5
+279,Four Knights Game: Gunsberg Variation,-22.2,50.0,50.0,10
+280,Four Knights Game: Halloween Gambit,9.666666666666666,33.333333333333336,66.66666666666667,3
+281,Four Knights Game: Italian Variation,93.52307692307693,59.25925925925926,37.03703703703704,135
+282,Four Knights Game: Italian Variation |  Noa Gambit,580.0,0.0,100.0,2
+283,Four Knights Game: Ranken Variation,57.142857142857146,55.55555555555556,22.22222222222222,9
+284,Four Knights Game: Rubinstein Countergambit |  Henneberger Variation,608.0,100.0,0.0,1
+285,Four Knights Game: Scotch Variation,60.53846153846154,57.142857142857146,35.714285714285715,14
+286,Four Knights Game: Scotch Variation Accepted,13.666666666666666,33.333333333333336,66.66666666666667,18
+287,Four Knights Game: Spanish Variation,38.36666666666667,61.29032258064516,35.483870967741936,31
+288,Four Knights Game: Spanish Variation |  Classical Variation,103.15,50.0,50.0,20
+289,Four Knights Game: Spanish Variation |  Rubinstein Variation,52.0,20.0,60.0,5
+290,Four Knights Game: Spanish Variation |  Rubinstein Variation Accepted,112.5,50.0,50.0,2
+291,Four Knights Game: Spanish Variation |  Symmetrical Variation #3,320.0,0.0,100.0,1
+292,Franco-Benoni Defense,19.833333333333332,83.33333333333333,16.666666666666668,6
+293,French Defense,232.85714285714286,28.571428571428573,71.42857142857143,7
+294,French Defense #2,88.69662921348315,46.73913043478261,50.0,92
+295,French Defense: Advance Variation,84.08,40.0,60.0,25
+296,French Defense: Advance Variation #2,59.416666666666664,50.0,42.30769230769231,26
+297,French Defense: Advance Variation #3,138.11111111111111,66.66666666666667,33.333333333333336,36
+298,French Defense: Advance Variation #4,145.94117647058823,52.94117647058823,47.05882352941177,17
+299,French Defense: Advance Variation |  Euwe Variation,164.3684210526316,47.36842105263158,52.63157894736842,19
+300,French Defense: Advance Variation |  Lputian Variation,-193.0,0.0,100.0,1
+301,French Defense: Advance Variation |  Main Line,34.875,77.77777777777777,11.11111111111111,9
+302,French Defense: Advance Variation |  Milner-Barry Gambit,-8.555555555555555,50.0,40.0,10
+303,French Defense: Advance Variation |  Nimzowitsch Attack,356.0,100.0,0.0,1
+304,French Defense: Advance Variation |  Nimzowitsch Gambit,129.0,0.0,100.0,1
+305,French Defense: Advance Variation |  Nimzowitsch System,29.333333333333332,31.25,62.5,32
+306,French Defense: Advance Variation |  Paulsen Attack,38.595238095238095,51.111111111111114,42.22222222222222,45
+307,French Defense: Advance Variation |  Wade Variation,-40.333333333333336,66.66666666666667,33.333333333333336,3
+308,French Defense: Advance |  Steinitz Variation,47.333333333333336,16.666666666666668,83.33333333333333,6
+309,French Defense: Alapin Gambit,-129.0,100.0,0.0,1
+310,French Defense: Alekhine-Chatard Attack |  Breyer Variation,211.0,0.0,100.0,1
+311,French Defense: Alekhine-Chatard Attack |  Maroczy Variation,,0.0,0.0,1
+312,French Defense: Baeuerle Gambit,-120.0,0.0,100.0,1
+313,French Defense: Banzai-Leong Gambit,228.0,0.0,100.0,1
+314,French Defense: Bird Invitation,51.666666666666664,66.66666666666667,33.333333333333336,3
+315,French Defense: Burn Variation,6.0,50.0,0.0,2
+316,French Defense: Carlson Gambit,339.5,50.0,50.0,2
+317,French Defense: Chigorin Variation,98.75,75.0,25.0,8
+318,French Defense: Classical Variation,15.2,33.333333333333336,50.0,6
+319,French Defense: Classical Variation |  Alapin Variation,51.5,100.0,0.0,2
+320,French Defense: Classical Variation |  Delayed Exchange Variation,221.0,0.0,100.0,2
+321,French Defense: Classical Variation |  Normal Variation,67.0,66.66666666666667,33.333333333333336,3
+322,French Defense: Classical Variation |  Pollock Variation,-44.0,100.0,0.0,1
+323,French Defense: Classical Variation |  Steinitz Variation,61.0,23.076923076923077,76.92307692307692,13
+324,French Defense: Classical Variation |  Svenonius Variation,70.0,0.0,100.0,1
+325,French Defense: Classical Variation |  Swiss Variation,23.666666666666668,66.66666666666667,33.333333333333336,3
+326,French Defense: Exchange Variation,87.93103448275862,55.208333333333336,35.416666666666664,96
+327,French Defense: Exchange Variation |  Monte Carlo Variation,-27.333333333333332,66.66666666666667,33.333333333333336,6
+328,French Defense: Exchange Variation |  Svenonius Variation,-4.5,33.333333333333336,66.66666666666667,6
+329,French Defense: Franco-Hiva Gambit I,-36.5,50.0,50.0,2
+330,French Defense: Franco-Hiva Gambit I Accepted,-144.0,0.0,100.0,1
+331,French Defense: Franco-Hiva Gambit II,-45.0,0.0,100.0,1
+332,French Defense: Horwitz Attack,12.666666666666666,25.0,50.0,4
+333,French Defense: King's Indian Attack,106.81481481481481,33.333333333333336,66.66666666666667,27
+334,French Defense: Knight Variation,62.657407407407405,50.65502183406114,43.66812227074236,229
+335,French Defense: La Bourdonnais Variation,25.72222222222222,47.22222222222222,52.77777777777778,36
+336,French Defense: La Bourdonnais Variation |  Reuter Gambit,-24.0,0.0,100.0,1
+337,French Defense: MacCutcheon Variation |  Chigorin Variation,86.5,0.0,100.0,2
+338,French Defense: MacCutcheon Variation |  Exchange Variation,-767.0,0.0,100.0,1
+339,French Defense: Marshall Variation,101.2,33.333333333333336,66.66666666666667,15
+340,French Defense: Mediterranean Defense,79.86666666666666,50.0,43.75,16
+341,French Defense: Normal Variation,93.19047619047619,60.55045871559633,35.77981651376147,109
+342,French Defense: Paulsen Variation,193.07142857142858,68.75,18.75,16
+343,French Defense: Pelikan Variation,-64.5,50.0,50.0,2
+344,French Defense: Perseus Gambit,-12.5,100.0,0.0,2
+345,French Defense: Queen's Knight,41.45454545454545,38.888888888888886,52.77777777777778,36
+346,French Defense: Reti-Spielmann Attack,63.22222222222222,55.55555555555556,44.44444444444444,9
+347,French Defense: Rubinstein Variation,204.66666666666666,71.42857142857143,14.285714285714286,7
+348,French Defense: Rubinstein Variation |  Blackburne Defense,55.0,66.66666666666667,16.666666666666668,6
+349,French Defense: Rubinstein Variation |  Fort Knox Variation,5.0,33.333333333333336,0.0,3
+350,French Defense: Schlechter Variation,52.3,40.0,60.0,10
+351,French Defense: Steiner Variation,165.85714285714286,71.42857142857143,28.571428571428573,7
+352,French Defense: Steinitz Attack,95.1304347826087,38.775510204081634,55.10204081632653,49
+353,French Defense: Steinitz Variation #2,-46.0,60.0,40.0,5
+354,French Defense: Steinitz Variation |  Boleslavsky Variation,95.0,71.42857142857143,28.571428571428573,7
+355,French Defense: Tarrasch Variation,13.0,54.54545454545455,27.272727272727273,11
+356,French Defense: Tarrasch Variation |  Chistyakov Defense,-0.5,0.0,100.0,2
+357,French Defense: Tarrasch Variation |  Chistyakov Defense |  Modern Line,-83.0,0.0,100.0,1
+358,French Defense: Tarrasch Variation |  Closed Variation,96.16666666666667,16.666666666666668,83.33333333333333,6
+359,French Defense: Tarrasch Variation |  Closed Variation #2,-82.0,0.0,100.0,3
+360,French Defense: Tarrasch Variation |  Closed Variation |  Main Line,162.66666666666666,100.0,0.0,3
+361,French Defense: Tarrasch Variation |  Guimard Defense |  Main Line,346.5,0.0,100.0,2
+362,French Defense: Tarrasch Variation |  Morozevich Variation,162.5,100.0,0.0,2
+363,French Defense: Tarrasch Variation |  Open System,61.75,25.0,75.0,4
+364,French Defense: Tarrasch Variation |  Open System |  Euwe-Keres Line,122.0,100.0,0.0,1
+365,French Defense: Tarrasch Variation |  Open System |  Suechting Line,56.75,40.0,40.0,5
+366,French Defense: Tarrasch Variation |  Pawn Center Variation,107.5,50.0,50.0,2
+367,French Defense: Tarrasch |  Open |  4.exd5 exd5,69.5,50.0,50.0,2
+368,French Defense: Two Knights Variation,37.391304347826086,41.666666666666664,54.166666666666664,24
+369,French Defense: Winawer Variation,-1.5,50.0,50.0,6
+370,French Defense: Winawer Variation |  Advance Variation,108.125,62.5,37.5,8
+371,French Defense: Winawer Variation |  Advance Variation #2,22.75,50.0,50.0,4
+372,French Defense: Winawer Variation |  Advance Variation #3,122.0,50.0,50.0,4
+373,French Defense: Winawer Variation |  Advance Variation |  Moscow Variation,-83.0,0.0,100.0,1
+374,French Defense: Winawer Variation |  Alekhine-Maroczy Gambit,105.0,100.0,0.0,1
+375,French Defense: Winawer Variation |  Bogoljubov Variation,300.0,0.0,100.0,1
+376,French Defense: Winawer Variation |  Delayed Exchange Variation,15.857142857142858,57.142857142857146,42.857142857142854,7
+377,French Defense: Winawer Variation |  Fingerslip Variation,-6.25,50.0,50.0,4
+378,French Defense: Winawer Variation |  Maroczy-Wallis Variation,62.0,100.0,0.0,3
+379,French Defense: Winawer Variation |  Poisoned Pawn Variation,123.5,0.0,100.0,2
+380,French Defense: Winawer Variation |  Retreat Variation,240.0,100.0,0.0,1
+381,French Defense: Winawer Variation |  Winckelmann-Riemer Gambit,-82.8,60.0,40.0,5
+382,French Defense: Wing Gambit,34.666666666666664,66.66666666666667,33.333333333333336,3
+383,Gedult's Opening,137.46153846153845,35.714285714285715,57.142857142857146,14
+384,Giuoco Piano,70.73170731707317,48.80952380952381,48.80952380952381,84
+385,Global Opening,-2.0,100.0,0.0,1
+386,Goldsmith Defense,67.72727272727273,63.63636363636363,36.36363636363637,11
+387,Goldsmith Defense: Picklepuss Defense,-239.0,0.0,100.0,1
+388,Grob Opening,156.9375,29.41176470588235,64.70588235294117,17
+389,Grob Opening: Grob Gambit,-94.0,0.0,100.0,2
+390,Grob Opening: Grob Gambit |  Fritz Gambit,25.0,50.0,50.0,2
+391,Grob Opening: Spike Attack,367.0,0.0,100.0,1
+392,Grob Opening: Spike |  Hurst Attack,22.0,100.0,0.0,2
+393,Gruenfeld Defense,69.0,0.0,100.0,3
+394,Gruenfeld Defense: Exchange Variation,149.6,80.0,20.0,5
+395,Gruenfeld Defense: Exchange Variation |  Classical Variation,112.0,100.0,0.0,1
+396,Gruenfeld Defense: Exchange Variation |  Modern Exchange Variation,-6.666666666666667,66.66666666666667,33.333333333333336,6
+397,Gruenfeld Defense: Exchange Variation |  Spassky Variation,157.0,100.0,0.0,3
+398,Gruenfeld Defense: Stockholm Variation,81.66666666666667,66.66666666666667,33.333333333333336,3
+399,Gruenfeld Defense: Three Knights Variation,-52.0,66.66666666666667,33.333333333333336,3
+400,Gruenfeld Defense: Three Knights Variation #2,205.0,100.0,0.0,1
+401,Gruenfeld Defense: Three Knights Variation |  Burille Variation,124.5,44.44444444444444,44.44444444444444,9
+402,Gruenfeld Defense: Three Knights Variation |  Hungarian Attack,-20.0,0.0,100.0,1
+403,Gruenfeld Defense: Three Knights Variation |  Hungarian Variation,-9.0,50.0,0.0,2
+404,Gruenfeld Defense: Three Knights Variation |  Paris Variation,137.0,50.0,50.0,2
+405,Gruenfeld Defense: Three Knights Variation |  Petrosian System,49.75,25.0,75.0,4
+406,Guatemala Defense,234.75,100.0,0.0,4
+407,Gunderam Defense,65.7,70.0,30.0,10
+408,Hippopotamus Defense #2,269.0,75.0,25.0,4
+409,Horwitz Defense,87.81564245810056,52.17391304347826,45.108695652173914,184
+410,Hungarian Opening,96.97321428571429,47.82608695652174,49.56521739130435,115
+411,Hungarian Opening: Buecker Gambit,60.0,0.0,100.0,1
+412,Hungarian Opening: Catalan Formation,80.0,66.66666666666667,0.0,3
+413,Hungarian Opening: Indian Defense,53.18181818181818,27.272727272727273,72.72727272727273,11
+414,Hungarian Opening: Reversed Alekhine,-17.5,50.0,50.0,2
+415,Hungarian Opening: Reversed Modern Defense,322.0,0.0,100.0,2
+416,Hungarian Opening: Sicilian Invitation,306.0,50.0,50.0,2
+417,Hungarian Opening: Slav Formation,275.85714285714283,0.0,100.0,7
+418,Hungarian Opening: Symmetrical Variation,32.285714285714285,57.142857142857146,42.857142857142854,7
+419,Indian Game,101.4609375,36.95652173913044,55.79710144927536,138
+420,Indian Game: Anti-Gruenfeld |  Advance Variation,215.75,50.0,50.0,4
+421,Indian Game: Anti-Nimzo-Indian,206.0,66.66666666666667,0.0,3
+422,Indian Game: Budapest Defense,105.75,33.333333333333336,55.55555555555556,9
+423,Indian Game: Colle System |  King's Indian Variation,-44.0,100.0,0.0,1
+424,Indian Game: East Indian Defense,154.33333333333334,53.333333333333336,46.666666666666664,15
+425,Indian Game: London System,105.08333333333333,33.333333333333336,66.66666666666667,12
+426,Indian Game: Normal Variation,-50.75,50.0,50.0,4
+427,Indian Game: Omega Gambit,755.0,0.0,100.0,1
+428,Indian Game: Paleface Attack |  Blackmar-Diemer Gambit Deferred,85.0,100.0,0.0,1
+429,Indian Game: Pawn Push Variation,134.44444444444446,55.55555555555556,44.44444444444444,9
+430,Indian Game: Przepiorka Variation,204.0,42.857142857142854,57.142857142857146,7
+431,Indian Game: Reversed Chigorin Defense,-574.0,0.0,100.0,1
+432,Indian Game: Seirawan Attack,27.571428571428573,42.857142857142854,57.142857142857146,7
+433,Indian Game: Spielmann-Indian,50.333333333333336,37.5,37.5,8
+434,Indian Game: Tartakower Attack,12.3,27.272727272727273,63.63636363636363,11
+435,Indian Game: Wade-Tartakower Defense,231.0,40.0,60.0,5
+436,Indian Game: West Indian Defense,24.333333333333332,21.428571428571427,64.28571428571429,14
+437,Irish Gambit,99.0,0.0,100.0,1
+438,Italian Game,74.83333333333333,56.52173913043478,34.78260869565217,92
+439,Italian Game: Anti-Fried Liver Defense,57.97202797202797,54.966887417218544,39.735099337748345,151
+440,Italian Game: Bird's Attack,124.66666666666667,66.66666666666667,33.333333333333336,3
+441,Italian Game: Classical Variation,73.0,0.0,100.0,1
+442,Italian Game: Classical Variation #2,57.45454545454545,63.63636363636363,36.36363636363637,22
+443,Italian Game: Classical Variation |  Albin Gambit,24.4,40.0,60.0,5
+444,Italian Game: Classical Variation |  Center Attack,113.66666666666667,33.333333333333336,66.66666666666667,3
+445,Italian Game: Classical Variation |  Center Holding Variation,489.0,0.0,100.0,1
+446,Italian Game: Classical Variation |  Closed Variation,-17.0,0.0,100.0,1
+447,Italian Game: Classical Variation |  Giuoco Pianissimo,33.19230769230769,50.0,42.857142857142854,28
+448,Italian Game: Classical Variation |  Greco Gambit,530.6666666666666,0.0,100.0,3
+449,Italian Game: Classical Variation |  Greco Gambit |  Main Line,-86.0,0.0,100.0,1
+450,Italian Game: Classical Variation |  Greco Gambit |  Moeller-Therkatz Attack,-114.5,0.0,50.0,4
+451,Italian Game: Classical Variation |  Greco Gambit |  Traditional Line,28.153846153846153,42.857142857142854,50.0,14
+452,Italian Game: Classical Variation |  La Bourdonnais Variation,458.0,0.0,100.0,1
+453,Italian Game: Deutz Gambit,184.66666666666666,50.0,50.0,6
+454,Italian Game: Evans Gambit,202.0,100.0,0.0,1
+455,Italian Game: Evans Gambit Declined,96.71428571428571,42.857142857142854,57.142857142857146,7
+456,Italian Game: Evans Gambit Declined |  5.a4,323.0,0.0,100.0,1
+457,Italian Game: Evans Gambit Declined |  Cordel Variation,35.0,0.0,100.0,1
+458,Italian Game: Evans Gambit |  Anderssen Defense,-75.0,0.0,100.0,1
+459,Italian Game: Evans Gambit |  Main Line,89.0,100.0,0.0,2
+460,Italian Game: Evans Gambit |  McDonnell Defense,107.83333333333333,66.66666666666667,33.333333333333336,6
+461,Italian Game: Evans Gambit |  Pierce Defense,184.0,100.0,0.0,2
+462,Italian Game: Evans Gambit |  Slow Variation,-37.0,0.0,100.0,2
+463,Italian Game: Evans Gambit |  Stone-Ware Variation,394.0,0.0,100.0,1
+464,Italian Game: Giuoco Pianissimo,87.15384615384616,38.46153846153846,61.53846153846154,26
+465,Italian Game: Giuoco Pianissimo |  Canal Variation,95.54545454545455,27.272727272727273,72.72727272727273,11
+466,Italian Game: Giuoco Pianissimo |  Italian Four Knights Variation,60.574074074074076,36.36363636363637,61.81818181818182,55
+467,Italian Game: Giuoco Pianissimo |  Normal,29.622222222222224,45.65217391304348,52.17391304347826,46
+468,Italian Game: Giuoco Piano |  Aitken Variation,12.0,66.66666666666667,33.333333333333336,3
+469,Italian Game: Giuoco Piano |  Greco's Attack,43.642857142857146,21.428571428571427,78.57142857142857,14
+470,Italian Game: Hungarian Defense,169.33333333333334,45.45454545454545,50.0,22
+471,Italian Game: Jerome Gambit,17.5,50.0,50.0,2
+472,Italian Game: Rosentreter Gambit,299.0,33.333333333333336,66.66666666666667,3
+473,Italian Game: Rousseau Gambit,64.2,60.0,40.0,5
+474,Italian Game: Schilling-Kostic Gambit,48.064516129032256,32.35294117647059,58.8235294117647,34
+475,Italian Game: Scotch Gambit,-242.0,100.0,0.0,1
+476,Italian Game: Scotch Gambit Declined,26.5,50.0,50.0,2
+477,Italian Game: Scotch Gambit |  Anderssen Attack,137.0,0.0,100.0,1
+478,Italian Game: Scotch Gambit |  Janowski Defense,28.666666666666668,33.333333333333336,66.66666666666667,3
+479,Italian Game: Scotch Gambit |  Max Lange Attack,-388.0,0.0,100.0,1
+480,Italian Game: Scotch Gambit |  Max Lange Attack |  Spielmann Defense,-73.0,100.0,0.0,1
+481,Italian Game: Scotch Gambit |  Walbrodt-Baird Gambit,-15.5,50.0,50.0,2
+482,Italian Game: Scotch Gambit |  de Riviere Defense,424.0,100.0,0.0,1
+483,Italian Game: Two Knights Defense,55.68421052631579,33.333333333333336,57.142857142857146,21
+484,Italian Game: Two Knights Defense #2,16.75,50.0,50.0,4
+485,Italian Game: Two Knights Defense |  Fried Liver Attack,54.421052631578945,55.0,40.0,20
+486,Italian Game: Two Knights Defense |  Fritz Variation,21.333333333333332,22.22222222222222,77.77777777777777,9
+487,Italian Game: Two Knights Defense |  Knight Attack,211.58333333333334,84.61538461538461,7.6923076923076925,13
+488,Italian Game: Two Knights Defense |  Knight Attack |  Normal Variation,57.074074074074076,40.74074074074074,59.25925925925926,27
+489,Italian Game: Two Knights Defense |  Lolli Attack,117.33333333333333,66.66666666666667,33.333333333333336,3
+490,Italian Game: Two Knights Defense |  Max Lange Attack,129.0,0.0,50.0,2
+491,Italian Game: Two Knights Defense |  Modern Bishop's Opening,134.19607843137254,62.264150943396224,33.9622641509434,53
+492,Italian Game: Two Knights Defense |  Open Variation,211.5,100.0,0.0,2
+493,Italian Game: Two Knights Defense |  Perreux Variation,380.0,100.0,0.0,1
+494,Italian Game: Two Knights Defense |  Polerio Defense,-101.25,62.5,37.5,8
+495,Italian Game: Two Knights Defense |  Polerio Defense |  Bishop Check Line,31.0,50.0,50.0,20
+496,Italian Game: Two Knights Defense |  Polerio Defense |  Bogoljubov Variation,179.5,0.0,100.0,2
+497,Italian Game: Two Knights Defense |  Polerio Defense |  Kieseritzky Variation,75.0,100.0,0.0,1
+498,Italian Game: Two Knights Defense |  Polerio Defense |  Suhle Defense,-270.5,100.0,0.0,2
+499,Italian Game: Two Knights Defense |  Ponziani-Steinitz Gambit,246.0,50.0,0.0,2
+500,Italian Game: Two Knights Defense |  Steinitz Variation,-12.666666666666666,66.66666666666667,33.333333333333336,3
+501,Italian Game: Two Knights Defense |  Traxler Counterattack,4.0,0.0,100.0,1
+502,Italian Game: Two Knights Defense |  Traxler Counterattack |  Bishop Sacrifice Line,-23.666666666666668,100.0,0.0,3
+503,Italian Game: Two Knights Defense |  Traxler Counterattack |  Knight Sacrifice Line,-112.33333333333333,50.0,50.0,6
+504,Italian Game: Two Knights Defense |  Ulvestad Variation,8.5,33.333333333333336,33.333333333333336,3
+505,Italian Game: Two Knights Defense |  de Riviere Gambit,12.5,50.0,50.0,6
+506,Kadas Opening,100.8,33.333333333333336,66.66666666666667,15
+507,Kangaroo Defense,55.333333333333336,33.333333333333336,66.66666666666667,3
+508,Kangaroo Defense: Keres Defense |  Transpositional Variation,128.0,100.0,0.0,2
+509,King's Gambit,159.61764705882354,40.0,57.142857142857146,35
+510,King's Gambit Accepted,,0.0,0.0,1
+511,King's Gambit Accepted |  Abbazia Defense,-244.0,0.0,100.0,1
+512,King's Gambit Accepted |  Bishop's Gambit,62.22222222222222,66.66666666666667,33.333333333333336,9
+513,King's Gambit Accepted |  Bishop's Gambit |  Bogoljubov Variation,220.0,100.0,0.0,1
+514,King's Gambit Accepted |  Bishop's Gambit |  Lopez Defense,-36.0,100.0,0.0,1
+515,King's Gambit Accepted |  Bishop's Gambit |  Maurian Defense,203.33333333333334,33.333333333333336,66.66666666666667,3
+516,King's Gambit Accepted |  Cunningham Defense,159.5,50.0,50.0,4
+517,King's Gambit Accepted |  Dodo Variation,502.0,0.0,100.0,1
+518,King's Gambit Accepted |  Fischer Defense,97.0,40.0,60.0,10
+519,King's Gambit Accepted |  Ghulam-Kassim Gambit,237.0,100.0,0.0,1
+520,King's Gambit Accepted |  Greco Gambit,-132.0,0.0,100.0,1
+521,King's Gambit Accepted |  Hanstein Gambit,-57.0,100.0,0.0,2
+522,King's Gambit Accepted |  Kieseritzky Gambit |  Kolisch Defense,38.0,100.0,0.0,1
+523,King's Gambit Accepted |  King's Knight Gambit,121.16666666666667,75.0,25.0,12
+524,King's Gambit Accepted |  MacLeod Defense,117.8695652173913,73.91304347826087,26.08695652173913,23
+525,King's Gambit Accepted |  Modern Defense,55.666666666666664,100.0,0.0,3
+526,King's Gambit Accepted |  Muzio Gambit |  Sarratt Defense,-320.0,50.0,50.0,2
+527,King's Gambit Accepted |  Polerio Gambit,5.5,50.0,50.0,6
+528,King's Gambit Accepted |  Rosentreter Gambit,34.0,100.0,0.0,1
+529,King's Gambit Accepted |  Rosentreter-Testa Gambit,390.0,100.0,0.0,1
+530,King's Gambit Accepted |  Salvio Gambit,70.0,100.0,0.0,1
+531,King's Gambit Accepted |  Schallopp Defense,120.35,66.66666666666667,28.571428571428573,21
+532,King's Gambit Accepted: Allgaier |  Schlechter Defense,-196.0,0.0,100.0,1
+533,King's Gambit Accepted: King Knight's Gambit,116.5,0.0,100.0,2
+534,King's Gambit Accepted: Modern Defense #2,54.2,60.0,40.0,5
+535,King's Gambit Declined |  Classical Variation,112.0,0.0,100.0,4
+536,King's Gambit Declined |  Keene Defense,20.0,0.0,50.0,2
+537,King's Gambit Declined |  Mafia Defense,-126.0,50.0,50.0,2
+538,King's Gambit Declined |  Miles Defense,179.5,50.0,50.0,2
+539,King's Gambit Declined |  Norwalde Variation,-22.5,100.0,0.0,2
+540,King's Gambit Declined |  Petrov's Defense,75.0,100.0,0.0,5
+541,King's Gambit Declined |  Queen's Knight Defense,74.77777777777777,42.10526315789474,52.63157894736842,19
+542,King's Gambit Declined: Classical |  Soldatenkov Variation,81.0,100.0,0.0,1
+543,King's Gambit Declined: Keene's Defense #2,-3.6666666666666665,100.0,0.0,6
+544,King's Gambit |  Falkbeer Countergambit Accepted,-54.5,100.0,0.0,2
+545,King's Gambit |  Falkbeer Countergambit |  Hinrichsen Gambit,-54.0,0.0,100.0,1
+546,King's Gambit |  Falkbeer Countergambit |  Miles Gambit,139.0,0.0,100.0,1
+547,King's Gambit |  Falkbeer Countergambit |  Nimzowitsch-Marshall Countergambit,154.0,50.0,50.0,2
+548,King's Gambit |  Falkbeer Countergambit |  Staunton Line,129.5,50.0,50.0,2
+549,King's Gambit: Panteldakis Countergambit,142.0,100.0,0.0,1
+550,King's Indian Attack,50.78787878787879,60.0,34.285714285714285,35
+551,King's Indian Attack: French Variation,-328.6666666666667,16.666666666666668,83.33333333333333,6
+552,King's Indian Attack: Keres Variation #2,49.0,100.0,0.0,2
+553,King's Indian Attack: Pachman System,-195.0,100.0,0.0,1
+554,King's Indian Attack: Sicilian Variation,94.66666666666667,66.66666666666667,33.333333333333336,3
+555,King's Indian Attack: Symmetrical Defense,139.54545454545453,58.333333333333336,33.333333333333336,12
+556,King's Indian Attack: Wahls Defense,717.0,50.0,0.0,2
+557,King's Indian Defense,58.464285714285715,64.28571428571429,35.714285714285715,28
+558,King's Indian Defense: 3.Nc3,66.33333333333333,66.66666666666667,33.333333333333336,3
+559,King's Indian Defense: Accelerated Averbakh Variation,3.5,50.0,50.0,2
+560,King's Indian Defense: Averbakh Variation |  Flexible Defense,54.0,100.0,0.0,2
+561,King's Indian Defense: Averbakh Variation |  Geller Defense,301.0,0.0,100.0,1
+562,King's Indian Defense: Averbakh Variation |  Modern Defense,90.0,0.0,100.0,1
+563,King's Indian Defense: Exchange Variation,,0.0,0.0,2
+564,King's Indian Defense: Fianchetto Variation |  Classical Fianchetto,-152.0,100.0,0.0,1
+565,King's Indian Defense: Fianchetto Variation |  Debrecen Defense,98.0,50.0,50.0,2
+566,King's Indian Defense: Fianchetto Variation |  Panno Variation,291.0,100.0,0.0,1
+567,King's Indian Defense: Fianchetto Variation |  Yugoslav System |  without Nc3,298.5,50.0,50.0,2
+568,King's Indian Defense: Four Pawns Attack,-108.58333333333333,41.666666666666664,58.333333333333336,12
+569,King's Indian Defense: Four Pawns Attack |  Dynamic Attack,132.75,25.0,75.0,4
+570,King's Indian Defense: Four Pawns Attack |  Normal Attack,211.0,0.0,100.0,1
+571,King's Indian Defense: Larsen Variation,50.666666666666664,33.333333333333336,66.66666666666667,3
+572,King's Indian Defense: Makogonov Variation,-62.0,60.0,40.0,5
+573,King's Indian Defense: Normal Variation,51.2,80.0,20.0,5
+574,King's Indian Defense: Normal Variation |  King's Knight Variation,27.928571428571427,40.0,53.333333333333336,15
+575,King's Indian Defense: Normal Variation |  Rare Defenses,78.88888888888889,55.55555555555556,44.44444444444444,18
+576,King's Indian Defense: Orthodox Variation,138.4,80.0,20.0,5
+577,King's Indian Defense: Orthodox Variation |  Aronin-Taimanov Defense,188.0,0.0,50.0,2
+578,King's Indian Defense: Orthodox Variation |  Bayonet Attack,86.0,100.0,0.0,1
+579,King's Indian Defense: Orthodox Variation |  Classical System,146.5,100.0,0.0,2
+580,King's Indian Defense: Orthodox Variation |  Glek Defense,202.0,0.0,100.0,1
+581,King's Indian Defense: Orthodox Variation |  Positional Defense,-74.0,0.0,100.0,1
+582,King's Indian Defense: Orthodox Variation |  Positional Defense |  Closed Line,42.0,100.0,0.0,1
+583,King's Indian Defense: Orthodox Variation |  Ukrainian Defense,319.0,100.0,0.0,1
+584,King's Indian Defense: Petrosian Variation,-15.0,100.0,0.0,1
+585,King's Indian Defense: Saemisch Variation,37.833333333333336,33.333333333333336,66.66666666666667,6
+586,King's Indian Defense: Saemisch Variation |  Closed Variation,-44.666666666666664,33.333333333333336,66.66666666666667,3
+587,King's Indian Defense: Saemisch Variation |  Closed Variation |  7...c6,234.66666666666666,100.0,0.0,3
+588,King's Indian Defense: Saemisch Variation |  Normal Defense,74.0,40.0,60.0,5
+589,King's Indian Defense: Semi-Classical Variation |  Benoni Variation,-75.0,0.0,100.0,1
+590,King's Indian Defense: Six Pawns Attack,78.11111111111111,33.333333333333336,66.66666666666667,9
+591,King's Indian Defense: Smyslov Variation,110.0,33.333333333333336,33.333333333333336,3
+592,King's Indian Defense: Steiner Attack,87.0,50.0,0.0,2
+593,King's Indian Defense: Zinnowitz Variation,63.6,40.0,60.0,5
+594,King's Indian |  Fianchetto |  Classical Variation |  8.e4,-4.0,50.0,50.0,2
+595,King's Indian |  Orthodox |  7...Nbd7 8.Re1,327.0,100.0,0.0,1
+596,King's Knight Opening,84.38333333333334,68.85245901639344,29.508196721311474,61
+597,King's Knight Opening: Konstantinopolsky,84.4,30.0,70.0,10
+598,King's Knight Opening: Normal Variation,-2.1343283582089554,48.57142857142857,47.142857142857146,70
+599,King's Pawn,141.9,90.0,10.0,10
+600,King's Pawn Game,51.77272727272727,28.26086956521739,67.3913043478261,46
+601,King's Pawn Game: Alapin Opening,196.66666666666666,33.333333333333336,66.66666666666667,3
+602,King's Pawn Game: Bavarian Gambit,287.0,100.0,0.0,1
+603,King's Pawn Game: Beyer Gambit,29.181818181818183,72.72727272727273,27.272727272727273,11
+604,King's Pawn Game: Busch-Gass Gambit,82.94736842105263,65.0,30.0,40
+605,King's Pawn Game: Clam Variation |  King's Gambit Reversed,153.0,0.0,100.0,1
+606,King's Pawn Game: Damiano Defense,67.56896551724138,53.225806451612904,40.32258064516129,62
+607,King's Pawn Game: Dresden Opening,76.0,50.0,50.0,6
+608,King's Pawn Game: Gunderam Gambit,52.285714285714285,57.142857142857146,42.857142857142854,14
+609,King's Pawn Game: King's Head Opening,-28.428571428571427,42.857142857142854,57.142857142857146,7
+610,King's Pawn Game: King's Head Opening #2,93.27777777777777,38.888888888888886,61.111111111111114,18
+611,King's Pawn Game: Leonardis Variation,57.177570093457945,49.54128440366973,48.62385321100918,109
+612,King's Pawn Game: Macleod Attack,39.69565217391305,39.130434782608695,60.869565217391305,23
+613,King's Pawn Game: Maroczy Defense,78.88,42.857142857142854,46.42857142857143,28
+614,King's Pawn Game: McConnell Defense,49.70786516853933,47.82608695652174,48.91304347826087,92
+615,King's Pawn Game: Mengarini's Opening,242.66666666666666,30.76923076923077,61.53846153846154,13
+616,King's Pawn Game: Napoleon Attack,32.13636363636363,47.82608695652174,47.82608695652174,46
+617,King's Pawn Game: Nimzowitsch Defense,163.88888888888889,55.172413793103445,37.93103448275862,29
+618,King's Pawn Game: Pachman Wing Gambit,263.0,100.0,0.0,1
+619,King's Pawn Game: Philidor Gambit,-173.0,0.0,100.0,1
+620,King's Pawn Game: Tayler Opening,-60.333333333333336,41.666666666666664,58.333333333333336,12
+621,King's Pawn Game: Tortoise Opening,5.285714285714286,71.42857142857143,28.571428571428573,7
+622,King's Pawn Game: Wayward Queen Attack,108.18461538461538,46.3235294117647,49.26470588235294,136
+623,King's Pawn Game: Wayward Queen Attack |  Kiddie Countergambit,52.0,62.06896551724138,37.93103448275862,29
+624,King's Pawn Opening: 2.b3,56.77777777777778,44.44444444444444,55.55555555555556,9
+625,King's Pawn Opening: Speers,108.0,0.0,100.0,1
+626,Latvian Gambit,-79.33333333333333,33.333333333333336,66.66666666666667,3
+627,Latvian Gambit Accepted,74.83333333333333,50.0,50.0,6
+628,Latvian Gambit Accepted |  Bilguer Variation,-77.5,0.0,100.0,2
+629,Latvian Gambit Accepted |  Main Line,-14.0,100.0,0.0,2
+630,Latvian Gambit: Mason Countergambit,69.0,100.0,0.0,1
+631,Latvian Gambit: Mlotkowski Variation,-116.0,50.0,50.0,2
+632,Lemming Defense,270.3333333333333,100.0,0.0,3
+633,Lion Defense: Anti-Philidor |  Lion's Cave,181.5,50.0,50.0,2
+634,Lion Defense: Lion's Jaw,274.0,0.0,100.0,2
+635,London System,95.35714285714286,25.0,62.5,16
+636,Mexican Defense,307.25,50.0,50.0,4
+637,Mieses Opening,121.734375,41.53846153846154,56.92307692307692,65
+638,Mieses Opening: Reversed Rat,74.63636363636364,31.818181818181817,68.18181818181819,22
+639,Mikenas Defense,62.17391304347826,45.833333333333336,50.0,24
+640,Mikenas Defense: Cannstatter Variation,79.66666666666667,66.66666666666667,33.333333333333336,3
+641,Mikenas Defense: Lithuanian Variation,-106.0,100.0,0.0,1
+642,Modern Defense,110.05223880597015,45.65217391304348,51.44927536231884,138
+643,Modern Defense: Averbakh System |  Kotov Variation,219.0,100.0,0.0,1
+644,Modern Defense: Averbakh System |  Randspringer Variation,-4.0,100.0,0.0,1
+645,Modern Defense: Averbakh Variation,415.0,50.0,0.0,2
+646,Modern Defense: Beefeater Variation,233.0,100.0,0.0,1
+647,Modern Defense: Bishop Attack,79.8,40.0,60.0,5
+648,Modern Defense: Geller's System,37.0,25.0,75.0,4
+649,Modern Defense: Mongredien Defense #2,97.0,16.666666666666668,66.66666666666667,6
+650,Modern Defense: Norwegian Defense,71.66666666666667,66.66666666666667,33.333333333333336,3
+651,Modern Defense: Pseudo-Austrian Attack,5.0,100.0,0.0,1
+652,Modern Defense: Standard Defense,-9.6,20.0,80.0,5
+653,Modern Defense: Standard Line,24.5,0.0,100.0,2
+654,Modern Defense: Three Pawns Attack,-79.5,60.0,20.0,5
+655,Modern Defense: Two Knights Variation,66.2,20.0,80.0,5
+656,Modern Defense: Two Knights Variation |  Suttles Variation,-9.333333333333334,0.0,100.0,3
+657,Neo-Gruenfeld Defense,78.0,0.0,100.0,1
+658,Neo-Gruenfeld Defense: Classical Variation,-58.0,0.0,100.0,1
+659,Neo-Gruenfeld Defense: Classical Variation |  Modern Defense,156.0,100.0,0.0,2
+660,Neo-Gruenfeld Defense: Classical Variation |  Polgar Variation,,0.0,0.0,1
+661,Neo-Gruenfeld Defense: Delayed Exchange Variation,30.5,100.0,0.0,2
+662,Nimzo-Indian Defense,111.43478260869566,30.434782608695652,69.56521739130434,23
+663,Nimzo-Indian Defense #2,-9.461538461538462,69.23076923076923,30.76923076923077,13
+664,Nimzo-Indian Defense: 4.e3 e8g8 |  5.Nf3 |  without ...d5,-26.0,0.0,100.0,1
+665,Nimzo-Indian Defense: Classical Variation,112.85714285714286,22.22222222222222,55.55555555555556,9
+666,Nimzo-Indian Defense: Classical Variation |  Berlin Variation,207.0,25.0,75.0,4
+667,Nimzo-Indian Defense: Classical Variation |  Noa Variation,-56.2,40.0,60.0,5
+668,Nimzo-Indian Defense: Classical Variation |  Zurich Variation,-11.0,100.0,0.0,1
+669,Nimzo-Indian Defense: Classical |  Noa Variation |  5.cxd5 exd5,22.0,0.0,100.0,1
+670,Nimzo-Indian Defense: Huebner Variation |  Rubinstein Variation,-480.0,100.0,0.0,1
+671,Nimzo-Indian Defense: Kmoch Variation,192.0,0.0,100.0,1
+672,Nimzo-Indian Defense: Leningrad Variation,90.0,60.0,20.0,5
+673,Nimzo-Indian Defense: Normal Line,236.0,100.0,0.0,2
+674,Nimzo-Indian Defense: Normal Variation |  Bernstein Defense,95.0,50.0,50.0,2
+675,Nimzo-Indian Defense: Normal Variation |  Bishop Attack |  Classical Defense,-212.0,0.0,100.0,1
+676,Nimzo-Indian Defense: Normal Variation |  Gligoric System,65.0,50.0,50.0,2
+677,Nimzo-Indian Defense: Normal Variation |  Gligoric System |  Bernstein Defense,171.33333333333334,0.0,100.0,3
+678,Nimzo-Indian Defense: Normal Variation |  Huebner Deferred,-187.0,100.0,0.0,2
+679,Nimzo-Indian Defense: Normal Variation |  Ragozin Variation,183.2,80.0,20.0,5
+680,Nimzo-Indian Defense: Normal Variation |  Schlechter Defense,-62.0,100.0,0.0,1
+681,Nimzo-Indian Defense: Panov Attack |  Main Line,39.333333333333336,66.66666666666667,33.333333333333336,3
+682,Nimzo-Indian Defense: Ragozin Variation,95.03571428571429,43.333333333333336,50.0,30
+683,Nimzo-Indian Defense: Reshevsky Variation,-88.0,0.0,100.0,1
+684,Nimzo-Indian Defense: Romanishin Variation #2,-228.0,0.0,100.0,1
+685,Nimzo-Indian Defense: Saemisch Variation,,0.0,0.0,1
+686,Nimzo-Indian Defense: Saemisch Variation |  Accelerated,41.111111111111114,44.44444444444444,55.55555555555556,9
+687,Nimzo-Indian Defense: Three Knights Variation,226.2,80.0,20.0,5
+688,Nimzo-Indian Defense: Three Knights Variation |  Duchamp Variation,62.0,100.0,0.0,1
+689,Nimzo-Larsen Attack,205.58333333333334,62.96296296296296,25.925925925925927,27
+690,Nimzo-Larsen Attack: Classical Variation,144.95833333333334,48.0,48.0,25
+691,Nimzo-Larsen Attack: Dutch Variation,-36.0,0.0,100.0,1
+692,Nimzo-Larsen Attack: English Variation,32.833333333333336,83.33333333333333,16.666666666666668,6
+693,Nimzo-Larsen Attack: Indian Variation,33.666666666666664,22.22222222222222,77.77777777777777,9
+694,Nimzo-Larsen Attack: Modern Variation,-22.25,44.44444444444444,44.44444444444444,9
+695,Nimzo-Larsen Attack: Modern Variation #2,19.846153846153847,61.53846153846154,38.46153846153846,13
+696,Nimzo-Larsen Attack: Modern Variation #3,7.6923076923076925,38.46153846153846,61.53846153846154,13
+697,Nimzo-Larsen Attack: Modern Variation #4,14.26923076923077,33.333333333333336,62.96296296296296,27
+698,Nimzo-Larsen Attack: Symmetrical Variation,47.2,20.0,80.0,5
+699,Nimzowitsch Defense,131.5483870967742,74.19354838709677,25.806451612903224,31
+700,Nimzowitsch Defense |  Declined Variation,34.07692307692308,42.857142857142854,50.0,14
+701,Nimzowitsch Defense: Breyer Variation,-45.0,100.0,0.0,3
+702,Nimzowitsch Defense: Franco-Nimzowitsch Variation,158.88235294117646,76.47058823529412,23.529411764705884,17
+703,Nimzowitsch Defense: French Connection,395.0,50.0,50.0,2
+704,Nimzowitsch Defense: Kennedy Variation,1.6666666666666667,33.333333333333336,66.66666666666667,3
+705,Nimzowitsch Defense: Kennedy Variation |  Keres Attack,312.0,50.0,50.0,2
+706,Nimzowitsch Defense: Kennedy Variation |  Linksspringer Variation,48.5,59.45945945945946,37.83783783783784,37
+707,Nimzowitsch Defense: Kennedy Variation |  Paulsen Attack,28.0,100.0,0.0,3
+708,Nimzowitsch Defense: Kennedy Variation |  de Smet Gambit,219.5,75.0,25.0,4
+709,Nimzowitsch Defense: Lean Variation,-3.0,100.0,0.0,1
+710,Nimzowitsch Defense: Lean Variation |  Colorado Counter Accepted,-22.75,60.0,20.0,5
+711,Nimzowitsch Defense: Mikenas Variation,36.5,50.0,50.0,6
+712,Nimzowitsch Defense: Pseudo-Spanish Variation,-42.0,50.0,50.0,4
+713,Nimzowitsch Defense: Scandinavian Variation |  Advance Variation,84.61904761904762,80.95238095238095,19.047619047619047,21
+714,Nimzowitsch Defense: Scandinavian Variation |  Bogoljubov Variation,77.0,66.66666666666667,33.333333333333336,6
+715,Nimzowitsch Defense: Scandinavian Variation |  Bogoljubov Variation |  Vehre Variation,-262.0,0.0,100.0,1
+716,Nimzowitsch Defense: Scandinavian Variation |  Exchange Variation,-29.25,87.5,12.5,8
+717,Nimzowitsch Defense: Williams Variation,-62.666666666666664,50.0,40.0,10
+718,Nimzowitsch-Larsen Attack,144.125,37.5,62.5,8
+719,Old Benoni Defense,104.03846153846153,40.74074074074074,55.55555555555556,27
+720,Old Benoni Defense #2,85.0,75.0,25.0,4
+721,Old Indian Defense,88.73076923076923,57.142857142857146,35.714285714285715,28
+722,Old Indian Defense: Tartakower-Indian,153.0,0.0,100.0,1
+723,Old Indian Defense: Two Knights Variation,114.0,100.0,0.0,1
+724,Old Indian Defense: Ukrainian Variation,-233.0,0.0,100.0,1
+725,Old Indian: Czech Variation,70.0,0.0,100.0,1
+726,Old Indian: Czech Variation |  with Nc3,101.0,33.333333333333336,66.66666666666667,3
+727,Owen Defense,87.04587155963303,45.21739130434783,49.56521739130435,115
+728,Paleface Attack,32.857142857142854,42.857142857142854,57.142857142857146,7
+729,Petrov's Defense,-10.433333333333334,37.5,56.25,32
+730,Petrov's Defense #2,81.43478260869566,62.5,33.333333333333336,24
+731,Petrov's Defense #3,70.5,50.0,50.0,2
+732,Petrov's Defense #4,,0.0,0.0,1
+733,Petrov: Modern Attack,142.5,33.333333333333336,33.333333333333336,9
+734,Philidor Defense,103.48543689320388,62.38532110091743,32.11009174311926,109
+735,Philidor Defense #2,46.9875,48.50299401197605,47.30538922155689,167
+736,Philidor Defense #3,90.8108108108108,64.90066225165563,33.11258278145695,151
+737,Philidor Defense #4,110.95454545454545,56.52173913043478,39.130434782608695,23
+738,Philidor Defense: Bird Gambit,-42.0,0.0,100.0,1
+739,Philidor Defense: Exchange Variation,96.25,51.724137931034484,44.827586206896555,29
+740,Philidor Defense: Exchange Variation #2,90.0,62.857142857142854,37.142857142857146,35
+741,Philidor Defense: Exchange Variation #3,51.666666666666664,33.333333333333336,66.66666666666667,6
+742,Philidor Defense: Hanham Variation,37.0,62.5,25.0,8
+743,Philidor Defense: Hanham Variation |  Krause Variation,-33.0,100.0,0.0,1
+744,Philidor Defense: Larsen Variation,103.0,50.0,50.0,2
+745,Philidor Defense: Lion Variation,229.66666666666666,33.333333333333336,66.66666666666667,3
+746,Philidor Defense: Lion Variation |  Lion's Claw II,,0.0,0.0,1
+747,Philidor Defense: Lopez Countergambit,95.6,60.0,40.0,5
+748,Philidor Defense: Morphy Gambit,35.0,0.0,100.0,1
+749,Philidor Defense: Nimzowitsch Variation,74.75,50.0,50.0,4
+750,Philidor Defense: Nimzowitsch Variation #2,19.2,60.0,40.0,5
+751,Philidor Defense: Nimzowitsch Variation |  Klein Variation,38.0,50.0,50.0,2
+752,Philidor Defense: Paulsen Attack,-191.0,0.0,100.0,1
+753,Philidor Defense: Philidor Countergambit,235.4,80.0,20.0,5
+754,Philidor Defense: Philidor Countergambit |  Zukertort Variation,148.0,0.0,100.0,1
+755,Philidor Defense: Steinitz Variation,147.66666666666666,100.0,0.0,3
+756,Pirc Defense,75.42857142857143,31.25,56.25,16
+757,Pirc Defense #2,179.52941176470588,58.8235294117647,41.1764705882353,17
+758,Pirc Defense #3,68.73333333333333,56.25,37.5,16
+759,Pirc Defense #4,84.19753086419753,60.22727272727273,31.818181818181817,88
+760,Pirc Defense #5,113.625,75.75757575757575,21.21212121212121,33
+761,Pirc Defense: Austrian Attack,-84.5,100.0,0.0,2
+762,Pirc Defense: Austrian Attack #2,-33.0,0.0,100.0,1
+763,Pirc Defense: Austrian Attack |  Dragon Formation,141.0,0.0,50.0,2
+764,Pirc Defense: Austrian Attack |  Kurajica Variation,84.0,0.0,100.0,1
+765,Pirc Defense: Austrian Attack |  Unzicker Attack,157.33333333333334,100.0,0.0,3
+766,Pirc Defense: Austrian Attack |  Weiss Variation,368.6,60.0,40.0,5
+767,Pirc Defense: Byrne Variation,2.8333333333333335,28.571428571428573,57.142857142857146,7
+768,Pirc Defense: Classical Variation,146.5,30.76923076923077,61.53846153846154,26
+769,Pirc Defense: Classical Variation #2,212.0,100.0,0.0,2
+770,Pirc Defense: Classical Variation |  Quiet System,229.0,50.0,0.0,2
+771,Pirc Defense: Classical Variation |  Quiet System |  Chigorin Line,84.0,100.0,0.0,1
+772,Pirc Defense: Classical Variation |  Quiet System |  Czech Defense,54.0,50.0,50.0,2
+773,Pirc Defense: Classical Variation |  Schlechter Variation,62.166666666666664,66.66666666666667,33.333333333333336,6
+774,Pirc Defense: Kholmov System,254.5,0.0,100.0,2
+775,Polish Defense,139.58333333333334,91.66666666666667,8.333333333333334,12
+776,Polish Opening,109.79069767441861,57.77777777777778,37.77777777777778,45
+777,Polish Opening: Birmingham Gambit,24.0,0.0,100.0,1
+778,Polish Opening: Bugayev Attack,85.0,50.0,50.0,4
+779,Polish Opening: Czech Defense,222.33333333333334,66.66666666666667,33.333333333333336,3
+780,Polish Opening: Grigorian Variation,,0.0,0.0,1
+781,Polish Opening: King's Indian Variation,86.33333333333333,0.0,100.0,3
+782,Polish Opening: Outflank Variation,482.0,100.0,0.0,1
+783,Polish Opening: Queen's Indian Variation,-176.0,100.0,0.0,1
+784,Polish Opening: Schiffler-Sokolsky Variation,-17.0,50.0,50.0,2
+785,Polish Opening: Symmetrical Variation,39.0,0.0,100.0,2
+786,Polish Opening: Zukertort System,56.0,100.0,0.0,1
+787,Ponziani Opening,87.34615384615384,50.0,50.0,26
+788,Ponziani Opening: Jaenisch Counterattack,125.9047619047619,50.0,45.45454545454545,22
+789,Ponziani Opening: Romanishin Variation,18.0,0.0,100.0,1
+790,Ponziani Opening: Spanish Variation,-29.0,0.0,100.0,2
+791,Portuguese Opening,45.94117647058823,47.05882352941177,52.94117647058823,17
+792,Portuguese Opening: Portuguese Gambit,109.0,0.0,100.0,1
+793,Pterodactyl Defense: Western |  Rhamphorhynchus,73.0,100.0,0.0,1
+794,Queen's Gambit,97.75,66.66666666666667,33.333333333333336,12
+795,Queen's Gambit Accepted,69.48717948717949,55.0,42.5,40
+796,Queen's Gambit Accepted: Accelerated Mannheim Variation,-56.0,20.0,80.0,5
+797,Queen's Gambit Accepted: Alekhine Defense |  Haberditz Variation,369.0,0.0,100.0,1
+798,Queen's Gambit Accepted: Bogoljubov Defense,70.0,0.0,100.0,1
+799,Queen's Gambit Accepted: Central Variation |  Greco Variation,-7.875,25.0,75.0,8
+800,Queen's Gambit Accepted: Central Variation |  McDonnell Defense,233.6,60.0,40.0,5
+801,Queen's Gambit Accepted: Central Variation |  McDonnell Defense |  Somov Gambit,256.0,0.0,100.0,1
+802,Queen's Gambit Accepted: Central Variation |  Modern Defense,68.33333333333333,83.33333333333333,16.666666666666668,6
+803,Queen's Gambit Accepted: Central Variation |  Rubinstein Defense,107.0,100.0,0.0,1
+804,Queen's Gambit Accepted: Central Variation |  Rubinstein Defense |  Yefimov Gambit,70.0,0.0,100.0,1
+805,Queen's Gambit Accepted: Classical Defense,-145.0,100.0,0.0,1
+806,Queen's Gambit Accepted: Classical Defense |  Steinitz Variation |  Exchange Variation,92.5,100.0,0.0,2
+807,Queen's Gambit Accepted: Gunsberg Defense,-267.0,0.0,100.0,1
+808,Queen's Gambit Accepted: Gunsberg Defense |  Prianishenmo Gambit,-128.0,100.0,0.0,1
+809,Queen's Gambit Accepted: Normal Variation,91.5,50.0,50.0,12
+810,Queen's Gambit Accepted: Normal Variation |  Traditional System,255.0,100.0,0.0,1
+811,Queen's Gambit Accepted: Old Variation,78.52222222222223,53.191489361702125,42.5531914893617,94
+812,Queen's Gambit Accepted: Rosenthal Variation,132.2,80.0,20.0,15
+813,Queen's Gambit Accepted: Saduleto Variation,-20.46153846153846,37.5,43.75,16
+814,Queen's Gambit Accepted: Schwartz Defense,-26.0,0.0,100.0,1
+815,Queen's Gambit Accepted: Showalter Variation,-2.0,50.0,50.0,2
+816,Queen's Gambit Accepted: Slav Gambit,88.0,100.0,0.0,3
+817,Queen's Gambit Declined,127.78947368421052,57.7319587628866,40.20618556701031,97
+818,Queen's Gambit Declined: 4.Bg5 Be7,114.72727272727273,72.72727272727273,27.272727272727273,11
+819,Queen's Gambit Declined: 4.Bg5 Be7 |  5.e3 O-O,-28.0,50.0,50.0,2
+820,Queen's Gambit Declined: Alapin Variation,-65.0,100.0,0.0,1
+821,Queen's Gambit Declined: Anti-Tartakower Variation,115.0,0.0,100.0,1
+822,Queen's Gambit Declined: Barmen Variation,277.0,100.0,0.0,1
+823,Queen's Gambit Declined: Been-Koomen Variation,-241.0,100.0,0.0,1
+824,Queen's Gambit Declined: Cambridge Springs Defense: Capablanca Variation,45.0,0.0,100.0,1
+825,Queen's Gambit Declined: Cambridge Springs Variation,-334.0,100.0,0.0,1
+826,Queen's Gambit Declined: Capablanca,-16.0,100.0,0.0,1
+827,Queen's Gambit Declined: Capablanca |  Anti-Cambridge Springs Variation,63.0,0.0,100.0,1
+828,Queen's Gambit Declined: Charousek (Petrosian) Variation,-184.33333333333334,66.66666666666667,33.333333333333336,3
+829,Queen's Gambit Declined: Exchange Variation,14.909090909090908,50.0,41.666666666666664,12
+830,Queen's Gambit Declined: Exchange Variation |  Positional Variation,147.83333333333334,0.0,85.71428571428571,7
+831,Queen's Gambit Declined: Exchange Variation |  Positional Variation #2,107.36363636363636,54.54545454545455,45.45454545454545,11
+832,Queen's Gambit Declined: Exchange Variation |  Reshevsky Variation,-186.0,0.0,100.0,1
+833,Queen's Gambit Declined: Harrwitz Attack,28.555555555555557,66.66666666666667,33.333333333333336,9
+834,Queen's Gambit Declined: Harrwitz Attack |  Orthodox Defense,219.0,0.0,100.0,2
+835,Queen's Gambit Declined: Harrwitz Attack |  Two Knights Defense,310.5,50.0,50.0,2
+836,Queen's Gambit Declined: Hastings Variation,-46.0,100.0,0.0,2
+837,Queen's Gambit Declined: Janowski Variation,286.0,100.0,0.0,1
+838,Queen's Gambit Declined: Lasker Defense,166.0,0.0,33.333333333333336,3
+839,Queen's Gambit Declined: Modern Variation,33.15384615384615,35.714285714285715,57.142857142857146,14
+840,Queen's Gambit Declined: Modern Variation |  Heral Variation,5.0,0.0,100.0,1
+841,Queen's Gambit Declined: Modern Variation |  Normal Line,-16.363636363636363,58.333333333333336,33.333333333333336,12
+842,Queen's Gambit Declined: Modern |  Knight Defense,237.0,50.0,50.0,2
+843,Queen's Gambit Declined: Modern |  Knight Defense #3,95.0,0.0,100.0,1
+844,Queen's Gambit Declined: Neo-Orthodox Variation,50.0,0.0,100.0,1
+845,Queen's Gambit Declined: Neo-Orthodox Variation |  Main Line,285.5,75.0,25.0,4
+846,Queen's Gambit Declined: Normal Defense,55.4,38.46153846153846,57.69230769230769,26
+847,Queen's Gambit Declined: Orthodox Defense,-9.0,100.0,0.0,1
+848,Queen's Gambit Declined: Orthodox Defense |  Botvinnik Variation,-212.0,100.0,0.0,1
+849,Queen's Gambit Declined: Pseudo-Tarrasch Variation,,0.0,0.0,1
+850,Queen's Gambit Declined: Queen's Knight Variation,83.51612903225806,52.94117647058823,38.23529411764706,34
+851,Queen's Gambit Declined: Ragozin Defense |  Alekhine Variation,735.0,100.0,0.0,1
+852,Queen's Gambit Declined: Semi-Tarrasch Defense,,0.0,0.0,1
+853,Queen's Gambit Declined: Semi-Tarrasch Defense |  Pillsbury Variation,-148.5,0.0,100.0,2
+854,Queen's Gambit Declined: Semi-Tarrasch |  5.cxd5,-161.25,0.0,100.0,4
+855,Queen's Gambit Declined: Slav |  Dutch Variation,336.0,100.0,0.0,1
+856,Queen's Gambit Declined: Tarrasch Defense |  Pseudo-Tarrasch,36.4,40.0,60.0,10
+857,Queen's Gambit Declined: Tarrasch Defense: 4.cxd5 exd5,-7.0,100.0,0.0,2
+858,Queen's Gambit Declined: Tartakower Defense |  Makogonov Exchange Variation,54.0,0.0,100.0,1
+859,Queen's Gambit Declined: Three Knights Variation,120.0,50.0,37.5,16
+860,Queen's Gambit Declined: Traditional Variation,135.26666666666668,66.66666666666667,33.333333333333336,15
+861,Queen's Gambit Declined: Vienna Variation,338.3333333333333,50.0,25.0,4
+862,Queen's Gambit Declined: Vienna Variation |  Quiet Variation,135.66666666666666,100.0,0.0,3
+863,Queen's Gambit Refused: Albin Countergambit,-32.416666666666664,50.0,50.0,12
+864,Queen's Gambit Refused: Albin Countergambit |  Lasker Trap,-3.0,100.0,0.0,2
+865,Queen's Gambit Refused: Albin Countergambit |  Normal Line,-0.4444444444444444,66.66666666666667,33.333333333333336,9
+866,Queen's Gambit Refused: Austrian Attack |  Salvio Countergambit,-218.0,0.0,100.0,1
+867,Queen's Gambit Refused: Austrian Defense,90.36363636363636,50.0,41.666666666666664,12
+868,Queen's Gambit Refused: Baltic Defense,86.7,60.0,40.0,10
+869,Queen's Gambit Refused: Baltic Defense |  Pseudo-Chigorin,120.0,0.0,100.0,1
+870,Queen's Gambit Refused: Baltic Defense |  Pseudo-Slav,38.833333333333336,83.33333333333333,16.666666666666668,6
+871,Queen's Gambit Refused: Baltic Defense |  Queen Attack,-195.0,0.0,100.0,1
+872,Queen's Gambit Refused: Chigorin Defense,199.5,20.0,60.0,5
+873,Queen's Gambit Refused: Chigorin Defense #2,-21.875,75.0,25.0,8
+874,Queen's Gambit Refused: Chigorin Defense #3,69.66666666666667,22.22222222222222,77.77777777777777,9
+875,Queen's Gambit Refused: Chigorin Defense |  Exchange Variation,19.5,57.142857142857146,28.571428571428573,7
+876,Queen's Gambit Refused: Chigorin Defense |  Janowski Variation,67.11111111111111,55.55555555555556,44.44444444444444,9
+877,Queen's Gambit Refused: Chigorin Defense |  Lazard Gambit,-70.0,50.0,50.0,2
+878,Queen's Gambit Refused: Chigorin Defense |  Main Line,225.0,33.333333333333336,0.0,3
+879,Queen's Gambit Refused: Chigorin Defense |  Modern Gambit,74.22222222222223,44.44444444444444,55.55555555555556,9
+880,Queen's Gambit Refused: Marshall Defense,69.16504854368932,72.11538461538461,26.923076923076923,104
+881,Queen's Indian Accelerated,-3.75,100.0,0.0,4
+882,Queen's Indian Defense,48.142857142857146,50.0,37.5,8
+883,Queen's Indian Defense: Capablanca Variation,-22.0,33.333333333333336,66.66666666666667,3
+884,Queen's Indian Defense: Classical Variation,43.0,0.0,100.0,2
+885,Queen's Indian Defense: Classical Variation |  Polugaevsky Gambit,,0.0,0.0,1
+886,Queen's Indian Defense: Classical Variation |  Tiviakov Defense,242.0,0.0,100.0,2
+887,Queen's Indian Defense: Classical Variation |  Traditional Variation,247.0,100.0,0.0,1
+888,Queen's Indian Defense: Fianchetto Traditional,148.85714285714286,85.71428571428571,14.285714285714286,7
+889,Queen's Indian Defense: Fianchetto Variation,-118.33333333333333,33.333333333333336,66.66666666666667,3
+890,Queen's Indian Defense: Fianchetto Variation |  Check Variation,111.0,0.0,100.0,1
+891,Queen's Indian Defense: Fianchetto Variation |  Nimzowitsch Variation,3.0,0.0,100.0,1
+892,Queen's Indian Defense: Fianchetto Variation |  Saemisch Variation,206.5,50.0,50.0,2
+893,Queen's Indian Defense: Kasparov Variation,62.0,100.0,0.0,3
+894,Queen's Indian Defense: Kasparov-Petrosian Variation |  Marco Defense,-8.0,50.0,50.0,2
+895,Queen's Indian Defense: Spassky System,75.4,33.333333333333336,50.0,6
+896,Queen's Pawn,88.95049504950495,63.20754716981132,32.075471698113205,106
+897,Queen's Pawn Game,168.09345794392524,33.6283185840708,61.06194690265487,113
+898,Queen's Pawn Game #2,102.79069767441861,45.65217391304348,47.82608695652174,92
+899,Queen's Pawn Game #3,123.45,38.63636363636363,52.27272727272727,44
+900,Queen's Pawn Game: Anglo-Slav Opening,25.0,80.0,20.0,5
+901,Queen's Pawn Game: Anti-Torre,74.625,37.5,62.5,16
+902,Queen's Pawn Game: Barry Attack |  Gruenfeld Variation,449.0,100.0,0.0,1
+903,Queen's Pawn Game: Chigorin Variation,71.67428571428572,46.666666666666664,50.55555555555556,180
+904,Queen's Pawn Game: Colle System,94.8,40.0,60.0,25
+905,Queen's Pawn Game: Colle System |  Anti-Colle,126.0,16.666666666666668,83.33333333333333,6
+906,Queen's Pawn Game: Colle System |  Gruenfeld Formation,-87.0,100.0,0.0,1
+907,Queen's Pawn Game: Englund Gambit,-274.0,100.0,0.0,1
+908,Queen's Pawn Game: Franco-Sicilian Defense,184.26666666666668,62.5,31.25,16
+909,Queen's Pawn Game: Krause Variation,21.058823529411764,44.44444444444444,50.0,18
+910,Queen's Pawn Game: Levitsky Attack,79.4,66.66666666666667,33.333333333333336,15
+911,Queen's Pawn Game: London System,93.34375,43.93939393939394,53.03030303030303,66
+912,Queen's Pawn Game: Mason Attack,51.59550561797753,49.19786096256684,45.98930481283423,187
+913,Queen's Pawn Game: Steinitz Countergambit,151.26666666666668,47.36842105263158,31.57894736842105,19
+914,Queen's Pawn Game: Stonewall Attack,172.6,40.0,60.0,15
+915,Queen's Pawn Game: Symmetrical Variation,62.92307692307692,41.86046511627907,48.83720930232558,43
+916,Queen's Pawn Game: Symmetrical Variation |  Pseudo-Catalan,105.4,41.666666666666664,41.666666666666664,12
+917,Queen's Pawn Game: Torre Attack,120.22222222222223,33.333333333333336,66.66666666666667,9
+918,Queen's Pawn Game: Torre Attack |  Gruenfeld Variation,207.0,0.0,100.0,1
+919,Queen's Pawn Game: Torre Attack |  Gruenfeld Variation |  Main Line,136.0,100.0,0.0,3
+920,Queen's Pawn Game: Veresov Attack |  Alburt Defense,81.33333333333333,33.333333333333336,66.66666666666667,3
+921,Queen's Pawn Game: Veresov Attack |  Anti-Veresov,401.0,0.0,100.0,1
+922,Queen's Pawn Game: Veresov Attack |  Boyce Defense,-19.0,100.0,0.0,1
+923,Queen's Pawn Game: Veresov Attack |  Classical Defense,54.2,40.0,60.0,5
+924,Queen's Pawn Game: Veresov Attack |  Dutch System,155.0,0.0,100.0,1
+925,Queen's Pawn Game: Veresov Attack |  Shaviliuk Gambit,48.0,100.0,0.0,1
+926,Queen's Pawn Game: Veresov Attack |  Veresov Variation,283.0,0.0,100.0,1
+927,Queen's Pawn Game: Zukertort Variation,72.29113924050633,55.95238095238095,38.095238095238095,84
+928,Queen's Pawn Game: Zurich Gambit,198.5,50.0,50.0,2
+929,Queen's Pawn Opening: Veresov |  Richter Attack,11.0,70.0,30.0,10
+930,Rat Defense: Accelerated Gurgenidze,-158.0,100.0,0.0,3
+931,Rat Defense: Antal Defense,68.88888888888889,55.55555555555556,44.44444444444444,9
+932,Rat Defense: Balogh Defense,17.846153846153847,61.53846153846154,38.46153846153846,13
+933,Rat Defense: English Rat,56.333333333333336,66.66666666666667,33.333333333333336,3
+934,Rat Defense: English Rat |  Lisbon Gambit,-337.0,0.0,100.0,1
+935,Rat Defense: Harmonist,236.33333333333334,42.857142857142854,42.857142857142854,7
+936,Rat Defense: Small Center Defense,190.41463414634146,66.66666666666667,30.952380952380953,42
+937,Reti Opening,97.125,61.111111111111114,27.77777777777778,18
+938,Reti Opening #2,148.5,50.0,50.0,12
+939,Reti Opening: Advance Variation,-262.5,0.0,100.0,2
+940,Reti Opening: Anglo-Slav Variation |  Bogoljubov Variation |  III,3.0,0.0,100.0,2
+941,Reti Opening: Reti Accepted,165.75,87.5,12.5,8
+942,Richter-Veresov Attack,248.16666666666666,28.571428571428573,57.142857142857146,7
+943,Richter-Veresov Attack #2,-20.5,100.0,0.0,2
+944,Robatsch (Modern) Defense,80.75,52.94117647058823,41.1764705882353,34
+945,Rubinstein Opening,406.0,100.0,0.0,1
+946,Russian Game: Classical Attack,49.5,50.0,50.0,4
+947,Russian Game: Classical Attack |  Chigorin Variation,31.5,33.333333333333336,33.333333333333336,3
+948,Russian Game: Classical Attack |  Closed Variation,,0.0,0.0,1
+949,Russian Game: Classical Attack |  Staunton Variation,442.0,100.0,0.0,1
+950,Russian Game: Cochrane Gambit,274.0,50.0,50.0,2
+951,Russian Game: Cozio (Lasker) Attack,102.22222222222223,44.44444444444444,55.55555555555556,9
+952,Russian Game: Damiano Variation,65.3103448275862,82.75862068965517,17.24137931034483,29
+953,Russian Game: Damiano Variation |  Kholmov Gambit,67.66666666666667,100.0,0.0,3
+954,Russian Game: French Attack,359.5,0.0,100.0,2
+955,Russian Game: Karklins-Martinovsky Variation,74.0,100.0,0.0,2
+956,Russian Game: Millennium Attack,-3.0,0.0,100.0,1
+957,Russian Game: Modern Attack |  Center Attack,43.0,0.0,50.0,2
+958,Russian Game: Modern Attack |  Center Variation,76.0,100.0,0.0,1
+959,Russian Game: Modern Attack |  Symmetrical Variation #2,-145.5,0.0,100.0,2
+960,Russian Game: Moody Gambit,-21.0,0.0,100.0,1
+961,Russian Game: Nimzowitsch Attack,-10.8,40.0,60.0,5
+962,Russian Game: Paulsen Attack,218.33333333333334,33.333333333333336,66.66666666666667,3
+963,Russian Game: Stafford Gambit,2.6666666666666665,33.333333333333336,66.66666666666667,3
+964,Russian Game: Three Knights Game,76.14084507042253,60.810810810810814,35.13513513513514,74
+965,Russian Game: Urusov Gambit,84.91836734693878,54.90196078431372,41.1764705882353,51
+966,Ruy Lopez,20.235294117647058,51.42857142857143,45.714285714285715,35
+967,Ruy Lopez: Alapin Defense,232.0,100.0,0.0,1
+968,Ruy Lopez: Berlin Defense,67.6,72.72727272727273,18.181818181818183,11
+969,Ruy Lopez: Berlin Defense #2,82.45901639344262,45.16129032258065,53.225806451612904,62
+970,Ruy Lopez: Berlin Defense |  Beverwijk Variation,139.9090909090909,50.0,41.666666666666664,12
+971,Ruy Lopez: Berlin Defense |  Closed Bernstein Variation,-373.0,100.0,0.0,1
+972,Ruy Lopez: Berlin Defense |  Closed Wolf Variation,716.0,100.0,0.0,1
+973,Ruy Lopez: Berlin Defense |  Fishing Pole Variation,-23.0,50.0,50.0,2
+974,Ruy Lopez: Berlin Defense |  Hedgehog Variation,,0.0,0.0,1
+975,Ruy Lopez: Berlin Defense |  Improved Steinitz Defense,78.0,65.21739130434783,26.08695652173913,23
+976,Ruy Lopez: Berlin Defense |  Minckwitz Variation,736.0,100.0,0.0,1
+977,Ruy Lopez: Berlin Defense |  Rio Gambit Accepted,76.5,50.0,30.0,10
+978,Ruy Lopez: Berlin Defense |  Rio de Janeiro Variation,82.0,100.0,0.0,2
+979,Ruy Lopez: Berlin Defense |  l'Hermet Variation,51.4,60.0,40.0,5
+980,Ruy Lopez: Bird Variation,101.71428571428571,41.37931034482759,55.172413793103445,29
+981,Ruy Lopez: Central Countergambit,548.0,100.0,0.0,1
+982,Ruy Lopez: Classical Variation,55.46875,45.714285714285715,45.714285714285715,35
+983,Ruy Lopez: Classical Variation |  Central Variation,-33.666666666666664,66.66666666666667,33.333333333333336,9
+984,Ruy Lopez: Classical Variation |  Modern Main Line,222.0,0.0,100.0,1
+985,Ruy Lopez: Classical Variation |  Zukertort Gambit,64.5,50.0,50.0,2
+986,Ruy Lopez: Closed,81.83333333333333,0.0,100.0,6
+987,Ruy Lopez: Closed Variations,125.33333333333333,66.66666666666667,33.333333333333336,3
+988,Ruy Lopez: Closed Variations |  Bogoljubov Variation,162.5,50.0,50.0,2
+989,Ruy Lopez: Closed Variations |  Flohr System,-20.5,0.0,66.66666666666667,3
+990,Ruy Lopez: Closed Variations |  Martinez Variation,428.0,100.0,0.0,1
+991,Ruy Lopez: Closed Variations |  Morphy Attack,-63.0,50.0,0.0,2
+992,Ruy Lopez: Closed Variations |  Rosen Attack,-200.0,0.0,100.0,1
+993,Ruy Lopez: Closed Variations |  Yates Variation,38.0,0.0,100.0,2
+994,Ruy Lopez: Closed Variations |  Yates Variation |  Short Attack,614.0,0.0,100.0,1
+995,Ruy Lopez: Closed |  7...O-O,-26.5,50.0,50.0,2
+996,Ruy Lopez: Closed |  8.c3,23.0,50.0,50.0,2
+997,Ruy Lopez: Columbus Variation,27.0,50.0,50.0,2
+998,Ruy Lopez: Cozio Defense,52.34375,45.45454545454545,51.515151515151516,33
+999,Ruy Lopez: Exchange Variation,80.05555555555556,59.45945945945946,37.83783783783784,37
+1000,Ruy Lopez: Exchange Variation |  Bronstein Variation,71.0,50.0,0.0,2
+1001,Ruy Lopez: Exchange Variation |  Gligoric Variation,315.3333333333333,66.66666666666667,33.333333333333336,3
+1002,Ruy Lopez: Exchange Variation |  Keres Variation,180.5,75.0,25.0,4
+1003,Ruy Lopez: Exchange Variation |  King's Bishop Variation,70.77777777777777,27.272727272727273,54.54545454545455,11
+1004,Ruy Lopez: Exchange Variation |  Lutikov Variation,64.85714285714286,76.19047619047619,23.80952380952381,21
+1005,Ruy Lopez: Exchange Variation |  Normal Variation,270.3333333333333,33.333333333333336,66.66666666666667,6
+1006,Ruy Lopez: Fianchetto Defense,161.75,0.0,100.0,4
+1007,Ruy Lopez: Marshall Attack,,0.0,0.0,1
+1008,Ruy Lopez: Marshall Attack |  Modern Main Line,42.666666666666664,33.333333333333336,66.66666666666667,3
+1009,Ruy Lopez: Marshall Attack |  Modern Variation,235.0,0.0,100.0,1
+1010,Ruy Lopez: Morphy Defense,72.3,45.45454545454545,45.45454545454545,11
+1011,Ruy Lopez: Morphy Defense #2,-130.33333333333334,66.66666666666667,33.333333333333336,3
+1012,Ruy Lopez: Morphy Defense |  Anderssen Variation,158.31578947368422,45.0,50.0,20
+1013,Ruy Lopez: Morphy Defense |  Arkhangelsk Variation,180.0,0.0,100.0,1
+1014,Ruy Lopez: Morphy Defense |  Breyer Defense |  Quiet Variation,,0.0,0.0,1
+1015,Ruy Lopez: Morphy Defense |  Caro Variation,79.24137931034483,64.51612903225806,29.032258064516128,31
+1016,Ruy Lopez: Morphy Defense |  Classical Defense Deferred,117.75,45.45454545454545,27.272727272727273,11
+1017,Ruy Lopez: Morphy Defense |  Cozio Defense,-48.0,100.0,0.0,1
+1018,Ruy Lopez: Morphy Defense |  Graz Variation,163.0,87.5,12.5,8
+1019,Ruy Lopez: Morphy Defense |  Jaffe Gambit,347.0,0.0,50.0,2
+1020,Ruy Lopez: Morphy Defense |  Mackenzie Variation,-91.33333333333333,66.66666666666667,33.333333333333336,3
+1021,Ruy Lopez: Morphy Defense |  Modern Steinitz Defense,33.57142857142857,42.857142857142854,57.142857142857146,7
+1022,Ruy Lopez: Morphy Defense |  Modern Steinitz Defense #2,4.333333333333333,25.0,50.0,4
+1023,Ruy Lopez: Morphy Defense |  Neo-Arkhangelsk Variation,10.4,71.42857142857143,0.0,7
+1024,Ruy Lopez: Morphy Defense |  Norwegian Variation,74.0,100.0,0.0,1
+1025,Ruy Lopez: Morphy Defense |  Norwegian Variation |  Nightingale Gambit,180.0,100.0,0.0,1
+1026,Ruy Lopez: Morphy Defense |  Schliemann Defense Deferred,169.5,0.0,100.0,2
+1027,Ruy Lopez: Morphy Defense |  Steinitz Deferred,-19.75,100.0,0.0,4
+1028,Ruy Lopez: Morphy Defense |  Tarrasch Variation,305.2857142857143,21.428571428571427,78.57142857142857,14
+1029,Ruy Lopez: Morphy Defense |  Wormald Attack,486.0,0.0,100.0,1
+1030,Ruy Lopez: Noah's Ark Trap,-24.5,50.0,50.0,2
+1031,Ruy Lopez: Nuernberg Variation,124.0,50.0,50.0,4
+1032,Ruy Lopez: Open Variations,-64.0,100.0,0.0,1
+1033,Ruy Lopez: Open Variations |  Howell Attack #2,296.5,0.0,100.0,2
+1034,Ruy Lopez: Open Variations |  Open Variation,-224.0,0.0,100.0,1
+1035,Ruy Lopez: Open Variations |  Riga Variation,84.0,100.0,0.0,1
+1036,Ruy Lopez: Open |  6.d4,164.0,100.0,0.0,2
+1037,Ruy Lopez: Rotary-Albany Gambit,-252.0,100.0,0.0,3
+1038,Ruy Lopez: Schliemann Defense,71.66666666666667,100.0,0.0,3
+1039,Ruy Lopez: Schliemann Defense |  Exchange Variation,-40.0,0.0,100.0,1
+1040,Ruy Lopez: Schliemann Defense |  Jaenisch Gambit Accepted,216.25,75.0,25.0,4
+1041,Ruy Lopez: Spanish Countergambit,41.0,60.0,40.0,5
+1042,Ruy Lopez: Steinitz Defense,82.05940594059406,47.16981132075472,48.113207547169814,106
+1043,Ruy Lopez: Steinitz Defense |  Nimzowitsch Attack,76.0,0.0,100.0,2
+1044,Ruy Lopez: Vinogradov Variation,68.0,66.66666666666667,33.333333333333336,3
+1045,Saragossa Opening,90.0,61.904761904761905,38.095238095238095,42
+1046,Scandinavian Defense,107.24431818181819,43.01075268817204,51.61290322580645,186
+1047,Scandinavian Defense: 2.b3,89.0,0.0,100.0,1
+1048,Scandinavian Defense: Anderssen Counterattack,297.0,100.0,0.0,1
+1049,Scandinavian Defense: Anderssen Counterattack |  Collijn Variation,-63.0,100.0,0.0,1
+1050,Scandinavian Defense: Anderssen Counterattack |  Goteborg System,,0.0,0.0,1
+1051,Scandinavian Defense: Blackburne Gambit,53.72727272727273,36.36363636363637,63.63636363636363,11
+1052,Scandinavian Defense: Blackburne-Kloosterboer Gambit,-94.0,20.0,80.0,5
+1053,Scandinavian Defense: Boehnke Gambit,152.0,0.0,100.0,4
+1054,Scandinavian Defense: Classical Variation,-59.5,50.0,50.0,2
+1055,Scandinavian Defense: Gubinsky-Melts Defense,-10.142857142857142,57.142857142857146,42.857142857142854,7
+1056,Scandinavian Defense: Icelandic-Palme Gambit,42.1875,12.5,87.5,16
+1057,Scandinavian Defense: Kiel Variation,-56.5,50.0,50.0,2
+1058,Scandinavian Defense: Main Line,81.73584905660377,61.111111111111114,37.03703703703704,54
+1059,Scandinavian Defense: Main Line |  Leonhardt Gambit,1.5,50.0,50.0,2
+1060,Scandinavian Defense: Main Line |  Mieses Variation,167.125,44.44444444444444,44.44444444444444,9
+1061,Scandinavian Defense: Marshall Variation,-62.5,20.0,60.0,5
+1062,Scandinavian Defense: Mieses-Kotroc Variation,90.29702970297029,62.31884057971015,35.265700483091784,207
+1063,Scandinavian Defense: Modern Variation,188.0,0.0,66.66666666666667,3
+1064,Scandinavian Defense: Modern Variation #2,81.3695652173913,46.808510638297875,51.06382978723404,47
+1065,Scandinavian Defense: Modern Variation |  Gipslis Variation,125.5,100.0,0.0,4
+1066,Scandinavian Defense: Panov Transfer,-5.909090909090909,0.0,100.0,11
+1067,Scandinavian Defense: Portuguese Variation,17.0,14.285714285714286,42.857142857142854,7
+1068,Scandinavian Defense: Richter Variation,-22.0,100.0,0.0,1
+1069,Scotch Gambit,32.6,60.0,40.0,5
+1070,Scotch Game,71.3175355450237,51.141552511415526,45.205479452054796,219
+1071,Scotch Game: Alekhine Gambit,80.0,50.0,50.0,2
+1072,Scotch Game: Benima Defense,71.16666666666667,83.33333333333333,16.666666666666668,6
+1073,Scotch Game: Blumenfeld Attack,307.0,50.0,50.0,2
+1074,Scotch Game: Classical Variation,89.18604651162791,60.46511627906977,39.53488372093023,43
+1075,Scotch Game: Classical Variation |  Intermezzo Variation,34.23076923076923,38.46153846153846,61.53846153846154,13
+1076,Scotch Game: Fraser Variation,85.0,0.0,100.0,1
+1077,Scotch Game: Goering Gambit |  Double Pawn Sacrifice,-26.5,0.0,100.0,2
+1078,Scotch Game: Haxo Gambit,271.1111111111111,88.88888888888889,11.11111111111111,9
+1079,Scotch Game: Horwitz Attack,269.0,100.0,0.0,1
+1080,Scotch Game: Lolli Variation,0.4444444444444444,77.77777777777777,22.22222222222222,9
+1081,Scotch Game: Malaniuk Variation,119.33333333333333,16.666666666666668,83.33333333333333,6
+1082,Scotch Game: Mieses Variation,50.0,100.0,0.0,3
+1083,Scotch Game: Modern Defense,135.33333333333334,0.0,100.0,3
+1084,Scotch Game: Paulsen Attack,-2.25,0.0,100.0,4
+1085,Scotch Game: Potter Variation,94.25,75.0,25.0,4
+1086,Scotch Game: Schmidt Variation,16.63157894736842,55.0,40.0,20
+1087,Scotch Game: Scotch Gambit,159.55555555555554,88.88888888888889,11.11111111111111,9
+1088,Scotch Game: Scotch Gambit |  Advance Variation,-140.5,37.5,62.5,8
+1089,Scotch Game: Scotch Gambit |  Cochrane-Anderssen Variation,-21.0,100.0,0.0,2
+1090,Scotch Game: Scotch Gambit |  Dubois Reti Defense,-26.25,25.0,75.0,4
+1091,Scotch Game: Scotch Gambit |  Kingside Variation,453.0,0.0,100.0,1
+1092,Scotch Game: Scotch Gambit |  London Defense,-13.666666666666666,100.0,0.0,3
+1093,Scotch Game: Scotch Gambit |  Sarratt Variation,185.8,60.0,40.0,5
+1094,Scotch Game: Steinitz Variation,785.0,0.0,100.0,1
+1095,Semi-Bononi,224.0,0.0,100.0,1
+1096,Semi-Slav Defense,84.36363636363636,31.03448275862069,44.827586206896555,29
+1097,Semi-Slav Defense: Accelerated Move Order,97.04761904761905,43.47826086956522,47.82608695652174,23
+1098,Semi-Slav Defense: Anti-Moscow Gambit,32.0,100.0,0.0,1
+1099,Semi-Slav Defense: Bogoljubov Variation,-4.0,50.0,0.0,2
+1100,Semi-Slav Defense: Chigorin Defense,68.0,66.66666666666667,0.0,3
+1101,Semi-Slav Defense: Main Line,72.75,46.15384615384615,46.15384615384615,13
+1102,Semi-Slav Defense: Marshall Gambit,40.0,80.0,20.0,5
+1103,Semi-Slav Defense: Marshall Gambit |  Main Line,46.0,0.0,100.0,1
+1104,Semi-Slav Defense: Meran Variation |  Wade Variation,219.0,100.0,0.0,1
+1105,Semi-Slav Defense: Normal Variation,76.16666666666667,50.0,50.0,6
+1106,Semi-Slav Defense: Noteboom Variation,201.0,100.0,0.0,1
+1107,Semi-Slav Defense: Noteboom Variation |  Abrahams Variation,0.0,0.0,100.0,1
+1108,Semi-Slav Defense: Quiet Variation,352.0,0.0,100.0,1
+1109,Semi-Slav Defense: Romih Variation,-3.0,100.0,0.0,2
+1110,Semi-Slav Defense: Stoltz Variation,108.0,0.0,100.0,3
+1111,Semi-Slav Defense: Stoltz Variation |  Center Variation,233.0,0.0,100.0,1
+1112,Sicilian Defense,92.90545454545455,44.169611307420496,53.003533568904594,283
+1113,Sicilian Defense #2,10.625,55.81395348837209,37.2093023255814,43
+1114,Sicilian Defense: Accelerated Dragon,73.0,25.0,75.0,16
+1115,Sicilian Defense: Accelerated Dragon |  Exchange Variation,210.4,40.0,60.0,5
+1116,Sicilian Defense: Accelerated Dragon |  Maroczy Bind,34.833333333333336,42.857142857142854,42.857142857142854,7
+1117,Sicilian Defense: Accelerated Dragon |  Maroczy Bind |  Breyer Variation,-30.0,0.0,100.0,1
+1118,Sicilian Defense: Accelerated Dragon |  Modern Bc4 Variation,201.5,0.0,85.71428571428571,7
+1119,Sicilian Defense: Accelerated Dragon |  Modern Variation,128.21428571428572,66.66666666666667,26.666666666666668,15
+1120,Sicilian Defense: Alapin Variation,62.03448275862069,35.59322033898305,62.71186440677966,59
+1121,Sicilian Defense: Alapin Variation |  Barmen Defense,153.0,71.42857142857143,28.571428571428573,7
+1122,Sicilian Defense: Alapin Variation |  Barmen Defense |  Central Exchange,-60.0,0.0,100.0,1
+1123,Sicilian Defense: Alapin Variation |  Smith-Morra Declined,118.42857142857143,28.571428571428573,71.42857142857143,7
+1124,Sicilian Defense: Amazon Attack,-49.0,100.0,0.0,1
+1125,Sicilian Defense: Bowdler Attack,72.5635593220339,39.11290322580645,56.04838709677419,248
+1126,Sicilian Defense: Brick Variation,310.5,25.0,75.0,4
+1127,Sicilian Defense: Buecker Variation,14.0,0.0,100.0,1
+1128,Sicilian Defense: Canal Attack |  Main Line,29.72,40.0,60.0,25
+1129,Sicilian Defense: Canal-Sokolsky Attack,17.083333333333332,58.333333333333336,41.666666666666664,12
+1130,Sicilian Defense: Canal-Sokolsky Attack |  Sokolsky Variation,,0.0,0.0,1
+1131,Sicilian Defense: Chekhover Variation,25.066666666666666,66.66666666666667,33.333333333333336,15
+1132,Sicilian Defense: Classical Variation,72.07692307692308,42.857142857142854,50.0,14
+1133,Sicilian Defense: Classical Variation |  Anti-Sozin Variation,126.0,33.333333333333336,33.333333333333336,3
+1134,Sicilian Defense: Closed,9.444444444444445,35.0,55.0,20
+1135,Sicilian Defense: Closed #2,243.66666666666666,100.0,0.0,6
+1136,Sicilian Defense: Closed Variation,36.19607843137255,51.851851851851855,42.592592592592595,54
+1137,Sicilian Defense: Closed Variation |  Chameleon Variation,-42.0,0.0,100.0,1
+1138,Sicilian Defense: Closed Variation |  Fianchetto Variation,70.25,80.0,0.0,5
+1139,Sicilian Defense: Closed Variation |  Korchnoi Defense,82.0,0.0,100.0,1
+1140,Sicilian Defense: Closed Variation |  Traditional,51.642857142857146,41.86046511627907,55.81395348837209,43
+1141,Sicilian Defense: Delayed Alapin,15.40625,41.1764705882353,52.94117647058823,34
+1142,Sicilian Defense: Delayed Alapin Variation,-30.285714285714285,37.5,50.0,16
+1143,Sicilian Defense: Double-Dutch Gambit,2.0,0.0,100.0,1
+1144,Sicilian Defense: Dragon Variation,7.545454545454546,54.54545454545455,45.45454545454545,11
+1145,Sicilian Defense: Dragon Variation |  Classical Variation,0.0,0.0,100.0,1
+1146,Sicilian Defense: Dragon Variation |  Classical Variation #2,-39.333333333333336,50.0,50.0,6
+1147,Sicilian Defense: Dragon Variation |  Classical Variation |  Normal Line,-113.0,100.0,0.0,1
+1148,Sicilian Defense: Dragon Variation |  Fianchetto Variation,-143.0,0.0,100.0,1
+1149,Sicilian Defense: Dragon Variation |  Levenfish Variation,106.0,100.0,0.0,1
+1150,Sicilian Defense: Dragon Variation |  Levenfish Variation |  Main Line,-167.0,0.0,100.0,1
+1151,Sicilian Defense: Dragon Variation |  Modern Bc4 Variation,146.0,33.333333333333336,66.66666666666667,3
+1152,Sicilian Defense: Dragon Variation |  Yugoslav Attack,11.0,50.0,0.0,4
+1153,Sicilian Defense: Dragon Variation |  Yugoslav Attack #2,164.0,50.0,50.0,2
+1154,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Belezky Line,256.0,0.0,100.0,1
+1155,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Early Deviations,-7.0,100.0,0.0,1
+1156,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Main Line,24.333333333333332,33.333333333333336,66.66666666666667,3
+1157,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Modern Line,-35.0,50.0,50.0,2
+1158,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Old Line,,0.0,0.0,1
+1159,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Panov Variation,24.0,100.0,0.0,1
+1160,Sicilian Defense: Dragon Variation |  Yugoslav Attack |  Sosonko Variation,-70.0,100.0,0.0,1
+1161,Sicilian Defense: Dragon |  6.Be3,27.0,55.55555555555556,33.333333333333336,9
+1162,Sicilian Defense: Dragon |  Classical Attack,132.0,66.66666666666667,33.333333333333336,3
+1163,Sicilian Defense: Drazic Variation,57.8,80.0,20.0,5
+1164,Sicilian Defense: Flohr Variation,426.0,0.0,66.66666666666667,3
+1165,Sicilian Defense: Four Knights Variation,19.2,100.0,0.0,5
+1166,Sicilian Defense: Four Knights Variation |  Exchange Variation,-285.0,0.0,100.0,1
+1167,Sicilian Defense: Franco-Sicilian Variation,40.9375,70.58823529411765,23.529411764705884,17
+1168,Sicilian Defense: French Variation,127.85416666666667,36.53846153846154,55.76923076923077,52
+1169,Sicilian Defense: French Variation |  Normal,24.0,0.0,100.0,4
+1170,Sicilian Defense: French Variation |  Open,25.25,33.333333333333336,33.333333333333336,6
+1171,Sicilian Defense: French Variation |  Westerinen Attack,222.0,100.0,0.0,2
+1172,Sicilian Defense: Godiva Variation,3.25,40.0,40.0,5
+1173,Sicilian Defense: Grand Prix Attack,28.77777777777778,50.0,25.0,12
+1174,Sicilian Defense: Hyperaccelerated Dragon,98.8125,56.25,43.75,16
+1175,Sicilian Defense: Hyperaccelerated Fianchetto,0.0,44.44444444444444,55.55555555555556,9
+1176,Sicilian Defense: Hyperaccelerated Pterodactyl,303.75,50.0,50.0,4
+1177,Sicilian Defense: Jalalabad Variation,116.42857142857143,71.42857142857143,28.571428571428573,7
+1178,Sicilian Defense: Kalashnikov Variation,61.8,70.0,30.0,10
+1179,Sicilian Defense: Kan Variation,141.28571428571428,28.571428571428573,71.42857142857143,7
+1180,Sicilian Defense: Kan Variation |  Knight Variation,167.06666666666666,40.0,60.0,15
+1181,Sicilian Defense: Kan Variation |  Maroczy Bind |  Reti Variation,-145.0,50.0,0.0,2
+1182,Sicilian Defense: Kan Variation |  Modern Variation,2.857142857142857,57.142857142857146,42.857142857142854,7
+1183,Sicilian Defense: Kan Variation |  Polugaevsky Variation,77.0,100.0,0.0,1
+1184,Sicilian Defense: Kan Variation |  Wing Attack,121.625,12.5,87.5,8
+1185,Sicilian Defense: Katalimov Variation,-5.25,25.0,75.0,4
+1186,Sicilian Defense: Keres Variation,-19.0,100.0,0.0,2
+1187,Sicilian Defense: Kramnik Variation,135.2,20.0,80.0,5
+1188,Sicilian Defense: Kronberger Variation,236.0,0.0,100.0,2
+1189,Sicilian Defense: Kupreichik Variation,-229.0,100.0,0.0,1
+1190,Sicilian Defense: Kveinis Variation,5.0,0.0,100.0,1
+1191,Sicilian Defense: Lasker-Dunne Attack,119.0,22.22222222222222,55.55555555555556,9
+1192,Sicilian Defense: Lasker-Pelikan Variation,187.0,60.0,40.0,5
+1193,Sicilian Defense: Lasker-Pelikan Variation |  Bird Variation,-3.0,100.0,0.0,1
+1194,Sicilian Defense: Lasker-Pelikan Variation |  Exchange Variation,327.5,0.0,100.0,4
+1195,Sicilian Defense: Lasker-Pelikan Variation |  Retreat Variation,74.4,80.0,20.0,5
+1196,Sicilian Defense: Lasker-Pelikan Variation |  Schlechter Variation,50.875,62.5,37.5,8
+1197,Sicilian Defense: Lasker-Pelikan Variation |  Sveshnikov Variation |  Chelyabinsk Variation,-26.0,50.0,50.0,2
+1198,Sicilian Defense: Loewenthal Variation,139.55172413793105,46.666666666666664,50.0,30
+1199,Sicilian Defense: Magnus Smith Trap,81.0,100.0,0.0,2
+1200,Sicilian Defense: Marshall Counterattack,-0.6666666666666666,40.0,20.0,5
+1201,Sicilian Defense: McDonnell Attack,51.310344827586206,47.540983606557376,47.540983606557376,61
+1202,Sicilian Defense: McDonnell Attack |  Tal Gambit,106.0,0.0,100.0,2
+1203,Sicilian Defense: Mengarini Variation,132.8,80.0,20.0,5
+1204,Sicilian Defense: Modern Variations,-15.0,50.0,25.0,4
+1205,Sicilian Defense: Modern Variations |  Anti-Qxd4 Move Order,177.25,50.0,50.0,4
+1206,Sicilian Defense: Modern Variations |  Main Line,60.28,28.0,72.0,25
+1207,Sicilian Defense: Modern Variations |  Tartakower,-10.5,100.0,0.0,2
+1208,Sicilian Defense: Morphy Gambit,-9.0,0.0,100.0,2
+1209,Sicilian Defense: Morphy Gambit |  Andreaschek Gambit,-253.66666666666666,100.0,0.0,3
+1210,Sicilian Defense: Myers Attack,-171.0,0.0,100.0,1
+1211,Sicilian Defense: Najdorf Variation,98.56862745098039,51.92307692307692,46.15384615384615,52
+1212,Sicilian Defense: Najdorf Variation |  Adams Attack,45.8,100.0,0.0,5
+1213,Sicilian Defense: Najdorf Variation |  Amsterdam Variation,99.66666666666667,50.0,50.0,6
+1214,Sicilian Defense: Najdorf Variation |  English Attack,127.47058823529412,58.8235294117647,41.1764705882353,17
+1215,Sicilian Defense: Najdorf Variation |  English Attack |  Anti-English,,0.0,0.0,1
+1216,Sicilian Defense: Najdorf Variation |  Neo-Classical Defense,,0.0,0.0,1
+1217,Sicilian Defense: Najdorf Variation |  Opocensky Variation,33.57142857142857,57.142857142857146,42.857142857142854,7
+1218,Sicilian Defense: Najdorf Variation |  Opocensky Variation |  Modern Line,100.5,100.0,0.0,2
+1219,Sicilian Defense: Najdorf Variation |  Opocensky Variation |  Traditional Line,-8.0,100.0,0.0,1
+1220,Sicilian Defense: Najdorf Variation |  Polugaevsky Variation,-75.0,100.0,0.0,1
+1221,Sicilian Defense: Najdorf Variation |  Scheveningen Variation,192.0,100.0,0.0,1
+1222,Sicilian Defense: Najdorf Variation |  Zagreb (Fianchetto) Variation,290.0,50.0,50.0,2
+1223,Sicilian Defense: Najdorf |  Lipnitsky Attack,97.65384615384616,40.74074074074074,55.55555555555556,27
+1224,Sicilian Defense: Nimzowitsch Variation,26.5,50.0,50.0,2
+1225,Sicilian Defense: Nimzowitsch Variation |  Advance Variation,74.0,57.142857142857146,42.857142857142854,7
+1226,Sicilian Defense: Nimzowitsch Variation |  Closed Variation,183.0,85.71428571428571,14.285714285714286,7
+1227,Sicilian Defense: Nimzowitsch Variation |  Main Line,199.0,100.0,0.0,1
+1228,Sicilian Defense: Nyezhmetdinov-Rossolimo Attack,79.5,56.52173913043478,43.47826086956522,46
+1229,Sicilian Defense: Nyezhmetdinov-Rossolimo Attack |  Fianchetto Variation,41.4,80.0,20.0,10
+1230,Sicilian Defense: O'Kelly Variation,225.0,0.0,100.0,3
+1231,Sicilian Defense: O'Kelly Variation |  Maroczy Bind |  Paulsen Line,264.0,0.0,100.0,1
+1232,Sicilian Defense: O'Kelly Variation |  Normal System,77.0,0.0,100.0,1
+1233,Sicilian Defense: O'Kelly Variation |  Normal System |  Taimanov Line,-64.4,60.0,40.0,5
+1234,Sicilian Defense: O'Kelly Variation |  Reti System,-35.0,0.0,100.0,1
+1235,Sicilian Defense: O'Kelly Variation |  Venice System,0.0,0.0,50.0,2
+1236,Sicilian Defense: O'Kelly Variation |  Venice System |  Ljubojevic Line,110.0,0.0,100.0,1
+1237,Sicilian Defense: O'Kelly Variation |  Yerevan System,1.1666666666666667,50.0,50.0,6
+1238,Sicilian Defense: Old Sicilian,62.85820895522388,36.69064748201439,59.71223021582734,139
+1239,Sicilian Defense: Open,150.71428571428572,77.27272727272727,18.181818181818183,22
+1240,Sicilian Defense: Open #2,37.0,50.0,0.0,2
+1241,Sicilian Defense: Open #3,14.533333333333333,46.875,46.875,32
+1242,Sicilian Defense: Paulsen Variation,68.78260869565217,20.0,72.0,25
+1243,Sicilian Defense: Paulsen Variation |  Bastrikov Variation,-32.75,60.0,20.0,5
+1244,Sicilian Defense: Paulsen Variation |  Bastrikov Variation |  English Attack,40.0,0.0,100.0,1
+1245,Sicilian Defense: Paulsen Variation |  Normal Variation,144.85714285714286,75.0,12.5,8
+1246,Sicilian Defense: Paulsen Variation |  Szen Variation,-49.0,60.0,0.0,5
+1247,Sicilian Defense: Paulsen-Basman Defense,-126.33333333333333,0.0,100.0,3
+1248,Sicilian Defense: Pin Variation,-17.833333333333332,66.66666666666667,33.333333333333336,6
+1249,Sicilian Defense: Pin Variation |  Koch Variation,70.0,100.0,0.0,1
+1250,Sicilian Defense: Prins Variation,-3.0,66.66666666666667,33.333333333333336,3
+1251,Sicilian Defense: Quinteros Variation,133.0,50.0,0.0,2
+1252,Sicilian Defense: Richter-Rauzer Variation,191.0,100.0,0.0,1
+1253,Sicilian Defense: Richter-Rauzer Variation |  Vitolins Variation,-106.0,0.0,100.0,1
+1254,Sicilian Defense: Scheveningen Variation,35.42857142857143,57.142857142857146,42.857142857142854,7
+1255,Sicilian Defense: Scheveningen Variation |  Classical Variation,123.28571428571429,42.857142857142854,57.142857142857146,7
+1256,Sicilian Defense: Scheveningen Variation |  Classical Variation #2,-70.0,50.0,50.0,2
+1257,Sicilian Defense: Scheveningen Variation |  Delayed Keres Attack,-60.0,100.0,0.0,1
+1258,Sicilian Defense: Scheveningen Variation |  English Attack,102.0,100.0,0.0,1
+1259,Sicilian Defense: Scheveningen Variation |  English Attack #2,-47.666666666666664,0.0,100.0,3
+1260,Sicilian Defense: Scheveningen Variation |  Keres Attack,407.0,100.0,0.0,1
+1261,Sicilian Defense: Scheveningen Variation |  Matanovic Attack,292.0,50.0,50.0,2
+1262,Sicilian Defense: Scheveningen Variation |  Modern Variation,152.0,100.0,0.0,1
+1263,Sicilian Defense: Scheveningen Variation |  Vitolins Variation,-238.0,100.0,0.0,1
+1264,Sicilian Defense: Smith-Morra Gambit,30.74074074074074,62.96296296296296,37.03703703703704,27
+1265,Sicilian Defense: Smith-Morra Gambit #2,100.45977011494253,48.91304347826087,45.65217391304348,92
+1266,Sicilian Defense: Smith-Morra Gambit Accepted |  Fianchetto Defense,-117.0,100.0,0.0,1
+1267,Sicilian Defense: Smith-Morra Gambit Accepted |  Kan Formation,331.0,100.0,0.0,2
+1268,Sicilian Defense: Smith-Morra Gambit Accepted |  Morphy Defense,86.0,100.0,0.0,1
+1269,Sicilian Defense: Smith-Morra Gambit Accepted |  Paulsen Formation,-11.0,50.0,50.0,2
+1270,Sicilian Defense: Smith-Morra Gambit Accepted |  Pin Defense,49.333333333333336,33.333333333333336,66.66666666666667,3
+1271,Sicilian Defense: Smith-Morra Gambit Accepted |  Scheveningen Formation,-35.25,20.0,60.0,5
+1272,Sicilian Defense: Smith-Morra Gambit Declined |  Push Variation,-17.0,100.0,0.0,1
+1273,Sicilian Defense: Smith-Morra Gambit Declined |  Scandinavian Formation,607.0,0.0,100.0,1
+1274,Sicilian Defense: Smith-Morra Gambit Declined |  Wing Formation,-105.0,0.0,100.0,1
+1275,Sicilian Defense: Smith-Morra Gambit Deferred,54.0,0.0,100.0,1
+1276,Sicilian Defense: Snyder Variation,27.666666666666668,22.22222222222222,77.77777777777777,9
+1277,Sicilian Defense: Sozin Attack,77.6,40.0,60.0,5
+1278,Sicilian Defense: Sozin Attack |  Flank Variation,95.0,100.0,0.0,2
+1279,Sicilian Defense: Sozin Attack |  Leonhardt Variation,-3.5,0.0,100.0,4
+1280,Sicilian Defense: Sozin |  not Scheveningen,10.0,50.0,0.0,2
+1281,Sicilian Defense: Spielmann Variation,20.0,0.0,100.0,1
+1282,Sicilian Defense: Staunton-Cochrane Variation,105.4047619047619,41.30434782608695,50.0,46
+1283,Sicilian Defense: Venice Attack,365.5,50.0,50.0,2
+1284,Sicilian Defense: Wing Gambit,42.0,60.0,40.0,5
+1285,Sicilian Defense: Wing Gambit Deferred,122.0,0.0,100.0,1
+1286,Sicilian Defense: Wing Gambit |  Carlsbad Variation,86.2,60.0,40.0,5
+1287,Sicilian Defense: Wing Gambit |  Deferred Variation,-174.5,50.0,50.0,2
+1288,Sicilian Defense: Wing Gambit |  Marshall Variation,183.625,25.0,75.0,8
+1289,Slav Defense,108.63333333333334,39.39393939393939,51.515151515151516,33
+1290,Slav Defense #2,114.24242424242425,37.83783783783784,51.351351351351354,37
+1291,Slav Defense #3,79.72727272727273,45.45454545454545,54.54545454545455,11
+1292,Slav Defense: Alekhine Variation,-42.0,0.0,100.0,1
+1293,Slav Defense: Bonet Gambit,264.4,33.333333333333336,50.0,6
+1294,Slav Defense: Chameleon Variation,344.0,50.0,50.0,2
+1295,Slav Defense: Czech Variation,-72.0,50.0,50.0,2
+1296,Slav Defense: Czech Variation |  Classical System,64.5,50.0,50.0,2
+1297,Slav Defense: Czech Variation |  Wiesbaden Variation,71.5,0.0,100.0,2
+1298,Slav Defense: Diemer Gambit,41.0,100.0,0.0,1
+1299,Slav Defense: Exchange Variation,108.21428571428571,28.571428571428573,71.42857142857143,14
+1300,Slav Defense: Exchange Variation |  Schallopp Variation,-43.666666666666664,20.0,40.0,5
+1301,Slav Defense: Exchange Variation |  Symmetrical Line,-417.5,50.0,50.0,2
+1302,Slav Defense: Geller Gambit #2,-195.0,0.0,100.0,1
+1303,Slav Defense: Modern,222.0,100.0,0.0,4
+1304,Slav Defense: Modern Line,104.16666666666667,47.36842105263158,47.36842105263158,19
+1305,Slav Defense: Quiet Variation,-31.333333333333332,33.333333333333336,66.66666666666667,6
+1306,Slav Defense: Quiet Variation |  Pin Defense,148.375,50.0,30.0,10
+1307,Slav Defense: Quiet Variation |  Schallopp Defense,203.0,50.0,50.0,6
+1308,Slav Defense: Schlechter Variation,10.666666666666666,66.66666666666667,33.333333333333336,3
+1309,Slav Defense: Slav Gambit |  Alekhine Attack,-11.5,100.0,0.0,2
+1310,Slav Defense: Soultanbeieff Variation,41.0,100.0,0.0,1
+1311,Slav Defense: Three Knights Variation,110.61290322580645,57.57575757575758,36.36363636363637,33
+1312,Slav Defense: Two Knights Attack,-52.0,100.0,0.0,1
+1313,Slav Defense: Winawer Countergambit,-20.0,0.0,100.0,1
+1314,Slav Indian,74.75,0.0,100.0,4
+1315,Sodium Attack,83.0,50.0,50.0,2
+1316,St. George Defense,155.51351351351352,55.0,37.5,40
+1317,St. George Defense: Woodchuck Variation,147.0,100.0,0.0,1
+1318,St. George Defense: Zilbermints Gambit,38.0,0.0,100.0,1
+1319,System: Double Duck Formation,213.0,0.0,100.0,1
+1320,Tarrasch Defense,-70.33333333333333,50.0,50.0,6
+1321,Tarrasch Defense: Classical Variation,154.0,0.0,100.0,2
+1322,Tarrasch Defense: Classical Variation |  Advance Variation,217.0,0.0,100.0,1
+1323,Tarrasch Defense: Symmetrical Variation,81.75,37.5,62.5,8
+1324,Tarrasch Defense: Two Knights Variation,163.75,75.0,25.0,4
+1325,Three Knights Opening,33.53125,54.54545454545455,42.42424242424242,66
+1326,Three Knights Opening #2,63.916666666666664,33.333333333333336,66.66666666666667,12
+1327,Three Knights Opening: Schlechter Variation,360.0,100.0,0.0,1
+1328,Three Knights Opening: Steinitz Defense,10.0,33.333333333333336,0.0,3
+1329,Three Knights Opening: Winawer Defense,79.0,0.0,100.0,4
+1330,Torre Attack,7.2727272727272725,66.66666666666667,25.0,12
+1331,Torre Attack #2,82.66666666666667,33.333333333333336,66.66666666666667,12
+1332,Torre Attack: Classical Defense |  Nimzowitsch Variation,69.0,0.0,100.0,3
+1333,Trompowsky Attack,-19.2,58.8235294117647,29.41176470588235,17
+1334,Trompowsky Attack: Classical Defense,-74.5,50.0,50.0,2
+1335,Trompowsky Attack: Classical Defense |  Big Center Variation,30.6,80.0,20.0,5
+1336,Valencia Opening,328.0,0.0,100.0,1
+1337,Van Geet Opening,173.7826086956522,39.130434782608695,60.869565217391305,23
+1338,Van Geet Opening: Berlin Gambit,-12.0,0.0,100.0,1
+1339,Van Geet Opening: Dunst-Perrenet Gambit,-79.0,50.0,25.0,4
+1340,Van Geet Opening: Napoleon Attack,-119.75,50.0,50.0,4
+1341,Van Geet Opening: Reversed Nimzowitsch,303.0,37.5,50.0,8
+1342,Van Geet Opening: Sicilian Two Knights,-143.0,0.0,100.0,1
+1343,Van't Kruijs Opening,153.0,31.493506493506494,64.28571428571429,308
+1344,Vienna Game,65.6923076923077,53.84615384615385,46.15384615384615,26
+1345,Vienna Game #2,108.33333333333333,66.66666666666667,33.333333333333336,3
+1346,Vienna Game: Anderssen Defense,89.22222222222223,40.0,50.0,10
+1347,Vienna Game: Falkbeer Variation,182.0,70.0,30.0,10
+1348,Vienna Game: Max Lange Defense,58.57142857142857,42.857142857142854,57.142857142857146,7
+1349,Vienna Game: Mengarini Variation,28.25,50.0,50.0,4
+1350,Vienna Game: Mieses Variation,436.0,0.0,66.66666666666667,3
+1351,Vienna Game: Omaha Gambit,124.0,100.0,0.0,1
+1352,Vienna Game: Paulsen Variation,1.0,33.333333333333336,66.66666666666667,3
+1353,Vienna Game: Stanley Variation,50.21739130434783,56.52173913043478,43.47826086956522,23
+1354,Vienna Game: Stanley Variation |  Reversed Spanish,65.8,50.0,50.0,10
+1355,Vienna Game: Vienna Gambit,137.57142857142858,85.71428571428571,14.285714285714286,7
+1356,Vienna Game: Vienna Gambit |  Main Line,356.0,50.0,50.0,2
+1357,Vienna Game: Zhuravlev Countergambit #2,-25.8,60.0,40.0,5
+1358,Wade Defense,28.0,50.0,50.0,2
+1359,Ware Defense,33.888888888888886,66.66666666666667,33.333333333333336,9
+1360,Ware Opening,289.5263157894737,36.8421052631579,63.1578947368421,19
+1361,Yusupov-Rubinstein System,-57.05882352941177,47.05882352941177,52.94117647058823,17
+1362,Zukertort Opening,307.0,100.0,0.0,1
+1363,Zukertort Opening: Arctic Defense,72.83333333333333,33.333333333333336,66.66666666666667,6
+1364,Zukertort Opening: Black Mustang Defense,160.6086956521739,43.47826086956522,56.52173913043478,23
+1365,Zukertort Opening: Double Fianchetto Attack,378.0,100.0,0.0,1
+1366,Zukertort Opening: Dutch Variation,73.14285714285714,100.0,0.0,7
+1367,Zukertort Opening: Kingside Fianchetto,81.13333333333334,53.333333333333336,46.666666666666664,15
+1368,Zukertort Opening: Lisitsyn Gambit,-12.5,50.0,50.0,2
+1369,Zukertort Opening: Nimzo-Larsen Variation,190.5,50.0,50.0,2
+1370,Zukertort Opening: Old Indian Attack,48.4,20.0,80.0,5
+1371,Zukertort Opening: Pirc Invitation,136.73684210526315,52.63157894736842,47.36842105263158,19
+1372,Zukertort Opening: Polish Defense,-18.5,0.0,100.0,2
+1373,Zukertort Opening: Queen's Gambit Invitation,100.86842105263158,68.29268292682927,24.390243902439025,41
+1374,Zukertort Opening: Queenside Fianchetto Variation,91.36363636363636,57.142857142857146,21.428571428571427,14
+1375,Zukertort Opening: Quiet System,-117.66666666666667,66.66666666666667,33.333333333333336,3
+1376,Zukertort Opening: Reversed Mexican Defense,103.36363636363636,54.54545454545455,45.45454545454545,11
+1377,Zukertort Opening: Ross Gambit,190.0,90.9090909090909,9.090909090909092,11
+1378,Zukertort Opening: Santasiere's Folly,143.0,50.0,50.0,2
+1379,Zukertort Opening: Sicilian Invitation,126.26923076923077,48.275862068965516,41.37931034482759,29
+1380,Zukertort Opening: Slav Invitation,230.5,87.5,12.5,8
+1381,Zukertort Opening: Tennison Gambit,132.21212121212122,47.22222222222222,44.44444444444444,36
+1382,Zukertort Opening: The Walrus,815.0,100.0,0.0,1
+1383,Zukertort Opening: Vos Gambit,182.0,33.333333333333336,33.333333333333336,3
