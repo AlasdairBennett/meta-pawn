@@ -19,4 +19,4 @@ if __name__ == "__main__":
     opening_data = pd.merge(avg_delta_table, win_rate_table, on='opening_name')
     opening_data = pd.merge(opening_data, avg_rating_table, on='opening_name')
 
-    opening_data.to_csv('project/static/openings.csv')
+    opening_data.to_csv('project/static/openings.csv', index=False)
