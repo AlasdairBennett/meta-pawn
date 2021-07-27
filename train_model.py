@@ -38,4 +38,3 @@ if __name__ == '__main__':
     kmeans = KMeans(n_clusters=n)
     kmeans.fit(scaled_features)
     pickle.dump(kmeans, open("project/static/model/kmeans_model.pkl", "wb"))
-
