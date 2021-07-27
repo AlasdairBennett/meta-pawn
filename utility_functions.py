@@ -166,6 +166,7 @@ def get_opening_outliers(games_set):
 
 
 # Get winning plot
+# Reference from https://stackoverflow.com/questions/32891211/limit-the-number-of-groups-shown-in-seaborn-countplot
 def get_winning_countplot(games_set):
     plot = sns.countplot(y="opening_name", data=games_set, order=games_set.opening_name.value_counts().iloc[:10].index)
     plot.set(xlabel = "Win Count", ylabel = "Opening Name", title="Top 10 Openings")
