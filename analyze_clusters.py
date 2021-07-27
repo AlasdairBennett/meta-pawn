@@ -1,8 +1,7 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import pickle
+import numpy as np
 
 if __name__ == '__main__':
     print("running...")
@@ -14,3 +13,10 @@ if __name__ == '__main__':
     openings = openings.assign(cluster=kmeans.labels_)
 
     print(openings)
+    u_labels = np.unique(kmeans.labels_)
+
+    for i in u_labels:
+        plt.scatter(openings[openings['cluster'] == i, openings['avg_rating_delta']],
+                    openings[openings['cluster'] == i, openings['n_games_played']])
+    plt.legend()
+    plt.show()
