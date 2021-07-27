@@ -2,9 +2,10 @@ import numpy as np
 import pandas as pd
 
 
-# get_games returns a dataframe containing only the data of ranked games
-def get_games():
-    games = pd.read_csv('project/static/games.csv')
+# get_games takes the name of a file containing chess game data and returns a dataframe containing
+#   only the data of ranked games in that file
+def get_games(filename='project/static/games.csv'):
+    games = pd.read_csv(filename)
 
     # prune the unranked games from the data set
     ranked_games = games[games['rated']]

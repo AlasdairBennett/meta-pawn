@@ -23,7 +23,14 @@ def stats_teardown_request(error=None):
 @stats_blueprint.route('/')
 def index():
     current_app.logger.info('Calling the index() function.')
+
+    df = app.win_table_1
+
+    # get table headers and rows
+    columns = df.columns
+    rows = df.values
+
     return render_template('stats/index.html',
-                           # Add table of all chess games with custom boostrap classes for formatting
-                           chesstable=[app.win_table_1],
-                           titles=app.chess_games.columns.values)
+                           columns=columns,
+                           rows=rows)
+
