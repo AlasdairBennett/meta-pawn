@@ -11,6 +11,7 @@ app = create_app()
 chess_games = uf.get_games('project/static/games.csv')
 win_table_1 = uf.get_win_rate_table(uf.get_rel_game_set(chess_games, 1000))
 
+# Inclusive of ALL data
 beginner_white_games = uf.get_beginner_white_games(chess_games)
 beginner_black_games = uf.get_beginner_black_games(chess_games)
 
@@ -28,14 +29,13 @@ if __name__ == "__main__":
     pd.set_option('display.max_columns', 20)
     pd.set_option('display.max_rows', 20)
     pd.set_option('display.width', 10000)
-
-    print(uf.get_win_rate_table(chess_games))
     
     print("Beginner white games:")
     beginner_white_avg_delta = uf.get_avg_delta(beginner_white_games)
     print(beginner_white_games.sample(10))
     print(beginner_white_avg_delta.sample(10))
+    
     uf.get_winning_countplot(beginner_white_games)
-    
-    print(uf.get_opening_outliers(chess_games))
-    
+    uf.get_winning_countplot(advanced_white_games)
+    uf.get_rating_scatterplot(chess_games, 1000, "white_rating")
+        
