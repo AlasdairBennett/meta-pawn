@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
@@ -161,3 +163,22 @@ def get_opening_outliers(games_set):
 
     return opening_freq[(opening_freq.values < l_quantile - 1.5 * interquartile_r)
                         | (opening_freq.values > h_quantile + 1.5 * interquartile_r)].index
+
+
+# Get winning plot
+# Reference from https://stackoverflow.com/questions/32891211/limit-the-number-of-groups-shown-in-seaborn-countplot
+def get_winning_countplot(games_set):
+    plot = sns.countplot(y="opening_name", data=games_set, order=games_set.opening_name.value_counts().iloc[:10].index)
+    plot.set(xlabel = "Win Count", ylabel = "Opening Name", title="Top 10 Openings")
+    plot.set_yticklabels(plot.get_yticklabels(), fontsize=6)
+    plt.show()
+
+# Display rating scatterplot
+# Reference from https://stackoverflow.com/questions/58476654/how-to-remove-or-hide-x-axis-labels-from-a-seaborn-matplotlib-plot
+def get_rating_scatterplot(games_set, elo, rating):
+    set_data = get_rel_game_set(games_set, elo)
+    plot = sns.scatterplot(data=set_data, x="id", y=rating)
+    plot.set(xticklabels=[])
+    plt.xlim(0, None)
+    plt.ylim(0, 3000)      
+    plt.show()
