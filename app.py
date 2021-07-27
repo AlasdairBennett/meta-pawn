@@ -47,8 +47,12 @@ if __name__ == "__main__":
     advanced_black_games = uf.get_advanced_black_games(chess_games)
     #print(advanced_black_games.sample(10))
     
-    sns.scatterplot(data=beginner_white_games, x="white_rating", y="opening_ply")
-    plt.show()
+    #sns.scatterplot(data=beginner_white_games, x="white_rating", y="opening_ply")
+    #plt.show()
 
-    sns.pairplot(uf.get_win_rate_table(chess_games))
-    plt.show()
+    #sns.pairplot(uf.get_win_rate_table(chess_games))
+    #plt.show()
+    
+    uf.get_winning_countplot(beginner_white_games)
+    uf.get_winning_countplot(beginner_black_games)
+

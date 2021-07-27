@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
@@ -161,3 +163,11 @@ def get_opening_outliers(games_set):
 
     return opening_freq[(opening_freq.values < l_quantile - 1.5 * interquartile_r)
                         | (opening_freq.values > h_quantile + 1.5 * interquartile_r)].index
+
+
+# Get winning plot
+def get_winning_countplot(games_set):
+    plot = sns.countplot(y="opening_name", data=games_set, order=games_set.opening_name.value_counts().iloc[:10].index)
+    plot.set(xlabel = "Win Count", ylabel = "Opening Name", title="Top 10 Openings")
+    plot.set_yticklabels(plot.get_yticklabels(), fontsize=6)
+    plt.show()
