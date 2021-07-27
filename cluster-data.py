@@ -1,7 +1,10 @@
+import pickle
+
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
+from kneed import KneeLocator
 
 if __name__ == '__main__':
     print("running...")
@@ -20,14 +23,19 @@ if __name__ == '__main__':
         "random_state": 88,
     }
     sse = []
-    for k in range(1, 20):
-        kmeans = KMeans(n_clusters=k)
+    for k in range(1, 21):
+        kmeans = KMeans(n_clusters=k, **kmeans_kwargs)
         kmeans.fit(scaled_features)
         sse.append(kmeans.inertia_)
 
-    plt.style.use("fivethirtyeight")
-    plt.plot(range(1, 20), sse)
-    plt.xticks(range(1, 20))
+    plt.plot(range(1, 21), sse)
+    plt.xticks(range(1, 21))
     plt.xlabel("Number of Clusters")
     plt.ylabel("SSE")
     plt.show()
+    kl = KneeLocator(range(1, 21), sse, curve="convex", direction="decreasing")
+    n = kl.elbow
+    kmeans = KMeans(n_clusters=n)
+    kmeans.fit(scaled_features)
+    pickle.dump(kmeans, open("project/static/model/kmeans_model.pkl", "wb"))
+
