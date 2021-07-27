@@ -50,9 +50,5 @@ if __name__ == "__main__":
     sns.scatterplot(data=beginner_white_games, x="white_rating", y="opening_ply")
     plt.show()
 
-    print(chess_games.columns)
-
-    print(uf.get_rel_game_set(chess_games, 1500).sample(20))
-
     sns.pairplot(uf.get_win_rate_table(chess_games))
     plt.show()
