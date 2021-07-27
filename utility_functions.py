@@ -171,6 +171,7 @@ def get_winning_countplot(games_set):
     plot = sns.countplot(y="opening_name", data=games_set, order=games_set.opening_name.value_counts().iloc[:10].index)
     plot.set(xlabel = "Win Count", ylabel = "Opening Name", title="Top 10 Openings")
     plot.set_yticklabels(plot.get_yticklabels(), fontsize=6)
+    plt.savefig("project/static/img/winningcountplot.png")
     plt.show()
 
 # Display rating scatterplot
@@ -180,5 +181,6 @@ def get_rating_scatterplot(games_set, elo, rating):
     plot = sns.scatterplot(data=set_data, x="id", y=rating)
     plot.set(xticklabels=[])
     plt.xlim(0, None)
-    plt.ylim(0, 3000)      
+    plt.ylim(0, 3000)
+    plt.savefig("project/static/img/ratingscatterplot.png")      
     plt.show()
