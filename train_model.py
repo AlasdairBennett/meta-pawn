@@ -57,9 +57,6 @@ if __name__ == '__main__':
     w_data_set = openings_features[openings_features['w_win_rate'] >= openings_features['b_win_rate']]
     b_data_set = openings_features[openings_features['w_win_rate'] <= openings_features['b_win_rate']]
 
-    print(len(w_data_set))
-    print(len(b_data_set))
-
     w_model = train_model(w_data_set)
     b_model = train_model(b_data_set)
 
