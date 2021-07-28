@@ -23,7 +23,11 @@
 
         <!-- Include JQuery -->
         <script src="{{ url_for('static', filename='scripts/jquery.js') }}"></script>
-        <script src="// code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+        <!-- Make a global variable with the prefix to the root of the application -->
+        <script type=text/javascript>
+            $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+        </script>
 
         <title>Meta-Pawn</title>
     </head>
@@ -33,15 +37,6 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Meta-Pawn</a>
-<!--            <button class="navbar-toggler"-->
-<!--                    type="button"-->
-<!--                    data-bs-toggle="collapse"-->
-<!--                    data-bs-target="#navbarCollapse"-->
-<!--                    aria-controls="navbarCollapse"-->
-<!--                    aria-expanded="false"-->
-<!--                    aria-label="Toggle navigation">-->
-<!--              <span class="navbar-toggler-icon"></span>-->
-<!--            </button>-->
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">

@@ -12,48 +12,13 @@
 
     <body>
 
+        <!-- Display header with dynamically updating elo value -->
         <h2 id="eloHeader">Win Rate of openings by colour for elo <output></output>:</h2>
-        <output></output>
         <input type="range" class="form-range" min="0" max="5000" step="100">
-        <script>
-        $(function() {
-            var $document = $(document);
-            var selector = '[data-rangeslider]';
-            var $element = $(selector);
+        <input type="button" class="ui-button" value="Refresh Table" id="refresh_button">
 
-            var textContent = ('textContent' in document) ? 'textContent' : 'innerText';
-
-            function valueOutput(element) {
-                var value = element.value;
-                var output = element.parentNode.getElementsByTagName('output')[0] ||
-                    element.parentNode.parentNode.getElementsByTagName('output')[0];
-                output[textContent] = value;
-            }
-
-            $document.on('input', 'input[type="range"], ' + selector, function(e) {
-                valueOutput(e.target);
-            });
-
-            $element.rangeslider({
-                polyfill: false,
-
-                onInit: function() {
-                    valueOutput(this.$element[0]);
-                },
-
-                onSlide: function(position, value) {
-                    console.log('onSlide');
-                    console.log('position: ' + position, 'value: ' + value);
-                },
-
-                onSlideEnd: function(position, value) {
-                    console.log('onSlideEnd');
-                    console.log('position: ' + position, 'value: ' + value)
-                }
-            });
-        });
-        </script>
-        <table class="table table-dark table-hover table-striped">
+        <!-- Display the dynamically updating table element -->
+        <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
             <thead>
                 <tr>
                     {% for column in columns %}
@@ -71,6 +36,46 @@
                 {% endfor %}
             </tbody>
         </table>
+
+        <!-- Script which enables dynamic updating of both header and table with slider value -->
+        {% block script %}
+            <script>
+
+                $(function() {
+                    var $document = $(document);
+                    var selector = '[data-rangeslider]';
+                    var $element = $(selector);
+
+                    var textContent = ('textContent' in document) ? 'textContent' : 'innerText';
+
+                    function valueOutput(element) {
+                        var value = element.value;
+                        var output = element.parentNode.getElementsByTagName('output')[0]
+                        output[textContent] = value;
+                    }
+
+                    $document.on('input', 'input[type="range"], ' + selector, function(e) {
+                        valueOutput(e.target);
+                    });
+
+
+                });
+
+                <!-- This part updates the table when the refresh button is clicked -->
+                $("#refresh_button").on("click", function() {
+                    $.getJSON(
+                        $SCRIPT_ROOT+"/_update_table",
+                        function(data) {
+                            console.log(data)
+                        {#    TODO: use `data` to repopulate the table with the newly updated information#}
+                        }
+                    );
+
+                    console.log("refresh!!")
+
+                });
+            </script>
+        {% endblock %}
     </body>
 </div>
 {% endblock %}

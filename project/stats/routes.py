@@ -1,6 +1,7 @@
 import app
+import pandas as pd
 from . import stats_blueprint
-from flask import current_app, render_template
+from flask import jsonify, current_app, render_template, request
 
 
 # request callbacks
@@ -20,16 +21,32 @@ def stats_teardown_request(error=None):
     current_app.logger.info('Calling teardown_request() for the stats blueprint...')
 
 
-@stats_blueprint.route('/')
+@stats_blueprint.route('/_update_table', methods=['GET', 'POST'])
+def update_table(elo=1500):
+    # if user has entered a value then we update with the user's value
+    if request.method == "POST":
+        elo = request.args.get('output', 0, type=int)
+
+    df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
+
+    # get table rows
+    rows = df.values
+
+    # re-render html page with new table values
+    return pd.DataFrame(rows).to_json()
+
+
+@stats_blueprint.route('/', methods=['GET', 'POST'])
 def index():
     current_app.logger.info('Calling the index() function.')
 
-    df = app.win_table_1
+    df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, 2500))
 
     # get table headers and rows
     columns = df.columns
     rows = df.values
 
+    # re-render html page with new table values
     return render_template('stats/index.html',
                            columns=columns,
                            rows=rows)

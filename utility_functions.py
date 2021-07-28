@@ -19,6 +19,12 @@ def get_games(filename='project/static/games.csv'):
 chess_games_utility = get_games()
 
 
+# get_game_set_by_rating returns a game set given a rating/game_set
+def get_game_set_by_rating(game_set, rating):
+    return game_set[(game_set['white_rating'] >= rating) |
+                    (game_set['black_rating'] >= rating)].copy()
+
+
 # get_rel_game_set takes in a set of chess games and an elo
 # and returns the relevant data set that the suggestion should be based on
 # in the future this function can include more features such as the increment code
