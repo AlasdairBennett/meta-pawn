@@ -52,8 +52,9 @@ def get_win_rate(games_set, opening_name):
 def get_win_rate_table(games_set):
     games_set_t = games_set.copy()
     games_set_t = games_set_t[~(games_set_t['winner'] == 'draw')]
-    win_rates_table = pd.DataFrame([get_win_rate(games_set_t, x) for x in games_set_t['opening_name'].drop_duplicates()],
-                                   columns=('opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
+    win_rates_table = pd.DataFrame(
+        [get_win_rate(games_set_t, x) for x in games_set_t['opening_name'].drop_duplicates()],
+        columns=('opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
 
     return win_rates_table
 
@@ -165,6 +166,11 @@ def get_opening_outliers(games_set):
                         | (opening_freq.values > h_quantile + 1.5 * interquartile_r)].index
 
 
+def get_game_set_by_rating(game_set, rating):
+    return game_set[(game_set['white_rating'] >= rating) |
+                    (game_set['black_rating'] >= rating)].copy()
+
+  
 # Get winning plot
 # Reference from https://stackoverflow.com/questions/32891211/limit-the-number-of-groups-shown-in-seaborn-countplot
 def get_winning_countplot(games_set):
@@ -174,6 +180,7 @@ def get_winning_countplot(games_set):
     plt.savefig("project/static/img/winningcountplot.png")
     plt.show()
 
+    
 # Display rating scatterplot
 # Reference from https://stackoverflow.com/questions/58476654/how-to-remove-or-hide-x-axis-labels-from-a-seaborn-matplotlib-plot
 def get_rating_scatterplot(games_set, elo, rating):
