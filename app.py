@@ -1,8 +1,6 @@
 import utility_functions as uf
 from project import create_app
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 app = create_app()
 

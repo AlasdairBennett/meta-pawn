@@ -40,7 +40,7 @@
         <!-- Script which enables dynamic updating of both header and table with slider value -->
         {% block script %}
             <script>
-
+                {#<!-- This block handles updating the elo display when the slider input is triggered -->#}
                 $(function() {
                     var $document = $(document);
                     var selector = '[data-rangeslider]';
@@ -57,8 +57,6 @@
                     $document.on('input', 'input[type="range"], ' + selector, function(e) {
                         valueOutput(e.target);
                     });
-
-
                 });
 
                 <!-- This part updates the table when the refresh button is clicked -->
@@ -66,14 +64,37 @@
                     $.getJSON(
                         $SCRIPT_ROOT+"/_update_table",
                         function(data) {
-                            console.log(data)
-                        {#    TODO: use `data` to repopulate the table with the newly updated information#}
+                            {#TODO: Fix request so that the table updates properly with the user input elo #}
+                            document.getElementById('dynamic_chess_table').innerHTML = refreshHtmlTable(data);
                         }
                     );
 
                     console.log("refresh!!")
-
                 });
+
+                {# Generate the innerHTML which represents the new table #}
+                function refreshHtmlTable(newTable) {
+                    var newInnerHTML = "",
+                        columns = Object.keys(newTable);
+
+                    newInnerHTML += "<tr>";
+                    for (var i=0; i<columns.length; ++i) {
+                        newInnerHTML += "<th>" + columns[i] + "</th>";
+                    }
+                    newInnerHTML += "</tr>";
+
+                    newInnerHTML += "<tbody>";
+                    for (var i=0; i<Object.values(newTable[columns[0]]).length; ++i) {
+                        newInnerHTML += "<tr>";
+                        for (var key in newTable) {
+                            var cellValue = newTable[key][i];
+                            newInnerHTML += "<td>" + cellValue + "</td>";
+                        }
+                        newInnerHTML += "</tr>";
+                    }
+                    newInnerHTML += "</tbody>";
+                    return newInnerHTML;
+                }
             </script>
         {% endblock %}
     </body>

@@ -1,7 +1,7 @@
 import app
 import pandas as pd
 from . import stats_blueprint
-from flask import jsonify, current_app, render_template, request
+from flask import current_app, render_template, request
 
 
 # request callbacks
@@ -22,18 +22,19 @@ def stats_teardown_request(error=None):
 
 
 @stats_blueprint.route('/_update_table', methods=['GET', 'POST'])
-def update_table(elo=1500):
-    # if user has entered a value then we update with the user's value
-    if request.method == "POST":
+def update_table():
+    elo = 1900
+
+    # if user has entered an elo value then we update with the user's value
+    if request.method == "GET":
         elo = request.args.get('output', 0, type=int)
 
+    # get new dataframe based on new elo value
     df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
-
-    # get table rows
-    rows = df.values
+    # df = app.chess_games
 
     # re-render html page with new table values
-    return pd.DataFrame(rows).to_json()
+    return pd.DataFrame(df).to_json(orient='columns')
 
 
 @stats_blueprint.route('/', methods=['GET', 'POST'])
