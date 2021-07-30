@@ -33,6 +33,5 @@ if __name__ == "__main__":
     print(beginner_white_avg_delta.sample(10))
     
     uf.get_winning_countplot(beginner_white_games)
-    uf.get_winning_countplot(advanced_white_games)
     uf.get_rating_scatterplot(chess_games, 1000, "white_rating")
 
