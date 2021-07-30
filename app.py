@@ -1,8 +1,6 @@
 import utility_functions as uf
 from project import create_app
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 app = create_app()
 
@@ -22,7 +20,6 @@ advanced_white_games = uf.get_advanced_white_games(chess_games)
 advanced_black_games = uf.get_advanced_black_games(chess_games)
 
 
-
 # TODO (re)move this code block - I'm not sure what's important here
 if __name__ == "__main__":
     print("running...")
@@ -37,4 +34,4 @@ if __name__ == "__main__":
     
     uf.get_winning_countplot(beginner_white_games)
     uf.get_rating_scatterplot(chess_games, 1000, "white_rating")
-        
+
