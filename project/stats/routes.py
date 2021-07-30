@@ -1,3 +1,6 @@
+import json
+import sys
+
 import app
 import pandas as pd
 from . import stats_blueprint
@@ -26,14 +29,16 @@ def update_table():
     elo = 1900
 
     # if user has entered an elo value then we update with the user's value
-    if request.method == "GET":
+    if request.method == "POST":
         elo = request.args.get('output', 0, type=int)
+
+    # This is jank nightmare fuel but it works for some reason?
+    elo = int(list(request.args.keys())[0])
 
     # get new dataframe based on new elo value
     df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
-    # df = app.chess_games
 
-    # re-render html page with new table values
+    # return the new table out to the client
     return pd.DataFrame(df).to_json(orient='columns')
 
 
