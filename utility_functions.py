@@ -33,8 +33,9 @@ def get_rel_game_set(game_set, user_rating):
 
 # get_win_rate takes a opening name and set of chess games
 # then returns the opening name, white/black win rate and number of games played for that opening in a tuple
-def get_win_rate(games_set, opening_name):
-    games_with_opening = games_set[games_set['opening_name'] == opening_name]
+def get_win_rate(games_set, opening_eco, opening_name):
+    games_with_opening = games_set[(games_set['opening_eco'] == opening_eco) &
+                                   (games_set['opening_name'] == opening_name)]
 
     w_win = games_with_opening[games_with_opening['winner'] == 'white']
     b_win = games_with_opening[games_with_opening['winner'] == 'black']
@@ -44,7 +45,7 @@ def get_win_rate(games_set, opening_name):
     w_win_rate = len(w_win) * 100 / len(games_with_opening)
     b_win_rate = len(b_win) * 100 / len(games_with_opening)
 
-    return opening_name, w_win_rate, b_win_rate, n_games_played
+    return opening_eco, opening_name, w_win_rate, b_win_rate, n_games_played
 
 
 # get_win_rate_table takes set of chess game
@@ -52,9 +53,12 @@ def get_win_rate(games_set, opening_name):
 def get_win_rate_table(games_set):
     games_set_t = games_set.copy()
     games_set_t = games_set_t[~(games_set_t['winner'] == 'draw')]
-    win_rates_table = pd.DataFrame(
-        [get_win_rate(games_set_t, x) for x in games_set_t['opening_name'].drop_duplicates()],
-        columns=('opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
+    unique_opening = games_set_t[['opening_eco', 'opening_name']].drop_duplicates()
+
+    win_rates_table = pd.DataFrame([get_win_rate(games_set_t, x, y) for
+                                    x, y in zip(unique_opening['opening_eco'], unique_opening['opening_name'])],
+                                   columns=(
+                                   'opening_eco', 'opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
 
     return win_rates_table
 
@@ -64,11 +68,29 @@ def get_win_rate_table(games_set):
 def get_avg_elo(games_set):
     games_set_t = games_set.copy()
     games_set_t = games_set_t[~(games_set_t['winner'] == 'draw')]
-    means_by_opening = games_set_t.groupby("opening_name").mean()
+    means_by_opening = games_set_t.groupby(['opening_eco', 'opening_name']).mean()
     means_by_opening.reset_index(inplace=True)
     means_by_opening = means_by_opening.rename(columns={'white_rating': 'avg_white_rating',
                                                         'black_rating': 'avg_black_rating'})
-    return means_by_opening[['opening_name', 'avg_white_rating', 'avg_black_rating']].copy()
+    return means_by_opening[['opening_eco', 'opening_name', 'avg_white_rating', 'avg_black_rating']].copy()
+
+
+# Get average score delta for each opening
+def get_avg_delta(games_set):
+    games_set_ = games_set.copy()
+
+    black_games = games_set_[games_set_['winner'] == 'black']
+    black_games = black_games.assign(rating_delta=black_games.black_rating - black_games.white_rating)
+
+    white_games = games_set_[games_set_['winner'] == 'white']
+    white_games = white_games.assign(rating_delta=white_games.white_rating - white_games.black_rating)
+
+    games_set_ = pd.concat([white_games, black_games])
+
+    means_by_opening = games_set_.groupby(['opening_eco', 'opening_name']).mean()
+    means_by_opening.reset_index(inplace=True)
+    means_by_opening = means_by_opening.rename(columns={'rating_delta': 'avg_rating_delta'})
+    return means_by_opening[['opening_eco', 'opening_name', 'avg_rating_delta']].copy()
 
 
 # White #
@@ -136,24 +158,6 @@ def get_advanced_black_games(games_set):
 # Utility methods #
 
 
-# Get average score delta for each opening
-def get_avg_delta(games_set):
-    games_set_ = games_set.copy()
-
-    black_games = games_set_[games_set_['winner'] == 'black']
-    black_games = black_games.assign(rating_delta=black_games.black_rating - black_games.white_rating)
-
-    white_games = games_set_[games_set_['winner'] == 'white']
-    white_games = white_games.assign(rating_delta=white_games.white_rating - white_games.black_rating)
-
-    games_set_ = pd.concat([white_games, black_games])
-
-    means_by_opening = games_set_.groupby("opening_name").mean()
-    means_by_opening.reset_index(inplace=True)
-    means_by_opening = means_by_opening.rename(columns={'rating_delta': 'avg_rating_delta'})
-    return means_by_opening[['opening_name', 'avg_rating_delta']].copy()
-
-
 # remove the openings that are considered outliers using
 # the instructions from this link https://www.wikihow.com/Calculate-Outliers
 def get_opening_outliers(games_set):
@@ -170,17 +174,17 @@ def get_game_set_by_rating(game_set, rating):
     return game_set[(game_set['white_rating'] >= rating) |
                     (game_set['black_rating'] >= rating)].copy()
 
-  
+
 # Get winning plot
 # Reference from https://stackoverflow.com/questions/32891211/limit-the-number-of-groups-shown-in-seaborn-countplot
 def get_winning_countplot(games_set):
     plot = sns.countplot(y="opening_name", data=games_set, order=games_set.opening_name.value_counts().iloc[:10].index)
-    plot.set(xlabel = "Win Count", ylabel = "Opening Name", title="Top 10 Openings")
+    plot.set(xlabel="Win Count", ylabel="Opening Name", title="Top 10 Openings")
     plot.set_yticklabels(plot.get_yticklabels(), fontsize=6)
     plt.savefig("project/static/img/winningcountplot.png")
     plt.show()
 
-    
+
 # Display rating scatterplot
 # Reference from https://stackoverflow.com/questions/58476654/how-to-remove-or-hide-x-axis-labels-from-a-seaborn-matplotlib-plot
 def get_rating_scatterplot(games_set, elo, rating):
@@ -189,5 +193,5 @@ def get_rating_scatterplot(games_set, elo, rating):
     plot.set(xticklabels=[])
     plt.xlim(0, None)
     plt.ylim(0, 3000)
-    plt.savefig("project/static/img/ratingscatterplot.png")      
+    plt.savefig("project/static/img/ratingscatterplot.png")
     plt.show()

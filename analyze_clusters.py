@@ -14,6 +14,7 @@ if __name__ == '__main__':
     openings = openings[(openings['w_win_rate'] >= openings['b_win_rate']) & (openings['n_games_played'] >= 10)]
     openings = openings.assign(cluster=kmeans.labels_)
 
+
     u_labels = np.unique(kmeans.labels_)
     print(openings)
 
