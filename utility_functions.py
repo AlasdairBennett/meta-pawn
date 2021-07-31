@@ -136,9 +136,35 @@ def get_recommended_w(skill_val, novel_val):
     w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) &
                             (w_clusters['novel_val'] == novel_val)]
 
-    w_openings = w_openings[w_openings['cluster'] in w_clusters['cluster']]
+    w_openings = w_openings[w_openings['cluster'].isin(w_clusters['cluster'])]
 
     return w_openings
+
+
+def get_recommended_b(skill_val, novel_val):
+    # cluster attributes
+    # skill_val 1: beginner, 2: intermediate, 3: advanced
+    cluster_attr = {
+        "cluster": [0, 1, 2, 3, 4, 5],
+        "skill_val": [1, 2, 1, 3, 3, 1],
+        "novel_val": [1, 2, 2, 2, 3, 1],
+    }
+    b_clusters = pd.DataFrame(cluster_attr)
+
+    # load all white opening clusters
+    b_openings = pd.read_csv('project/static/b_clusters/cluster0.csv')
+    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster1.csv')])
+    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster2.csv')])
+    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster3.csv')])
+    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster4.csv')])
+    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster5.csv')])
+
+    b_clusters = b_clusters[(b_clusters['skill_val'] == skill_val) &
+                            (b_clusters['novel_val'] == novel_val)]
+
+    b_openings = b_openings[b_openings['cluster'].isin(b_clusters['cluster'])]
+
+    return b_openings
 
 
 # -------------------------------------------------------------------------------------------------------------------- #
