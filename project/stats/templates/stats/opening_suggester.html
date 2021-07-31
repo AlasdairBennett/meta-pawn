@@ -13,12 +13,12 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                               href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link"
                                href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="{{ url_for('stats.opening_suggester_page') }}">Advanced Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -37,9 +37,10 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Opening Suggestion</strong></h1>
-            <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on user
-                inputs. Please note that some combinations of user inputs will result in a blank table.</p>
+            <h1><strong>Advanced Opening Suggestion</strong></h1>
+            <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on
+                advanced user
+                inputs.</p>
         </header>
 
         <body>
