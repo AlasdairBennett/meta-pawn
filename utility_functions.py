@@ -141,7 +141,7 @@ def get_recommended_w(skill_val, novel_val):
         'score', axis=1).tail(10)
     # calculate the distribution
     p = top_openings['n_games_played'] / top_openings['n_games_played'].sum()
-    return top_openings.sample(n=5, weights=p).drop(['opening_eco', 'cluster']).reset_index(drop=True)
+    return top_openings.sample(n=5, weights=p).drop(['opening_eco', 'cluster'], axis=1).reset_index(drop=True)
 
 
 def get_recommended_b(skill_val, novel_val):
@@ -169,7 +169,7 @@ def get_recommended_b(skill_val, novel_val):
         'score', axis=1).tail(10)
     # calculate the distribution
     p = top_openings['n_games_played'] / top_openings['n_games_played'].sum()
-    return top_openings.sample(n=5, weights=p).drop(['opening_eco', 'cluster']).reset_index(drop=True)
+    return top_openings.sample(n=5, weights=p).drop(['opening_eco', 'cluster'], axis=1).reset_index(drop=True)
 
 
 # -------------------------------------------------------------------------------------------------------------------- #
