@@ -63,7 +63,7 @@ def update_opening_suggester_table():
     if white_value:
         df = app.uf.get_recommended_w(skill, novelty)
     else:
-        df = app.uf.get_recommended_w(skill, novelty)
+        df = app.uf.get_recommended_b(skill, novelty)
 
     # return the new table out to the client
     return pd.DataFrame(df).to_json(orient='columns')
@@ -73,6 +73,7 @@ def update_opening_suggester_table():
 def opening_suggester_page():
     current_app.logger.info('Calling the opening_suggester_page() function.')
 
+    # default table is 2, 2, and white (these are the default values on the front end)
     df = app.uf.get_recommended_w(2, 2)
 
     # get table headers and rows
@@ -89,7 +90,7 @@ def opening_suggester_page():
 def index():
     current_app.logger.info('Calling the index() function.')
 
-    df = app.uf.get_recommended_w(1, 2)
+    df = app.uf.get_recommended_w(2, 2)
 
     # get table headers and rows
     columns = df.columns
