@@ -13,12 +13,12 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                               href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link"
                                href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="{{ url_for('stats.opening_suggester_page') }}">Advanced Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -37,9 +37,10 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Opening Suggestion</strong></h1>
-            <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on user
-                inputs. Please note that some combinations of user inputs will result in a blank table.</p>
+            <h1><strong>Advanced Opening Suggestion</strong></h1>
+            <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on
+                advanced user
+                inputs.</p>
         </header>
 
         <body>
@@ -48,7 +49,8 @@
             <output id="eloOutput">2</output>
         </h3>
         <input type="range" class="form-range" min="1" max="3" step="1" id="eloInputRange">
-        <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is played):
+        <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is
+            played):
             <output id="noveltyOutput">2</output>
         </h3>
         <input type="range" class="form-range" min="1" max="3" step="1" id="noveltyInputRange">
@@ -92,7 +94,7 @@
                     $("#eloInputRange").on('input', function (e) {
                         document.getElementById('eloOutput').innerHTML = e.target.value;
                     });
-                    $("#noveltyInputRange").on('input', function(e) {
+                    $("#noveltyInputRange").on('input', function (e) {
                         document.getElementById('noveltyOutput').innerHTML = e.target.value;
                     })
                 });
@@ -120,16 +122,18 @@
 
                 function refreshHtmlTable(newTable) {
                     var newInnerHTML = "",
-                        columns = Object.keys(newTable);
+                        cols = Object.keys(newTable);
 
                     newInnerHTML += "<tr>";
-                    for (var i = 0; i < columns.length; ++i) {
-                        newInnerHTML += "<th>" + columns[i] + "</th>";
+                    for (var i = 0; i < cols.length; ++i) {
+                        newInnerHTML += "<th>" + cols[i] + "</th>";
                     }
                     newInnerHTML += "</tr>";
 
                     newInnerHTML += "<tbody>";
-                    for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
+                    for (var i = 0; i < Object.values(newTable[cols[0]]).length; ++i) {
+                        if (newTable[cols[0]][i] == undefined) continue;
+                        {# Skips displaying null rows #}
                         newInnerHTML += "<tr>";
                         for (var key in newTable) {
                             var cellValue = newTable[key][i];
