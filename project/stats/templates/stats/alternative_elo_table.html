@@ -93,16 +93,16 @@
 
                 function refreshHtmlTable(newTable) {
                     var newInnerHTML = "",
-                        columns = Object.keys(newTable);
+                        cols = Object.keys(newTable);
 
                     newInnerHTML += "<tr>";
-                    for (var i = 0; i < columns.length; ++i) {
-                        newInnerHTML += "<th>" + columns[i] + "</th>";
+                    for (var i = 0; i < cols.length; ++i) {
+                        newInnerHTML += "<th>" + cols[i] + "</th>";
                     }
                     newInnerHTML += "</tr>";
 
                     newInnerHTML += "<tbody>";
-                    for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
+                    for (var i = 0; i < Object.values(newTable[cols[0]]).length; ++i) {
                         {# Skips displaying null rows #}
                         if (newTable[cols[0]][i] == undefined) continue;
                         newInnerHTML += "<tr>";
