@@ -13,14 +13,23 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('stats.main_ml_table_page') }}">Opening Suggestion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Placeholder</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                               href="{{ url_for('stats.second_table_page') }}">Second Table</a>
+                               href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.placeholder_name') }}">Placeholder Name</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.png_plot') }}">PNG Plot 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
                 </div>
@@ -28,18 +37,32 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Meta-Pawn</strong></h1>
-            <p>Data based metagame analysis of chess.</p>
+            <h1><strong>Opening Suggestion</strong></h1>
+            <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on user
+                inputs. Please note that some combinations of user inputs will result in a blank table.</p>
         </header>
 
         <body>
         <!-- Display header with dynamically updating elo value -->
-        <h2 id="eloHeader">Win Rate of openings by colour for elo
-            <output id="eloOutput"></output>
-            :
-        </h2>
-        <input type="range" class="form-range" min="0" max="2600" step="100">
-        <input type="button" class="ui-button" value="Refresh Table" id="refresh_button">
+        <h3 id="eloHeader">Select a skill value:
+            <output id="eloOutput">2</output>
+        </h3>
+        <input type="range" class="form-range" min="1" max="3" step="1" id="eloInputRange">
+        <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is played):
+            <output id="noveltyOutput">2</output>
+        </h3>
+        <input type="range" class="form-range" min="1" max="3" step="1" id="noveltyInputRange">
+
+        <div class="btn-group" role="group">
+            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="white-btn">White</label>
+
+            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="black-btn">Black</label>
+        </div>
+
+        <input type="button" class="btn btn-dark" value="Refresh Table" id="refresh_button">
+
 
         <!-- Display the dynamically updating table element -->
         <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
@@ -64,23 +87,29 @@
         <!-- Script which enables dynamic updating of both header and table with slider value -->
         {% block script %}
             <script>
-                {#<!-- This block handles updating the elo display when the slider input is triggered -->#}
+                {#<!-- This block handles updating the slider value displays -->#}
                 $(function () {
-                    var $document = $(document);
-
-                    $document.on('input', function (e) {
+                    $("#eloInputRange").on('input', function (e) {
                         document.getElementById('eloOutput').innerHTML = e.target.value;
                     });
+                    $("#noveltyInputRange").on('input', function(e) {
+                        document.getElementById('noveltyOutput').innerHTML = e.target.value;
+                    })
                 });
 
                 <!-- This part updates the table when the refresh button is clicked -->
                 $("#refresh_button").on("click", function () {
-                    var eloHTML = document.getElementById('eloOutput').innerHTML;
-                    var elo = eloHTML;
+                    var elo = document.getElementById('eloOutput').innerHTML,
+                        novelty = document.getElementById('noveltyOutput').innerHTML,
+                        whiteStatus = document.getElementById('white-btn').checked;
                     $.ajax({
                         type: 'GET',
-                        url: $SCRIPT_ROOT + "/_update_table",
-                        data: elo,
+                        url: $SCRIPT_ROOT + "/_update_opening_suggester_table",
+                        data: {
+                            elo,
+                            novelty,
+                            whiteStatus
+                        },
                         dataType: 'json'
                     }).then(function (data) {
                         document.getElementById('dynamic_chess_table').innerHTML = refreshHtmlTable(data)
