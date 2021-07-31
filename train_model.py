@@ -1,7 +1,5 @@
 import pickle
-
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from kneed import KneeLocator
 from sklearn.cluster import KMeans
@@ -60,16 +58,6 @@ if __name__ == '__main__':
 
     w_model = train_model(w_data_set)
     b_model = train_model(b_data_set)
-
-    # add cluster column to data frames and save to file
-    w_data_set = w_data_set.assign(cluster=w_model.labels_)
-
-    for x in np.unique(w_model.labels_):
-        w_data_set[w_data_set['cluster'] == x].to_csv('project/static/w_clusters/cluster{}.csv'.format(x), index=False)
-
-    b_data_set = b_data_set.assign(cluster=b_model.labels_)
-    for x in np.unique(b_model.labels_):
-        b_data_set[b_data_set['cluster'] == x].to_csv('project/static/b_clusters/cluster{}.csv'.format(x), index=False)
 
     # pickle the models
     pickle.dump(w_model, open("project/static/models/w_model.pkl", "wb"))
