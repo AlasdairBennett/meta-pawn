@@ -64,7 +64,7 @@ def get_win_rate_table(games_set):
     win_rates_table = pd.DataFrame([get_win_rate(games_set_t, x, y) for
                                     x, y in zip(unique_opening['opening_eco'], unique_opening['opening_name'])],
                                    columns=(
-                                   'opening_eco', 'opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
+                                       'opening_eco', 'opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
 
     return win_rates_table
 
