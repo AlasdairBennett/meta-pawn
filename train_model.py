@@ -1,6 +1,7 @@
 import pickle
 
 import pandas as pd
+import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
@@ -39,6 +40,7 @@ def train_model(data_set):
     # train the models using the optimal n_cluster
     kmeans = KMeans(n_clusters=n)
     kmeans.fit(scaled_features)
+
     return kmeans
 
 
@@ -49,8 +51,7 @@ if __name__ == '__main__':
     pd.set_option('display.max_rows', 20)
     pd.set_option('display.width', 10000)
     openings = pd.read_csv('project/static/openings.csv')
-    openings_features = openings.drop('opening_name', axis=1)
-
+    openings_features = openings.drop(['opening_eco', 'opening_name'], axis=1)
     # removing novel openings
     openings_features = openings_features[openings_features['n_games_played'] >= 10]
 
@@ -59,6 +60,16 @@ if __name__ == '__main__':
 
     w_model = train_model(w_data_set)
     b_model = train_model(b_data_set)
+
+    # add cluster column to data frames and save to file
+    w_data_set = w_data_set.assign(cluster=w_model.labels_)
+
+    for x in np.unique(w_model.labels_):
+        w_data_set[w_data_set['cluster'] == x].to_csv('project/static/w_clusters/cluster{}.csv'.format(x), index=False)
+
+    b_data_set = b_data_set.assign(cluster=b_model.labels_)
+    for x in np.unique(b_model.labels_):
+        b_data_set[b_data_set['cluster'] == x].to_csv('project/static/b_clusters/cluster{}.csv'.format(x), index=False)
 
     # pickle the models
     pickle.dump(w_model, open("project/static/models/w_model.pkl", "wb"))
