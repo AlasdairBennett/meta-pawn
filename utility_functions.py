@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import os
 
 
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
