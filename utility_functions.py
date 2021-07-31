@@ -121,17 +121,13 @@ def get_recommended_w(skill_val, novel_val):
     # skill_val 1: beginner, 2: intermediate, 3: advanced
     cluster_attr = {
         "cluster": [0, 1, 2, 3, 4],
-        "skill_val": [3, 1, 2, 3, 2],
-        "novel_val": [2, 2, 2, 3, 1],
+        "skill_val": [3, 1, 1, 3, 2],
+        "novel_val": [3, 2, 2, 1, 1],
     }
     w_clusters = pd.DataFrame(cluster_attr)
 
     # load all white opening clusters
-    w_openings = pd.read_csv('project/static/w_clusters/cluster0.csv')
-    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster1.csv')])
-    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster2.csv')])
-    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster3.csv')])
-    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster4.csv')])
+    w_openings = pd.read_csv('project/static/w_clusters.csv')
 
     w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) &
                             (w_clusters['novel_val'] == novel_val)]
@@ -146,18 +142,13 @@ def get_recommended_b(skill_val, novel_val):
     # skill_val 1: beginner, 2: intermediate, 3: advanced
     cluster_attr = {
         "cluster": [0, 1, 2, 3, 4, 5],
-        "skill_val": [1, 2, 1, 3, 3, 1],
-        "novel_val": [1, 2, 2, 2, 3, 1],
+        "skill_val": [3, 2, 2, 3, 1, 1],
+        "novel_val": [3, 1, 2, 2, 2, 1],
     }
     b_clusters = pd.DataFrame(cluster_attr)
 
     # load all white opening clusters
-    b_openings = pd.read_csv('project/static/b_clusters/cluster0.csv')
-    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster1.csv')])
-    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster2.csv')])
-    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster3.csv')])
-    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster4.csv')])
-    b_openings = pd.concat([b_openings, pd.read_csv('project/static/b_clusters/cluster5.csv')])
+    b_openings = pd.read_csv('project/static/b_clusters.csv')
 
     b_clusters = b_clusters[(b_clusters['skill_val'] == skill_val) &
                             (b_clusters['novel_val'] == novel_val)]
