@@ -14,13 +14,14 @@
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                               href="{{ url_for('stats.main_ml_table_page') }}">Opening Suggestion</a>
+                               href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Placeholder</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('stats.second_table_page') }}">Second Table</a>
                         </li>
                     </ul>
                 </div>
@@ -28,16 +29,21 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Meta-Pawn</strong></h1>
-            <p>Data based metagame analysis of chess.</p>
+            <h1><strong>Opening Suggestion</strong></h1>
+            <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on user
+                inputs.</p>
         </header>
 
         <body>
         <!-- Display header with dynamically updating elo value -->
-        <h3 id="eloHeader">Select an elo:
-            <output id="eloOutput">1500</output>
+        <h3 id="eloHeader">Select a skill value:
+            <output id="eloOutput">3</output>
         </h3>
-        <input type="range" class="form-range" min="1000" max="2000" step="100" id="eloInputRange">
+        <input type="range" class="form-range" min="1" max="5" step="1" id="eloInputRange">
+        <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is played):
+            <output id="noveltyOutput">3</output>
+        </h3>
+        <input type="range" class="form-range" min="1" max="5" step="1" id="noveltyInputRange">
 
         <div class="btn-group" role="group">
             <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
@@ -48,6 +54,7 @@
         </div>
 
         <input type="button" class="btn btn-dark" value="Refresh Table" id="refresh_button">
+
 
         <!-- Display the dynamically updating table element -->
         <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
@@ -72,22 +79,27 @@
         <!-- Script which enables dynamic updating of both header and table with slider value -->
         {% block script %}
             <script>
-                {#<!-- This block handles updating the slider value display -->#}
+                {#<!-- This block handles updating the slider value displays -->#}
                 $(function () {
                     $("#eloInputRange").on('input', function (e) {
                         document.getElementById('eloOutput').innerHTML = e.target.value;
                     });
+                    $("#noveltyInputRange").on('input', function(e) {
+                        document.getElementById('noveltyOutput').innerHTML = e.target.value;
+                    })
                 });
 
                 <!-- This part updates the table when the refresh button is clicked -->
                 $("#refresh_button").on("click", function () {
                     var elo = document.getElementById('eloOutput').innerHTML,
+                        novelty = document.getElementById('noveltyOutput').innerHTML,
                         whiteStatus = document.getElementById('white-btn').checked;
                     $.ajax({
                         type: 'GET',
-                        url: $SCRIPT_ROOT + "/_update_table",
+                        url: $SCRIPT_ROOT + "/_update_opening_suggester_table",
                         data: {
                             elo,
+                            novelty,
                             whiteStatus
                         },
                         dataType: 'json'
