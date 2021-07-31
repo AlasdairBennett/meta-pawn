@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
@@ -58,7 +59,7 @@ def get_win_rate_table(games_set):
     win_rates_table = pd.DataFrame([get_win_rate(games_set_t, x, y) for
                                     x, y in zip(unique_opening['opening_eco'], unique_opening['opening_name'])],
                                    columns=(
-                                   'opening_eco', 'opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
+                                       'opening_eco', 'opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
 
     return win_rates_table
 
@@ -92,6 +93,51 @@ def get_avg_delta(games_set):
     means_by_opening = means_by_opening.rename(columns={'rating_delta': 'avg_rating_delta'})
     return means_by_opening[['opening_eco', 'opening_name', 'avg_rating_delta']].copy()
 
+
+# remove the openings that are considered outliers using
+# the instructions from this link https://www.wikihow.com/Calculate-Outliers
+def get_opening_outliers(games_set):
+    opening_freq = games_set['opening_name'].value_counts()
+    l_quantile = opening_freq.quantile(0.25)
+    h_quantile = opening_freq.quantile(0.75)
+    interquartile_r = h_quantile - l_quantile
+
+    return opening_freq[(opening_freq.values < l_quantile - 1.5 * interquartile_r)
+                        | (opening_freq.values > h_quantile + 1.5 * interquartile_r)].index
+
+
+def get_game_set_by_rating(game_set, rating):
+    return game_set[(game_set['white_rating'] >= rating) |
+                    (game_set['black_rating'] >= rating)].copy()
+
+
+def get_recommended_w(skill_val, novel_val):
+
+    # cluster attributes
+    # skill_val 1: beginner, 2: intermediate, 3: advanced
+    cluster_attr = {
+        "cluster": [0, 1, 2, 3, 4],
+        "skill_val": [3, 1, 2, 3, 2],
+        "novel_val": [2, 2, 2, 3, 1],
+    }
+    w_clusters = pd.DataFrame(cluster_attr)
+
+    # load all white opening clusters
+    w_openings = pd.read_csv('project/static/w_clusters/cluster0.csv')
+    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster1.csv')])
+    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster2.csv')])
+    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster3.csv')])
+    w_openings = pd.concat([w_openings, pd.read_csv('project/static/w_clusters/cluster4.csv')])
+
+    w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) &
+                            (w_clusters['novel_val'] == novel_val)]
+
+    w_openings = w_openings[w_openings['cluster'] in w_clusters['cluster']]
+
+    return w_openings
+
+
+# -------------------------------------------------------------------------------------------------------------------- #
 
 # White #
 
@@ -153,26 +199,6 @@ def get_advanced_black_games(games_set):
     advanced_black_games = advanced_black_games.assign(
         score_delta=advanced_black_games.black_rating - advanced_black_games.white_rating)
     return advanced_black_games
-
-
-# Utility methods #
-
-
-# remove the openings that are considered outliers using
-# the instructions from this link https://www.wikihow.com/Calculate-Outliers
-def get_opening_outliers(games_set):
-    opening_freq = games_set['opening_name'].value_counts()
-    l_quantile = opening_freq.quantile(0.25)
-    h_quantile = opening_freq.quantile(0.75)
-    interquartile_r = h_quantile - l_quantile
-
-    return opening_freq[(opening_freq.values < l_quantile - 1.5 * interquartile_r)
-                        | (opening_freq.values > h_quantile + 1.5 * interquartile_r)].index
-
-
-def get_game_set_by_rating(game_set, rating):
-    return game_set[(game_set['white_rating'] >= rating) |
-                    (game_set['black_rating'] >= rating)].copy()
 
 
 # Get winning plot
