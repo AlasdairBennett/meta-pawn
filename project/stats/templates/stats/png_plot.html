@@ -1,0 +1,50 @@
+{% extends "stats/index.html" %}
+
+{% block styling %}
+{% endblock %}
+
+{% block deepContent %}
+    <div class="container">
+
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Meta-Pawn</a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{{ url_for('stats.placeholder_name') }}">Placeholder Name</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="{{ url_for('stats.png_plot') }}">PNG Plot 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="content-text">
+            <h1><strong>PNG plot 1</strong></h1>
+            <p>This table means something.</p>
+        </header>
+
+        <body>
+            <!-- Display the png table -->
+            <img src="{{ url_for('static', filename='img/winningcountplot.png') }}">
+
+        </body>
+    </div>
+{% endblock %}
