@@ -17,11 +17,11 @@
                                href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
+                            <a class="nav-link"
                                href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
+                            <a class="nav-link active" aria-current="page"
                                href="{{ url_for('stats.placeholder_name') }}">Placeholder Name</a>
                         </li>
                         <li class="nav-item">
@@ -37,7 +37,7 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Alternative (second) Opening Suggestion</strong></h1>
+            <h1><strong>Placeholder Name</strong></h1>
             <p>This table displays something else.</p>
         </header>
 
@@ -94,7 +94,7 @@
                         whiteStatus = document.getElementById('white-btn').checked;
                     $.ajax({
                         type: 'GET',
-                        url: $SCRIPT_ROOT + "/_update_alternative_elo_table",
+                        url: $SCRIPT_ROOT + "/_update_placeholder_name",
                         data: {
                             elo,
                             whiteStatus
