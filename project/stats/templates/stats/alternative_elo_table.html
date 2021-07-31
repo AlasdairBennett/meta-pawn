@@ -60,22 +60,6 @@
 
         <!-- Display the dynamically updating table element -->
         <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
-            <thead>
-            <tr>
-                {% for column in columns %}
-                    <th>{{ column }}</th>
-                {% endfor %}
-            </tr>
-            </thead>
-            <tbody>
-            {% for row in rows %}
-                <tr>
-                    {% for cell in row %}
-                        <td>{{ cell }}</td>
-                    {% endfor %}
-                </tr>
-            {% endfor %}
-            </tbody>
         </table>
 
         <!-- Script which enables dynamic updating of both header and table with slider value -->
@@ -119,9 +103,16 @@
 
                     newInnerHTML += "<tbody>";
                     for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
+                        {# Skips displaying null rows #}
+                        if (newTable[cols[0]][i] == undefined) continue;
                         newInnerHTML += "<tr>";
                         for (var key in newTable) {
                             var cellValue = newTable[key][i];
+                            {# round floats for nice display #}
+                            if (!isNaN(cellValue) && typeof cellValue == 'number') {
+                                {# https://stackoverflow.com/questions/4435170/how-to-parse-float-with-two-decimal-places-in-javascript #}
+                                cellValue = parseFloat(cellValue).toFixed(2);
+                            }
                             newInnerHTML += "<td>" + cellValue + "</td>";
                         }
                         newInnerHTML += "</tr>";
