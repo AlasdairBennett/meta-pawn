@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import os
 
 
 # get_games takes the name of a file containing chess game data and returns a dataframe containing
@@ -118,7 +117,6 @@ def get_game_set_by_rating(game_set, rating):
 
 
 def get_recommended_w(skill_val, novel_val):
-
     # cluster attributes
     # skill_val 1: beginner, 2: intermediate, 3: advanced
     cluster_attr = {
