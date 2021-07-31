@@ -31,12 +31,18 @@ if __name__ == "__main__":
     print(beginner_white_games.sample(10))
     print(beginner_white_avg_delta.sample(10))
 
-    uf.get_winning_countplot(beginner_white_games, "Beginner White Top 10 Openings", "project/static/img/beg_whit_cp.png")
-    uf.get_winning_countplot(intermediate_white_games, "Intermediate White Top 10 Openings", "project/static/img/int_whit_cp.png")
-    uf.get_winning_countplot(advanced_white_games, "Advanced White Top 10 Openings", "project/static/img/adv_whit_cp.png")
-    
-    uf.get_winning_countplot(beginner_black_games, "Beginner Black Top 10 Openings", "project/static/img/beg_blk_cp.png")
-    uf.get_winning_countplot(intermediate_black_games, "Intermediate Black Top 10 Openings", "project/static/img/int_blk_cp.png")
-    uf.get_winning_countplot(advanced_black_games, "Advanced Black Top 10 Openings", "project/static/img/adv_blk_cp.png")
+    uf.get_winning_countplot(beginner_white_games, "Beginner White Top 10 Openings",
+                             "project/static/img/beg_whit_cp.png")
+    uf.get_winning_countplot(intermediate_white_games, "Intermediate White Top 10 Openings",
+                             "project/static/img/int_whit_cp.png")
+    uf.get_winning_countplot(advanced_white_games, "Advanced White Top 10 Openings",
+                             "project/static/img/adv_whit_cp.png")
 
-    #uf.get_rating_scatterplot(chess_games, 1000, "white_rating")
+    uf.get_winning_countplot(beginner_black_games, "Beginner Black Top 10 Openings",
+                             "project/static/img/beg_blk_cp.png")
+    uf.get_winning_countplot(intermediate_black_games, "Intermediate Black Top 10 Openings",
+                             "project/static/img/int_blk_cp.png")
+    uf.get_winning_countplot(advanced_black_games, "Advanced Black Top 10 Openings",
+                             "project/static/img/adv_blk_cp.png")
+
+    # uf.get_rating_scatterplot(chess_games, 1000, "white_rating")
