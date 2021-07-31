@@ -1,0 +1,118 @@
+{% extends "stats/index.html" %}
+
+{% block styling %}
+{% endblock %}
+
+{% block deepContent %}
+    <div class="container">
+
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Meta-Pawn</a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('stats.main_ml_table_page') }}">Opening Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Placeholder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="{{ url_for('stats.second_table_page') }}">Second Table</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="content-text">
+            <h1><strong>Meta-Pawn</strong></h1>
+            <p>Data based metagame analysis of chess.</p>
+        </header>
+
+        <body>
+        <!-- Display header with dynamically updating elo value -->
+        <h2 id="eloHeader">Win Rate of openings by colour for elo
+            <output id="eloOutput"></output>
+            :
+        </h2>
+        <input type="range" class="form-range" min="0" max="2600" step="100">
+        <input type="button" class="ui-button" value="Refresh Table" id="refresh_button">
+
+        <!-- Display the dynamically updating table element -->
+        <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
+            <thead>
+            <tr>
+                {% for column in columns %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in rows %}
+                <tr>
+                    {% for cell in row %}
+                        <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Script which enables dynamic updating of both header and table with slider value -->
+        {% block script %}
+            <script>
+                {#<!-- This block handles updating the elo display when the slider input is triggered -->#}
+                $(function () {
+                    var $document = $(document);
+
+                    $document.on('input', function (e) {
+                        document.getElementById('eloOutput').innerHTML = e.target.value;
+                    });
+                });
+
+                <!-- This part updates the table when the refresh button is clicked -->
+                $("#refresh_button").on("click", function () {
+                    var eloHTML = document.getElementById('eloOutput').innerHTML;
+                    var elo = eloHTML;
+                    $.ajax({
+                        type: 'GET',
+                        url: $SCRIPT_ROOT + "/_update_table",
+                        data: elo,
+                        dataType: 'json'
+                    }).then(function (data) {
+                        document.getElementById('dynamic_chess_table').innerHTML = refreshHtmlTable(data)
+                    });
+                });
+
+                {# Generate the innerHTML which represents the new table #}
+
+                function refreshHtmlTable(newTable) {
+                    var newInnerHTML = "",
+                        columns = Object.keys(newTable);
+
+                    newInnerHTML += "<tr>";
+                    for (var i = 0; i < columns.length; ++i) {
+                        newInnerHTML += "<th>" + columns[i] + "</th>";
+                    }
+                    newInnerHTML += "</tr>";
+
+                    newInnerHTML += "<tbody>";
+                    for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
+                        newInnerHTML += "<tr>";
+                        for (var key in newTable) {
+                            var cellValue = newTable[key][i];
+                            newInnerHTML += "<td>" + cellValue + "</td>";
+                        }
+                        newInnerHTML += "</tr>";
+                    }
+                    newInnerHTML += "</tbody>";
+                    return newInnerHTML;
+                }
+            </script>
+        {% endblock %}
+        </body>
+    </div>
+{% endblock %}
