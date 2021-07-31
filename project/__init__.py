@@ -1,8 +1,9 @@
-from flask import Flask, render_template
-from logging.handlers import RotatingFileHandler
 import logging
-from flask.logging import default_handler
 import os
+from logging.handlers import RotatingFileHandler
+
+from flask import Flask, render_template
+from flask.logging import default_handler
 
 
 def create_app():

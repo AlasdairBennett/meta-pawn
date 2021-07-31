@@ -1,11 +1,11 @@
 import pickle
 
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from kneed import KneeLocator
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 
 
 def train_model(data_set):

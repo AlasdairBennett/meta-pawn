@@ -1,6 +1,6 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
@@ -18,6 +18,12 @@ def get_games(filename='project/static/games.csv'):
 
 # global utility variable to avoid calling get_games repeatedly
 chess_games_utility = get_games()
+
+
+# get_game_set_by_rating returns a game set given a rating/game_set
+def get_game_set_by_rating(game_set, rating):
+    return game_set[(game_set['white_rating'] >= rating) |
+                    (game_set['black_rating'] >= rating)].copy()
 
 
 # get_rel_game_set takes in a set of chess games and an elo
