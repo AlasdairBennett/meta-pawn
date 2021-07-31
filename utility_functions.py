@@ -39,8 +39,9 @@ def get_rel_game_set(game_set, user_rating):
 
 # get_win_rate takes a opening name and set of chess games
 # then returns the opening name, white/black win rate and number of games played for that opening in a tuple
-def get_win_rate(games_set, opening_name):
-    games_with_opening = games_set[games_set['opening_name'] == opening_name]
+def get_win_rate(games_set, opening_eco, opening_name):
+    games_with_opening = games_set[(games_set['opening_eco'] == opening_eco) &
+                                   (games_set['opening_name'] == opening_name)]
 
     w_win = games_with_opening[games_with_opening['winner'] == 'white']
     b_win = games_with_opening[games_with_opening['winner'] == 'black']
@@ -50,7 +51,7 @@ def get_win_rate(games_set, opening_name):
     w_win_rate = len(w_win) * 100 / len(games_with_opening)
     b_win_rate = len(b_win) * 100 / len(games_with_opening)
 
-    return opening_name, w_win_rate, b_win_rate, n_games_played
+    return opening_eco, opening_name, w_win_rate, b_win_rate, n_games_played
 
 
 # get_win_rate_table takes set of chess game
@@ -58,9 +59,12 @@ def get_win_rate(games_set, opening_name):
 def get_win_rate_table(games_set):
     games_set_t = games_set.copy()
     games_set_t = games_set_t[~(games_set_t['winner'] == 'draw')]
-    win_rates_table = pd.DataFrame(
-        [get_win_rate(games_set_t, x) for x in games_set_t['opening_name'].drop_duplicates()],
-        columns=('opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
+    unique_opening = games_set_t[['opening_eco', 'opening_name']].drop_duplicates()
+
+    win_rates_table = pd.DataFrame([get_win_rate(games_set_t, x, y) for
+                                    x, y in zip(unique_opening['opening_eco'], unique_opening['opening_name'])],
+                                   columns=(
+                                       'opening_eco', 'opening_name', 'w_win_rate', 'b_win_rate', 'n_games_played'))
 
     return win_rates_table
 
@@ -70,11 +74,29 @@ def get_win_rate_table(games_set):
 def get_avg_elo(games_set):
     games_set_t = games_set.copy()
     games_set_t = games_set_t[~(games_set_t['winner'] == 'draw')]
-    means_by_opening = games_set_t.groupby("opening_name").mean()
+    means_by_opening = games_set_t.groupby(['opening_eco', 'opening_name']).mean()
     means_by_opening.reset_index(inplace=True)
     means_by_opening = means_by_opening.rename(columns={'white_rating': 'avg_white_rating',
                                                         'black_rating': 'avg_black_rating'})
-    return means_by_opening[['opening_name', 'avg_white_rating', 'avg_black_rating']].copy()
+    return means_by_opening[['opening_eco', 'opening_name', 'avg_white_rating', 'avg_black_rating']].copy()
+
+
+# Get average score delta for each opening
+def get_avg_delta(games_set):
+    games_set_ = games_set.copy()
+
+    black_games = games_set_[games_set_['winner'] == 'black']
+    black_games = black_games.assign(rating_delta=black_games.black_rating - black_games.white_rating)
+
+    white_games = games_set_[games_set_['winner'] == 'white']
+    white_games = white_games.assign(rating_delta=white_games.white_rating - white_games.black_rating)
+
+    games_set_ = pd.concat([white_games, black_games])
+
+    means_by_opening = games_set_.groupby(['opening_eco', 'opening_name']).mean()
+    means_by_opening.reset_index(inplace=True)
+    means_by_opening = means_by_opening.rename(columns={'rating_delta': 'avg_rating_delta'})
+    return means_by_opening[['opening_eco', 'opening_name', 'avg_rating_delta']].copy()
 
 
 # White #
@@ -140,24 +162,6 @@ def get_advanced_black_games(games_set):
 
 
 # Utility methods #
-
-
-# Get average score delta for each opening
-def get_avg_delta(games_set):
-    games_set_ = games_set.copy()
-
-    black_games = games_set_[games_set_['winner'] == 'black']
-    black_games = black_games.assign(rating_delta=black_games.black_rating - black_games.white_rating)
-
-    white_games = games_set_[games_set_['winner'] == 'white']
-    white_games = white_games.assign(rating_delta=white_games.white_rating - white_games.black_rating)
-
-    games_set_ = pd.concat([white_games, black_games])
-
-    means_by_opening = games_set_.groupby("opening_name").mean()
-    means_by_opening.reset_index(inplace=True)
-    means_by_opening = means_by_opening.rename(columns={'rating_delta': 'avg_rating_delta'})
-    return means_by_opening[['opening_name', 'avg_rating_delta']].copy()
 
 
 # remove the openings that are considered outliers using

@@ -16,8 +16,6 @@ if __name__ == '__main__':
     openings = openings.assign(cluster=kmeans.labels_)
 
     u_labels = np.unique(kmeans.labels_)
-    print(openings)
-
     for i in u_labels:
         plt.scatter(openings[openings['cluster'] == i]['avg_rating_delta'],
                     openings[openings['cluster'] == i]['w_win_rate'], label=i)
@@ -39,5 +37,13 @@ if __name__ == '__main__':
                     openings[openings['cluster'] == i]['w_win_rate'], label=i)
     plt.xlabel('avg_white_rating')
     plt.ylabel('w_win_rate')
+    plt.legend()
+    plt.show()
+
+    for i in u_labels:
+        plt.scatter(openings[openings['cluster'] == i]['avg_white_rating'],
+                    openings[openings['cluster'] == i]['n_games_played'], label=i)
+    plt.xlabel('avg_white_rating')
+    plt.ylabel('n_games_played')
     plt.legend()
     plt.show()
