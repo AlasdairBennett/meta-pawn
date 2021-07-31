@@ -1,6 +1,5 @@
 import pickle
-import matplotlib.pyplot as plt
-import numpy as np
+
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
@@ -17,7 +16,7 @@ if __name__ == '__main__':
     kmeans = pickle.load(open("project/static/models/w_model.pkl", "rb"))
     kmeans.fit(scaled_features)
     w_openings = w_openings.assign(cluster=kmeans.labels_)
-    w_openings.to_csv('project/static/w_clusters.csv')
+    w_openings.to_csv('project/static/w_clusters.csv', index=False)
 
     b_openings = openings[(openings['w_win_rate'] <= openings['b_win_rate']) & (openings['n_games_played'] >= 10)]
     scaler = StandardScaler()
@@ -25,4 +24,4 @@ if __name__ == '__main__':
     kmeans = pickle.load(open("project/static/models/b_model.pkl", "rb"))
     kmeans.fit(scaled_features)
     b_openings = b_openings.assign(cluster=kmeans.labels_)
-    b_openings.to_csv('project/static/b_clusters.csv')
+    b_openings.to_csv('project/static/b_clusters.csv', index=False)

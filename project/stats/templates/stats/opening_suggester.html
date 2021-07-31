@@ -48,7 +48,8 @@
             <output id="eloOutput">2</output>
         </h3>
         <input type="range" class="form-range" min="1" max="3" step="1" id="eloInputRange">
-        <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is played):
+        <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is
+            played):
             <output id="noveltyOutput">2</output>
         </h3>
         <input type="range" class="form-range" min="1" max="3" step="1" id="noveltyInputRange">
@@ -92,7 +93,7 @@
                     $("#eloInputRange").on('input', function (e) {
                         document.getElementById('eloOutput').innerHTML = e.target.value;
                     });
-                    $("#noveltyInputRange").on('input', function(e) {
+                    $("#noveltyInputRange").on('input', function (e) {
                         document.getElementById('noveltyOutput').innerHTML = e.target.value;
                     })
                 });
@@ -120,16 +121,18 @@
 
                 function refreshHtmlTable(newTable) {
                     var newInnerHTML = "",
-                        columns = Object.keys(newTable);
+                        cols = Object.keys(newTable);
 
                     newInnerHTML += "<tr>";
-                    for (var i = 0; i < columns.length; ++i) {
-                        newInnerHTML += "<th>" + columns[i] + "</th>";
+                    for (var i = 0; i < cols.length; ++i) {
+                        newInnerHTML += "<th>" + cols[i] + "</th>";
                     }
                     newInnerHTML += "</tr>";
 
                     newInnerHTML += "<tbody>";
-                    for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
+                    for (var i = 0; i < Object.values(newTable[cols[0]]).length; ++i) {
+                        if (newTable[cols[0]][i] == undefined) continue;
+                        {# Skips displaying null rows #}
                         newInnerHTML += "<tr>";
                         for (var key in newTable) {
                             var cellValue = newTable[key][i];
