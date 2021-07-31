@@ -55,15 +55,15 @@ def alternative_elo_page():
 
 @stats_blueprint.route('/_update_opening_suggester_table', methods=['GET', 'POST'])
 def update_opening_suggester_table():
-    elo = int(list(request.args.values())[0])
+    skill = int(list(request.args.values())[0])
     novelty = int(list(request.args.values())[1])
     white_value = bool(list(request.args.values())[2])
 
     # get new dataframe based on new elo value
     if white_value:
-        df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
+        df = app.uf.get_recommended_w(skill, novelty)
     else:
-        df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
+        df = app.uf.get_recommended_w(skill, novelty)
 
     # return the new table out to the client
     return pd.DataFrame(df).to_json(orient='columns')
@@ -73,7 +73,7 @@ def update_opening_suggester_table():
 def opening_suggester_page():
     current_app.logger.info('Calling the opening_suggester_page() function.')
 
-    df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, 1500))
+    df = app.uf.get_recommended_w(2, 2)
 
     # get table headers and rows
     columns = df.columns
@@ -89,7 +89,7 @@ def opening_suggester_page():
 def index():
     current_app.logger.info('Calling the index() function.')
 
-    df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, 1500))
+    df = app.uf.get_recommended_w(1, 2)
 
     # get table headers and rows
     columns = df.columns

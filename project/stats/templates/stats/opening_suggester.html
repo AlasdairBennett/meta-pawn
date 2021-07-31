@@ -31,19 +31,19 @@
         <header class="content-text">
             <h1><strong>Opening Suggestion</strong></h1>
             <p>This table displays the top 5 openings as recommended by Meta-Pawn's advanced AI engine, based on user
-                inputs.</p>
+                inputs. Please note that some combinations of user inputs will result in a blank table.</p>
         </header>
 
         <body>
         <!-- Display header with dynamically updating elo value -->
         <h3 id="eloHeader">Select a skill value:
-            <output id="eloOutput">3</output>
+            <output id="eloOutput">2</output>
         </h3>
-        <input type="range" class="form-range" min="1" max="5" step="1" id="eloInputRange">
+        <input type="range" class="form-range" min="1" max="3" step="1" id="eloInputRange">
         <h3 id="noveltyHeader">Select a novelty value (the higher the novelty, the less frequently the opening is played):
-            <output id="noveltyOutput">3</output>
+            <output id="noveltyOutput">2</output>
         </h3>
-        <input type="range" class="form-range" min="1" max="5" step="1" id="noveltyInputRange">
+        <input type="range" class="form-range" min="1" max="3" step="1" id="noveltyInputRange">
 
         <div class="btn-group" role="group">
             <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>

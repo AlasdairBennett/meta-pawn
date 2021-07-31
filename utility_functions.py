@@ -136,7 +136,7 @@ def get_recommended_w(skill_val, novel_val):
     w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) &
                             (w_clusters['novel_val'] == novel_val)]
 
-    w_openings = w_openings[w_openings['cluster'] in w_clusters['cluster']]
+    w_openings = w_openings[w_openings['cluster'].isin(w_clusters['cluster'])]
 
     return w_openings
 
