@@ -233,12 +233,11 @@ def get_advanced_black_games(games_set):
 
 # Get winning plot
 # Reference from https://stackoverflow.com/questions/32891211/limit-the-number-of-groups-shown-in-seaborn-countplot
-def get_winning_countplot(games_set):
+def get_winning_countplot(games_set, plot_title, output_file):
     plot = sns.countplot(y="opening_name", data=games_set, order=games_set.opening_name.value_counts().iloc[:10].index)
-    plot.set(xlabel="Win Count", ylabel="Opening Name", title="Top 10 Openings")
+    plot.set(xlabel="Win Count", ylabel="Opening Name", title=plot_title)
     plot.set_yticklabels(plot.get_yticklabels(), fontsize=6)
-    plt.savefig("project/static/img/winningcountplot.png")
-    plt.show()
+    plt.savefig(output_file, bbox_inches="tight")
 
 
 # Display rating scatterplot
@@ -250,4 +249,3 @@ def get_rating_scatterplot(games_set, elo, rating):
     plt.xlim(0, None)
     plt.ylim(0, 3000)
     plt.savefig("project/static/img/ratingscatterplot.png")
-    plt.show()
