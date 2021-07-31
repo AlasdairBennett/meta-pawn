@@ -117,7 +117,7 @@ def get_game_set_by_rating(game_set, rating):
                     (game_set['black_rating'] >= rating)].copy()
 
 
-def get_recommended_w(skill_val, novel_val):
+def get_ad_recommend_w(skill_val, novel_val):
     # cluster attributes
     # skill_val 1: beginner, 2: intermediate, 3: advanced
     cluster_attr = {
@@ -141,10 +141,10 @@ def get_recommended_w(skill_val, novel_val):
         'score', axis=1).tail(10)
     # calculate the distribution
     p = top_openings['n_games_played'] / top_openings['n_games_played'].sum()
-    return top_openings.sample(n=5, weights=p)
+    return top_openings.sample(n=5, weights=p).drop(['opening_eco', 'cluster'], axis=1).reset_index(drop=True)
 
 
-def get_recommended_b(skill_val, novel_val):
+def get_ad_recommend_b(skill_val, novel_val):
     # cluster attributes
     # skill_val 1: beginner, 2: intermediate, 3: advanced
     cluster_attr = {
@@ -169,7 +169,7 @@ def get_recommended_b(skill_val, novel_val):
         'score', axis=1).tail(10)
     # calculate the distribution
     p = top_openings['n_games_played'] / top_openings['n_games_played'].sum()
-    return top_openings.sample(n=5, weights=p)
+    return top_openings.sample(n=5, weights=p).drop(['opening_eco', 'cluster'], axis=1).reset_index(drop=True)
 
 
 # -------------------------------------------------------------------------------------------------------------------- #
