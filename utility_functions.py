@@ -117,6 +117,28 @@ def get_game_set_by_rating(game_set, rating):
                     (game_set['black_rating'] >= rating)].copy()
 
 
+def get_recommend_w(elo):
+    # load all white opening clusters
+    w_openings = pd.read_csv('project/static/w_clusters.csv')
+    rel_game_set = w_openings[np.abs(w_openings['avg_white_rating'] - elo) < 100]
+    scaler = StandardScaler()
+    top_openings = w_openings.assign(
+        score=np.sum(scaler.fit_transform(w_openings[['avg_rating_delta', 'w_win_rate', 'n_games_played']]),
+                     axis=1)).sort_values(by='score').drop('score', axis=1).tail(5)
+    return top_openings.drop(['opening_eco', 'cluster'], axis=1).reset_index(drop=True)
+
+
+def get_recommend_b(elo):
+    # load all black opening clusters
+    b_openings = pd.read_csv('project/static/b_clusters.csv')
+    rel_game_set = b_openings[np.abs(b_openings['avg_black_rating'] - elo) < 100]
+    scaler = StandardScaler()
+    top_openings = b_openings.assign(
+        score=np.sum(scaler.fit_transform(b_openings[['avg_rating_delta', 'b_win_rate', 'n_games_played']]),
+                     axis=1)).sort_values(by='score').drop('score', axis=1).tail(5)
+    return top_openings.drop(['opening_eco', 'cluster'], axis=1).reset_index(drop=True)
+
+
 def get_ad_recommend_w(skill_val, novel_val):
     # cluster attributes
     # skill_val 1: beginner, 2: intermediate, 3: advanced
@@ -154,7 +176,7 @@ def get_ad_recommend_b(skill_val, novel_val):
     }
     b_clusters = pd.DataFrame(cluster_attr)
 
-    # load all white opening clusters
+    # load all black opening clusters
     b_openings = pd.read_csv('project/static/b_clusters.csv')
 
     b_clusters = b_clusters[(b_clusters['skill_val'] == skill_val) |
@@ -164,7 +186,7 @@ def get_ad_recommend_b(skill_val, novel_val):
 
     scaler = StandardScaler()
     top_openings = b_openings.assign(
-        score=np.sum(scaler.fit_transform(b_openings[['avg_rating_delta', 'w_win_rate']]), axis=1)).sort_values(
+        score=np.sum(scaler.fit_transform(b_openings[['avg_rating_delta', 'b_win_rate']]), axis=1)).sort_values(
         by='score').drop(
         'score', axis=1).tail(10)
     # calculate the distribution
