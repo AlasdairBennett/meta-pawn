@@ -95,7 +95,7 @@ def alternative_elo_page():
 def update_opening_suggester_table():
     skill = int(list(request.args.values())[0])
     novelty = int(list(request.args.values())[1])
-    white_value = bool(list(request.args.values())[2])
+    white_value = list(request.args.values())[2] == 'true'
 
     # get new dataframe based on new elo value
     if white_value:

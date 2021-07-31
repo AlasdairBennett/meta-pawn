@@ -14,11 +14,11 @@
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="{{ url_for('stats.opening_suggester_page') }}">Opening Suggestion</a>
+                               href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
+                               href="{{ url_for('stats.opening_suggester_page') }}">Advanced Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -26,7 +26,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                               href="{{ url_for('stats.png_plot') }}">PNG Plot 1</a>
+                               href="{{ url_for('stats.png_plot') }}">Top Openings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -37,13 +37,68 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>PNG plot 1</strong></h1>
-            <p>This table means something.</p>
+            <h1><strong>Top openings by win count.</strong></h1>
+            <p>Select a skill range to get a table with the top 10 openings by win count for that range.</p>
         </header>
 
         <body>
-            <!-- Display the png table -->
-            <img src="{{ url_for('static', filename='img/winningcountplot.png') }}">
+        <!-- Display the png table -->
+
+        <div class="btn-group" role="group" data-toggle="buttons">
+            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="white-btn">White</label>
+
+            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="black-btn">Black</label>
+        </div>
+
+        <div class="btn-group" role="group" data-toggle="buttons">
+            <input type="radio" class="btn-check" name="btn-radio2" id="beginner-btn" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="beginner-btn">Beginner</label>
+
+            <input type="radio" class="btn-check" name="btn-radio2" id="intermediate-btn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="intermediate-btn">Intermediate</label>
+
+            <input type="radio" class="btn-check" name="btn-radio2" id="advanced-btn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="advanced-btn">Advanced</label>
+        </div>
+
+        <img id="dynamicImg" src="{{ url_for('static', filename='img/beg_whit_cp.png') }}">
+
+        <!-- Script which enables the image to change when the buttons are pressed -->
+        {% block script %}
+            <script>
+                {#<!-- This block handles updating the slider value display -->#}
+                $(function () {
+                    $("#eloInputRange").on('input', function (e) {
+                        document.getElementById('eloOutput').innerHTML = e.target.value;
+                    });
+                });
+
+                <!-- This part updates the table when the refresh button is clicked -->
+                $(document).on("input", function (e) {
+
+                    if (document.getElementById('white-btn').checked) {
+                        if (document.getElementById('beginner-btn').checked) {
+                            document.getElementById('dynamicImg').src = "{{ url_for('static', filename='img/beg_whit_cp.png') }}";
+                        } else if (document.getElementById('intermediate-btn').checked) {
+                            document.getElementById('dynamicImg').src = "{{ url_for('static', filename='img/int_whit_cp.png') }}";
+                        } else if (document.getElementById('advanced-btn').checked) {
+                            document.getElementById('dynamicImg').src = "{{ url_for('static', filename='img/adv_whit_cp.png') }}";
+                        }
+                    } else if (document.getElementById('black-btn').checked) {
+                        if (document.getElementById('beginner-btn').checked) {
+                            document.getElementById('dynamicImg').src = "{{ url_for('static', filename='img/beg_blk_cp.png') }}";
+                        } else if (document.getElementById('intermediate-btn').checked) {
+                            document.getElementById('dynamicImg').src = "{{ url_for('static', filename='img/int_blk_cp.png') }}";
+                        } else if (document.getElementById('advanced-btn').checked) {
+                            document.getElementById('dynamicImg').src = "{{ url_for('static', filename='img/adv_blk_cp.png') }}";
+                        }
+                    }
+
+                });
+            </script>
+        {% endblock %}
 
         </body>
     </div>
