@@ -97,4 +97,4 @@ def index():
     current_app.logger.info('Calling the index() function.')
 
     # re-render html page with new table values
-    return render_template('stats/opening_suggester.html')
+    return render_template('stats/elo_opening_suggestion.html')
