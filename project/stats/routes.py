@@ -63,7 +63,7 @@ def placeholder_name():
 @stats_blueprint.route('/_update_alternative_elo_table', methods=['GET', 'POST'])
 def update_alternative_elo_table():
     elo = int(list(request.args.values())[0])
-    white_value = bool(list(request.args.values())[1])
+    white_value = list(request.args.values())[1] == 'true'
 
     # get new dataframe based on new elo value
     if white_value:
