@@ -277,5 +277,5 @@ def get_rating_scatterplot(games_set, elo, rating):
     
 # Get win rate without opening_eco
 def get_explorer_table():
-    explorer_games = pd.read_csv("project/openings.csv")
-    return explorer_games["opening_game", "w_win_rate", "b_win_rate", "n_games_played"]
+    explorer_games = pd.read_csv("project/static/openings.csv")
+    return explorer_games.drop(['opening_eco'], axis=1).reset_index(drop=True)
