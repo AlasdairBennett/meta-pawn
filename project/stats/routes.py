@@ -29,26 +29,11 @@ def png_plot():
     return render_template('stats/png_plot.html')
 
 
-@stats_blueprint.route('/_update_placeholder_name', methods=['GET', 'POST'])
-def update_placeholder_name():
-    elo = int(list(request.args.values())[0])
-    white_value = bool(list(request.args.values())[1])
-
-    # get new dataframe based on new elo value
-    if white_value:
-        df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
-    else:
-        df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
-
-    # return the new table out to the client
-    return pd.DataFrame(df).to_json(orient='columns')
-
-
 @stats_blueprint.route('/_placeholder_name', methods=['GET', 'POST'])
 def placeholder_name():
     current_app.logger.info('Calling the placeholder_name() function.')
 
-    df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, 1500))
+    df = app.uf.get_win_rate_table(app.chess_games)
 
     # get table headers and rows
     columns = df.columns

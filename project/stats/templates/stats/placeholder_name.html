@@ -34,29 +34,15 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Placeholder Name</strong></h1>
-            <p>This table displays something else.</p>
+            <h1><strong>Opening Explorer</strong></h1>
+            <p>This table has win rate data on all the openings in the dataset. Explore using the search and ordering
+                functionalities at your leisure!</p>
         </header>
 
         <body>
-        <!-- Display header with dynamically updating elo value -->
-        <h3 id="eloHeader">Select an elo:
-            <output id="eloOutput">1500</output>
-        </h3>
-        <input type="range" class="form-range" min="1000" max="2000" step="100" id="eloInputRange">
-
-        <div class="btn-group" role="group">
-            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
-            <label class="btn btn-outline-dark" for="white-btn">White</label>
-
-            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
-            <label class="btn btn-outline-dark" for="black-btn">Black</label>
-        </div>
-
-        <input type="button" class="btn btn-dark" value="Refresh Table" id="refresh_button">
 
         <!-- Display the dynamically updating table element -->
-        <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
+        <table class="display" id="dynamic_chess_table" style="width:100%">
             <thead>
             <tr>
                 {% for column in columns %}
@@ -75,57 +61,15 @@
             </tbody>
         </table>
 
-        <!-- Script which enables dynamic updating of both header and table with slider value -->
+        <!-- Script which enables searching table -->
         {% block script %}
+            <!-- Include necessary CSS and JavaScript for DataTables plugin -->
+            <link href="{{ url_for('static', filename='pkg/DataTables/datatables.min.css') }}" rel="stylesheet">
+            <script src="{{ url_for('static', filename='pkg/DataTables/datatables.min.js') }}"></script>
             <script>
-                {#<!-- This block handles updating the slider value display -->#}
-                $(function () {
-                    $("#eloInputRange").on('input', function (e) {
-                        document.getElementById('eloOutput').innerHTML = e.target.value;
-                    });
+                $(document).ready(function () {
+                    $('#dynamic_chess_table').DataTable();
                 });
-
-                <!-- This part updates the table when the refresh button is clicked -->
-                $("#refresh_button").on("click", function () {
-                    var elo = document.getElementById('eloOutput').innerHTML,
-                        whiteStatus = document.getElementById('white-btn').checked;
-                    $.ajax({
-                        type: 'GET',
-                        url: $SCRIPT_ROOT + "/_update_placeholder_name",
-                        data: {
-                            elo,
-                            whiteStatus
-                        },
-                        dataType: 'json'
-                    }).then(function (data) {
-                        document.getElementById('dynamic_chess_table').innerHTML = refreshHtmlTable(data)
-                    });
-                });
-
-                {# Generate the innerHTML which represents the new table #}
-
-                function refreshHtmlTable(newTable) {
-                    var newInnerHTML = "",
-                        columns = Object.keys(newTable);
-
-                    newInnerHTML += "<tr>";
-                    for (var i = 0; i < columns.length; ++i) {
-                        newInnerHTML += "<th>" + columns[i] + "</th>";
-                    }
-                    newInnerHTML += "</tr>";
-
-                    newInnerHTML += "<tbody>";
-                    for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
-                        newInnerHTML += "<tr>";
-                        for (var key in newTable) {
-                            var cellValue = newTable[key][i];
-                            newInnerHTML += "<td>" + cellValue + "</td>";
-                        }
-                        newInnerHTML += "</tr>";
-                    }
-                    newInnerHTML += "</tbody>";
-                    return newInnerHTML;
-                }
             </script>
         {% endblock %}
         </body>
