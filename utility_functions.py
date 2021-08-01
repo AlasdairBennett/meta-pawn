@@ -120,7 +120,7 @@ def get_game_set_by_rating(game_set, rating):
 def get_recommend_w(elo):
     # load all white opening clusters
     w_openings = pd.read_csv('project/static/w_clusters.csv')
-    rel_game_set = w_openings[np.abs(w_openings['avg_white_rating'] - elo) < 50]
+    rel_game_set = w_openings[np.abs(w_openings['avg_white_rating'] - elo) < 100]
     scaler = StandardScaler()
     top_openings = rel_game_set.assign(
         score=np.sum(scaler.fit_transform(rel_game_set[['avg_rating_delta', 'w_win_rate', 'n_games_played']]),
@@ -131,7 +131,7 @@ def get_recommend_w(elo):
 def get_recommend_b(elo):
     # load all black opening clusters
     b_openings = pd.read_csv('project/static/b_clusters.csv')
-    rel_game_set = b_openings[np.abs(b_openings['avg_black_rating'] - elo) < 50]
+    rel_game_set = b_openings[np.abs(b_openings['avg_black_rating'] - elo) < 100]
     scaler = StandardScaler()
     top_openings = rel_game_set.assign(
         score=np.sum(scaler.fit_transform(rel_game_set[['avg_rating_delta', 'b_win_rate', 'n_games_played']]),
@@ -152,7 +152,7 @@ def get_ad_recommend_w(skill_val, novel_val):
     # load all white opening clusters
     w_openings = pd.read_csv('project/static/w_clusters.csv')
 
-    w_clusters = w_clusters[(w_clusters['skill_val'] <= skill_val) &
+    w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) &
                             (w_clusters['novel_val'] >= novel_val)]
 
     w_openings = w_openings[w_openings['cluster'].isin(w_clusters['cluster'])]
@@ -178,7 +178,7 @@ def get_ad_recommend_b(skill_val, novel_val):
     # load all black opening clusters
     b_openings = pd.read_csv('project/static/b_clusters.csv')
 
-    b_clusters = b_clusters[(b_clusters['skill_val'] <= skill_val) &
+    b_clusters = b_clusters[(b_clusters['skill_val'] == skill_val) &
                             (b_clusters['novel_val'] >= novel_val)]
 
     b_openings = b_openings[b_openings['cluster'].isin(b_clusters['cluster'])]
