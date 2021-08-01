@@ -152,8 +152,8 @@ def get_ad_recommend_w(skill_val, novel_val):
     # load all white opening clusters
     w_openings = pd.read_csv('project/static/w_clusters.csv')
 
-    w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) &
-                            (w_clusters['novel_val'] >= novel_val)]
+    w_clusters = w_clusters[(w_clusters['skill_val'] == skill_val) |
+                            (w_clusters['novel_val'] == novel_val)]
 
     w_openings = w_openings[w_openings['cluster'].isin(w_clusters['cluster'])]
     scaler = StandardScaler()
@@ -178,8 +178,8 @@ def get_ad_recommend_b(skill_val, novel_val):
     # load all black opening clusters
     b_openings = pd.read_csv('project/static/b_clusters.csv')
 
-    b_clusters = b_clusters[(b_clusters['skill_val'] == skill_val) &
-                            (b_clusters['novel_val'] >= novel_val)]
+    b_clusters = b_clusters[(b_clusters['skill_val'] == skill_val) |
+                            (b_clusters['novel_val'] == novel_val)]
 
     b_openings = b_openings[b_openings['cluster'].isin(b_clusters['cluster'])]
 
