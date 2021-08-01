@@ -29,18 +29,18 @@ def png_plot():
     return render_template('stats/png_plot.html')
 
 
-@stats_blueprint.route('/_placeholder_name', methods=['GET', 'POST'])
-def placeholder_name():
-    current_app.logger.info('Calling the placeholder_name() function.')
+@stats_blueprint.route('/_opening_explorer', methods=['GET', 'POST'])
+def opening_explorer():
+    current_app.logger.info('Calling the opening_explorer() function.')
 
-    df = app.uf.get_win_rate_table(app.chess_games)
+    df = app.uf.get_explorer_table()
 
     # get table headers and rows
     columns = df.columns
     rows = df.values
 
     # re-render html page with new table values
-    return render_template('stats/placeholder_name.html',
+    return render_template('stats/opening_explorer.html',
                            columns=columns,
                            rows=rows)
 
@@ -60,12 +60,12 @@ def update_alternative_elo_table():
     return pd.DataFrame(df).to_json(orient='columns')
 
 
-@stats_blueprint.route('/_alternative_elo_page', methods=['GET', 'POST'])
-def alternative_elo_page():
-    current_app.logger.info('Calling the alternative_elo_page() function.')
+@stats_blueprint.route('/_elo_opening_suggestion', methods=['GET', 'POST'])
+def elo_opening_suggestion():
+    current_app.logger.info('Calling the elo_opening_suggestion() function.')
 
     # re-render html page with new table values
-    return render_template('stats/alternative_elo_table.html')
+    return render_template('stats/elo_opening_suggestion.html')
 
 
 @stats_blueprint.route('/_update_opening_suggester_table', methods=['GET', 'POST'])
