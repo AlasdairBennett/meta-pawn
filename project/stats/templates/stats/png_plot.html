@@ -14,7 +14,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="{{ url_for('stats.alternative_elo_page') }}">Opening Suggestion</a>
+                               href="{{ url_for('stats.elo_opening_suggestion') }}">Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -22,7 +22,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="{{ url_for('stats.placeholder_name') }}">Placeholder Name</a>
+                               href="{{ url_for('stats.opening_explorer') }}">Opening Explorer</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
@@ -39,16 +39,8 @@
         </header>
 
         <body>
+
         <!-- Display the png table -->
-
-        <div class="btn-group" role="group" data-toggle="buttons">
-            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
-            <label class="btn btn-outline-dark" for="white-btn">White</label>
-
-            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
-            <label class="btn btn-outline-dark" for="black-btn">Black</label>
-        </div>
-
         <div class="btn-group" role="group" data-toggle="buttons">
             <input type="radio" class="btn-check" name="btn-radio2" id="beginner-btn" autocomplete="off" checked>
             <label class="btn btn-outline-dark" for="beginner-btn">Beginner</label>
@@ -59,6 +51,20 @@
             <input type="radio" class="btn-check" name="btn-radio2" id="advanced-btn" autocomplete="off">
             <label class="btn btn-outline-dark" for="advanced-btn">Advanced</label>
         </div>
+
+        <br>
+        <br>
+
+        <div class="btn-group" role="group" data-toggle="buttons">
+            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="white-btn">White</label>
+
+            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="black-btn">Black</label>
+        </div>
+
+        <br>
+        <br>
 
         <img id="dynamicImg" src="{{ url_for('static', filename='img/beg_whit_cp.png') }}">
 

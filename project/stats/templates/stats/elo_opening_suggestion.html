@@ -13,16 +13,16 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link"
-                               href="{{ url_for('stats.alternative_elo_page') }}">Opening Suggestion</a>
+                            <a class="nav-link active" aria-current="page"
+                               href="{{ url_for('stats.elo_opening_suggestion') }}">Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
                                href="{{ url_for('stats.opening_suggester_page') }}">Advanced Suggestion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                               href="{{ url_for('stats.placeholder_name') }}">Placeholder Name</a>
+                            <a class="nav-link"
+                               href="{{ url_for('stats.opening_explorer') }}">Opening Explorer</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -34,8 +34,8 @@
         </nav>
 
         <header class="content-text">
-            <h1><strong>Placeholder Name</strong></h1>
-            <p>This table displays something else.</p>
+            <h1><strong>Opening Suggestion</strong></h1>
+            <p>This page displays a table with the top openings for the given user input elo.</p>
         </header>
 
         <body>
@@ -43,7 +43,7 @@
         <h3 id="eloHeader">Select an elo:
             <output id="eloOutput">1500</output>
         </h3>
-        <input type="range" class="form-range" min="1000" max="2000" step="100" id="eloInputRange">
+        <input type="range" class="form-range" min="1300" max="2000" step="100" id="eloInputRange">
 
         <div class="btn-group" role="group">
             <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
@@ -57,22 +57,6 @@
 
         <!-- Display the dynamically updating table element -->
         <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
-            <thead>
-            <tr>
-                {% for column in columns %}
-                    <th>{{ column }}</th>
-                {% endfor %}
-            </tr>
-            </thead>
-            <tbody>
-            {% for row in rows %}
-                <tr>
-                    {% for cell in row %}
-                        <td>{{ cell }}</td>
-                    {% endfor %}
-                </tr>
-            {% endfor %}
-            </tbody>
         </table>
 
         <!-- Script which enables dynamic updating of both header and table with slider value -->
@@ -91,7 +75,7 @@
                         whiteStatus = document.getElementById('white-btn').checked;
                     $.ajax({
                         type: 'GET',
-                        url: $SCRIPT_ROOT + "/_update_placeholder_name",
+                        url: $SCRIPT_ROOT + "/_update_alternative_elo_table",
                         data: {
                             elo,
                             whiteStatus
@@ -106,19 +90,26 @@
 
                 function refreshHtmlTable(newTable) {
                     var newInnerHTML = "",
-                        columns = Object.keys(newTable);
+                        cols = Object.keys(newTable);
 
                     newInnerHTML += "<tr>";
-                    for (var i = 0; i < columns.length; ++i) {
-                        newInnerHTML += "<th>" + columns[i] + "</th>";
+                    for (var i = 0; i < cols.length; ++i) {
+                        newInnerHTML += "<th>" + cols[i] + "</th>";
                     }
                     newInnerHTML += "</tr>";
 
                     newInnerHTML += "<tbody>";
-                    for (var i = 0; i < Object.values(newTable[columns[0]]).length; ++i) {
+                    for (var i = 0; i < Object.values(newTable[cols[0]]).length; ++i) {
+                        {# Skips displaying null rows #}
+                        if (newTable[cols[0]][i] == undefined) continue;
                         newInnerHTML += "<tr>";
                         for (var key in newTable) {
                             var cellValue = newTable[key][i];
+                            {# round floats for nice display #}
+                            if (!isNaN(cellValue) && typeof cellValue == 'number') {
+                                {# https://stackoverflow.com/questions/4435170/how-to-parse-float-with-two-decimal-places-in-javascript #}
+                                cellValue = parseFloat(cellValue).toFixed(2);
+                            }
                             newInnerHTML += "<td>" + cellValue + "</td>";
                         }
                         newInnerHTML += "</tr>";
