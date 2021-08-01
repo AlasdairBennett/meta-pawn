@@ -63,13 +63,13 @@ def placeholder_name():
 @stats_blueprint.route('/_update_alternative_elo_table', methods=['GET', 'POST'])
 def update_alternative_elo_table():
     elo = int(list(request.args.values())[0])
-    white_value = bool(list(request.args.values())[1])
+    white_value = list(request.args.values())[1] == 'true'
 
     # get new dataframe based on new elo value
     if white_value:
-        df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
+        df = app.uf.get_recommend_w(elo)
     else:
-        df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, elo))
+        df = app.uf.get_recommend_b(elo)
 
     # return the new table out to the client
     return pd.DataFrame(df).to_json(orient='columns')
@@ -79,16 +79,8 @@ def update_alternative_elo_table():
 def alternative_elo_page():
     current_app.logger.info('Calling the alternative_elo_page() function.')
 
-    df = app.uf.get_win_rate_table(app.uf.get_game_set_by_rating(app.chess_games, 1500))
-
-    # get table headers and rows
-    columns = df.columns
-    rows = df.values
-
     # re-render html page with new table values
-    return render_template('stats/alternative_elo_table.html',
-                           columns=columns,
-                           rows=rows)
+    return render_template('stats/alternative_elo_table.html')
 
 
 @stats_blueprint.route('/_update_opening_suggester_table', methods=['GET', 'POST'])
@@ -99,9 +91,9 @@ def update_opening_suggester_table():
 
     # get new dataframe based on new elo value
     if white_value:
-        df = app.uf.get_recommended_w(skill, novelty)
+        df = app.uf.get_ad_recommend_w(skill, novelty)
     else:
-        df = app.uf.get_recommended_b(skill, novelty)
+        df = app.uf.get_ad_recommend_b(skill, novelty)
 
     # return the new table out to the client
     return pd.DataFrame(df).to_json(orient='columns')
@@ -111,30 +103,13 @@ def update_opening_suggester_table():
 def opening_suggester_page():
     current_app.logger.info('Calling the opening_suggester_page() function.')
 
-    # default table is 2, 2, and white (these are the default values on the front end)
-    df = app.uf.get_recommended_w(2, 2)
-
-    # get table headers and rows
-    columns = df.columns
-    rows = df.values
-
     # re-render html page with new table values
-    return render_template('stats/opening_suggester.html',
-                           columns=columns,
-                           rows=rows)
+    return render_template('stats/opening_suggester.html')
 
 
 @stats_blueprint.route('/', methods=['GET', 'POST'])
 def index():
     current_app.logger.info('Calling the index() function.')
 
-    df = app.uf.get_recommended_w(2, 2)
-
-    # get table headers and rows
-    columns = df.columns
-    rows = df.values
-
     # re-render html page with new table values
-    return render_template('stats/opening_suggester.html',
-                           columns=columns,
-                           rows=rows)
+    return render_template('stats/opening_suggester.html')

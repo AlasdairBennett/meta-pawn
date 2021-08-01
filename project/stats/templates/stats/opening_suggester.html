@@ -14,7 +14,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link"
-                               href="{{ url_for('stats.alternative_elo_page') }}">Alternative Opening Suggestion</a>
+                               href="{{ url_for('stats.alternative_elo_page') }}">Opening Suggestion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
@@ -27,9 +27,6 @@
                         <li class="nav-item">
                             <a class="nav-link"
                                href="{{ url_for('stats.png_plot') }}">Top Openings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
                 </div>
@@ -68,22 +65,6 @@
 
         <!-- Display the dynamically updating table element -->
         <table class="table table-dark table-hover table-striped" id="dynamic_chess_table">
-            <thead>
-            <tr>
-                {% for column in columns %}
-                    <th>{{ column }}</th>
-                {% endfor %}
-            </tr>
-            </thead>
-            <tbody>
-            {% for row in rows %}
-                <tr>
-                    {% for cell in row %}
-                        <td>{{ cell }}</td>
-                    {% endfor %}
-                </tr>
-            {% endfor %}
-            </tbody>
         </table>
 
         <!-- Script which enables dynamic updating of both header and table with slider value -->
@@ -132,11 +113,16 @@
 
                     newInnerHTML += "<tbody>";
                     for (var i = 0; i < Object.values(newTable[cols[0]]).length; ++i) {
-                        if (newTable[cols[0]][i] == undefined) continue;
                         {# Skips displaying null rows #}
+                        if (newTable[cols[0]][i] == undefined) continue;
                         newInnerHTML += "<tr>";
                         for (var key in newTable) {
                             var cellValue = newTable[key][i];
+                            {# round floats for nice display #}
+                            if (!isNaN(cellValue) && typeof cellValue == 'number') {
+                                {# https://stackoverflow.com/questions/4435170/how-to-parse-float-with-two-decimal-places-in-javascript #}
+                                cellValue = parseFloat(cellValue).toFixed(2);
+                            }
                             newInnerHTML += "<td>" + cellValue + "</td>";
                         }
                         newInnerHTML += "</tr>";
