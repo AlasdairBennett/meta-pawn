@@ -39,16 +39,8 @@
         </header>
 
         <body>
+
         <!-- Display the png table -->
-
-        <div class="btn-group" role="group" data-toggle="buttons">
-            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
-            <label class="btn btn-outline-dark" for="white-btn">White</label>
-
-            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
-            <label class="btn btn-outline-dark" for="black-btn">Black</label>
-        </div>
-
         <div class="btn-group" role="group" data-toggle="buttons">
             <input type="radio" class="btn-check" name="btn-radio2" id="beginner-btn" autocomplete="off" checked>
             <label class="btn btn-outline-dark" for="beginner-btn">Beginner</label>
@@ -59,6 +51,20 @@
             <input type="radio" class="btn-check" name="btn-radio2" id="advanced-btn" autocomplete="off">
             <label class="btn btn-outline-dark" for="advanced-btn">Advanced</label>
         </div>
+
+        <br>
+        <br>
+
+        <div class="btn-group" role="group" data-toggle="buttons">
+            <input type="radio" class="btn-check" name="btn-radio" id="white-btn" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="white-btn">White</label>
+
+            <input type="radio" class="btn-check" name="btn-radio" id="black-btn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="black-btn">Black</label>
+        </div>
+
+        <br>
+        <br>
 
         <img id="dynamicImg" src="{{ url_for('static', filename='img/beg_whit_cp.png') }}">
 
