@@ -6,6 +6,8 @@ Chess metagame statistics explorer<br>
 Term project for COSC4427<br>
 <br>
 This project uses [this dataset](https://www.kaggle.com/datasnaek/chess) <br>
+The project can also be found on [github](https://github.com/AlasdairBennett/meta-pawn) <br>
+
 
 <h2>Installation Directions:</h2>
 Requires python 3.9.5<br>
