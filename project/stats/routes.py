@@ -29,18 +29,18 @@ def png_plot():
     return render_template('stats/png_plot.html')
 
 
-@stats_blueprint.route('/_placeholder_name', methods=['GET', 'POST'])
-def placeholder_name():
-    current_app.logger.info('Calling the placeholder_name() function.')
+@stats_blueprint.route('/_opening_explorer', methods=['GET', 'POST'])
+def opening_explorer():
+    current_app.logger.info('Calling the opening_explorer() function.')
 
-    df = app.uf.get_win_rate_table(app.chess_games)
+    df = app.uf.get_explorer_table()
 
     # get table headers and rows
     columns = df.columns
     rows = df.values
 
     # re-render html page with new table values
-    return render_template('stats/placeholder_name.html',
+    return render_template('stats/opening_explorer.html',
                            columns=columns,
                            rows=rows)
 
